@@ -381,7 +381,7 @@ input::-moz-focus-inner {
 	label {
 		color: #ffffff;
 		display: block;
-		font-size: 0.8em;
+		font-size: 1em;
 		font-weight: 600;
 		letter-spacing: 0.25em;
 		margin: 0 0 1em 0;
