@@ -1142,6 +1142,7 @@ input::-moz-focus-inner {
 				top: 0;
 				width: 100%;
 				z-index: 1;
+
 			}
 
 			.tiles article:hover:before {
@@ -1458,7 +1459,7 @@ input::-moz-focus-inner {
 		position: fixed;
 		text-transform: uppercase;
 		top: 0;
-		width: 55%;
+		width: 100%;
 		z-index: 10000;
 	}
 
