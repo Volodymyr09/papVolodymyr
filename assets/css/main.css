@@ -1045,6 +1045,31 @@ input::-moz-focus-inner {
 			opacity: 0.25;
 		}
 
+/* Config */
+
+.cabecera-filtro {
+    background: #2b304a;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+}
+/* Galeria */
+
+div.wrapper {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+
+.col4 {
+    color: #FFFFFF;
+    background-color: #232323;
+    border-bottom: 1px solid #D51D29;
+
+}
 /* Tiles */
 
 	.tiles {
