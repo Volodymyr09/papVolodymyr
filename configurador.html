@@ -47,14 +47,32 @@
                     <h1>Configurador</h1>
                 </header>
 
+
+
+
+
                 <form method="post" action="#">
                     <div class="fields">
 
-                        <div id="conf-tab-1" class="cabecera-filtro">
-                            <span>Processador *</span>
-                            <span class="pull-right">
-                                <i class="abre-filtro pccom-icon pull-xs-right">+</i>
-                            </span>
+                        <div class="seleccion-filtro seleccionado">
+                            <div class="row">
+           
+                                <div class="col-lg-8">
+                                    <select id="configurador-tipos" name="configuracion" class="form-control"><option value="0">Seleciona configuração</option>
+                                        <option value="2">Processador Intel Socket 1150</option>
+                                        <option value="4">Processador Intel Socket 1151 Gen 6/7</option>
+                                        <option value="17">Processador Intel Socket 1151 Gen 8</option>
+                                        <option value="6">Processador Intel Socket 2011-3</option>
+                                        <option value="8">Processador AMD Socket AM3</option>
+                                        <option value="10">Processador AMD Socket FM2</option>
+                                        <option value="12">Procesador AMD Socket AM4</option>
+                                        <option value="14">Procesador Intel Socket 2066</option>
+                                        <option value="16">Procesador AMD Socket TR-4</option>
+                                        <option value="18">Procesador AMD Socket TRX-40 </option>
+                                        <option value="19">Processador Intel socket LGA1200 10Gen</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="field half">
@@ -245,6 +263,7 @@
                         </div>
                     </div>
                 </form>
+
             </section>
             <section class="split">
                 <section>

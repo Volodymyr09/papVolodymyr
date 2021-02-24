@@ -1054,6 +1054,24 @@ input::-moz-focus-inner {
     border-top: 1px solid #ccc;
     cursor: pointer;
 }
+
+.caja-configurador .tabla-configurador .seleccion-filtro.seleccionado {
+	background: url(//cdn.pccomponentes.com/img/css/fila-seleccionado-bg.gif) 0 0 no-repeat;
+	padding: 10px;
+	border-top: 1px solid #ccc;
+}
+
+.white-card-movil {
+	padding: 15px;
+	margin-bottom: 3px;
+	background: #1905e6;
+}
+
+.caja-configurador .tabla-configurador {
+	border: 1px solid #ccc;
+}
+
+
 /* Galeria */
 
 div.wrapper {
