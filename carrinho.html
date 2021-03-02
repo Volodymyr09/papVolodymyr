@@ -74,10 +74,72 @@
 								</table>
 							</section>
 
+							<div class="field half text-right">
+								<ul class="actions">
+									<li> <a href="#" data-toggle="modal" data-target="#login"><span class="label"></span> <input type="submit" value="Comprar" class="primary" /></a></li>
+								</ul>
+							</div>
 						</div>
 
 					</section>
 
+				<!-- Checkout -->
+
+				<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Checkout</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form class="row g-3">
+									<div class="col-md-6">
+										<label for="validationServer01" class="form-label">Primeiro Nome</label>
+										<input type="text" class="form-control" id="validationServer01"  required>
+
+									</div>
+									<div class="col-md-6">
+										<label for="validationServer02" class="form-label">Apelido</label>
+										<input type="text" class="form-control" id="validationServer02" required>
+
+									</div>
+									<div class="col-md-6">
+										<label for="inputTelephone4" class="form-label">Telemóvel</label>
+										<input type="email" class="form-control" id="inputTelephone4">
+									</div>
+									<div class="col-md-6">
+										<label for="inputEmail4" class="form-label">Email</label>
+										<input type="email" class="form-control" id="inputEmail4">
+									</div>
+
+									<div class="col-12">
+										<label for="inputAddress" class="form-label">Morada</label>
+										<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+									</div>
+									<div class="col-md-6">
+										<label for="inputCity" class="form-label">Cidade</label>
+										<input type="text" class="form-control" id="inputCity">
+									</div>
+									<div class="col-md-4">
+										<label for="inputState" class="form-label">País</label>
+										<select id="inputState" class="form-select">
+											<option selected>Choose...</option>
+											<option>...</option>
+										</select>
+									</div>
+
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+								<button type="submit" class="btn btn-warning">Finalizar</button>
+							</div>
+						</div>
+					</div>
+				</div>
 
 				<!-- Footer -->
 					<footer id="footer">
