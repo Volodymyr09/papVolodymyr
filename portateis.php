@@ -11,7 +11,7 @@ top();
             <header class="major">
                 <h1>Portateis</h1>
             </header>
-            <a class="btn btn-primary" href="products.html" role="button">Voltar</a>
+            <a class="btn btn-primary" href="products.php" role="button">Voltar</a>
         </div>
     </section>
 
@@ -29,7 +29,7 @@ top();
 
 
                 <div class="major-actions">
-                    <a href="ListaPortatil.html" class="button small next">Ver Produto</a>
+                    <a href="ListaPortatil.php" class="button small next">Ver Produto</a>
                 </div>
             </header>
         </article>

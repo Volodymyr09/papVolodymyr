@@ -24,7 +24,7 @@
                         <p>(Intel Core i7 -NVIDIA GeForce GTX 1660 Ti - RAM: 16 GB - 1 TB SSD - 15.6)</p>
                         <p><del><span style="padding: 10px; font-size: 10px"  class="badge badge-success">New</span></del></p>
                     <div class="major-actions">
-                        <a href="ListaPortatil.html" class="button small next">Ver Produto</a>
+                        <a href="ListaPortatil.php" class="button small next">Ver Produto</a>
                     </div>
                 </header>
             </article>
@@ -37,7 +37,7 @@
                         <p>(31.5'' - 4 ms - 144Hz - FreeSync)</p>
                         <p><del><span style="padding: 10px; font-size: 10px"  class="badge badge-success">New</span></del></p>
                     <div class="major-actions">
-                        <a href="ListaMonitores.html" class="button small next">Ver Produto</a>
+                        <a href="ListaMonitores.php" class="button small next">Ver Produto</a>
                     </div>
                 </header>
             </article>
@@ -50,7 +50,7 @@
                         <p>(ATX Mid Tower - Preto)</p>
                         <p><del><span style="padding: 10px; font-size: 10px"  class="badge badge-success">New</span></del></p>
                     <div class="major-actions">
-                        <a href="ListaCaixas.html" class="button small next">Ver Produto</a>
+                        <a href="ListaCaixas.php" class="button small next">Ver Produto</a>
                     </div>
                 </header>
             </article>

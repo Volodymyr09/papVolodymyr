@@ -42,7 +42,7 @@ top();
 
 
                 <div class="major-actions">
-                    <a href="monitores.html" class="button small next">Ver Produtos</a>
+                    <a href="monitores.php" class="button small next">Ver Produtos</a>
                 </div>
             </header>
         </article>
@@ -58,7 +58,7 @@ top();
 
 
                 <div class="major-actions">
-                    <a href="caixas.html" class="button small next">Ver Produtos</a>
+                    <a href="caixas.php" class="button small next">Ver Produtos</a>
                 </div>
             </header>
         </article>
@@ -74,13 +74,13 @@ top();
 
 
                 <div class="major-actions">
-                    <a href="hardware.html" class="button small next">Ver Produtos</a>
+                    <a href="hardware.php" class="button small next">Ver Produtos</a>
                 </div>
             </header>
         </article>
         <article>
 									<span class="image">
-										<img src="images/AcessóriosGamingPC.jpg" alt="" />
+										<img src="images/acessoariosLogo.jpg" alt="" />
 									</span>
             <header class="major">
                 <h3>Acessórios Gaming PC</h3>
@@ -90,7 +90,7 @@ top();
 
 
                 <div class="major-actions">
-                    <a href="teclados.html" class="button small next">Ver Produtos</a>
+                    <a href="acessoarios.php" class="button small next">Ver Produtos</a>
                 </div>
             </header>
         </article>
@@ -106,7 +106,7 @@ top();
 
 
                 <div class="major-actions">
-                    <a href="portateis.html" class="button small next">Ver Produtos</a>
+                    <a href="portateis.php" class="button small next">Ver Produtos</a>
                 </div>
             </header>
         </article>
@@ -122,7 +122,7 @@ top();
 
 
                 <div class="major-actions">
-                    <a href="desktops.html" class="button small next">Ver Produtos</a>
+                    <a href="desktops.php" class="button small next">Ver Produtos</a>
                 </div>
             </header>
         </article>

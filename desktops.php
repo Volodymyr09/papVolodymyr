@@ -11,7 +11,7 @@ top();
             <header class="major">
                 <h1>Desktops.Marcas(Gaming)</h1>
             </header>
-            <a class="btn btn-primary" href="products.html" role="button">Voltar</a>
+            <a class="btn btn-primary" href="products.php" role="button">Voltar</a>
         </div>
     </section>
 
@@ -29,7 +29,7 @@ top();
 
 
                 <div class="major-actions">
-                    <a href="omen.html" class="button small next">Ver Produto</a>
+                    <a href="omen.php" class="button small next">Ver Produto</a>
                 </div>
             </header>
         </article>
@@ -45,7 +45,7 @@ top();
 
 
                 <div class="major-actions">
-                    <a href="legion.html" class="button small next">Ver Produto</a>
+                    <a href="legion.php" class="button small next">Ver Produto</a>
                 </div>
             </header>
         </article>
@@ -61,7 +61,7 @@ top();
 
 
                 <div class="major-actions">
-                    <a href="msi.html" class="button small next">Ver Produto</a>
+                    <a href="msi.php" class="button small next">Ver Produto</a>
                 </div>
             </header>
         </article>
@@ -77,7 +77,7 @@ top();
 
 
                 <div class="major-actions">
-                    <a href="asus.html" class="button small next">Ver Produto</a>
+                    <a href="asus.php" class="button small next">Ver Produto</a>
                 </div>
             </header>
         </article>
@@ -93,7 +93,7 @@ top();
 
 
                 <div class="major-actions">
-                    <a href="predator.html" class="button small next">Ver Produto</a>
+                    <a href="predator.php" class="button small next">Ver Produto</a>
                 </div>
             </header>
         </article>
@@ -109,7 +109,7 @@ top();
 
 
                 <div class="major-actions">
-                    <a href="tsunami.html" class="button small next">Ver Produto</a>
+                    <a href="tsunami.php" class="button small next">Ver Produto</a>
                 </div>
             </header>
         </article>
