@@ -17,10 +17,10 @@ top();
                     <h1>Adicionar</h1>
 
                 </header>
-                <div class="container">
-                    <div class="row">
-                        <form method="post" action="#">
-                            <div class="field half">
+                <div class="container ">
+                    <div class="row ">
+                        <form method="post" action="#"  style="width: 100%">
+                            <div class="field ">
                                 <label for="name">Nome</label>
                                 <input type="text" name="name" id="name" />
                             </div>
@@ -36,15 +36,15 @@ top();
                             </div>
                             <br>
                             <div class="field half">
-                                <label for="preço">Preço</label>
-                                <input type="text" name="preço" id="preço" />
+                                <label for="preÃ§o">PreÃ§o</label>
+                                <input type="text" name="preÃ§o" id="preÃ§o" />
                             </div>
                             <br>
 
-                            <h1>Características</h1>
+                            <h1>CaracterÃ­sticas</h1>
 
                             <div class="field half">
-                                <label for="referencias">Referências</label>
+                                <label for="referencias">ReferÃªncias</label>
                                 <textarea name="referencias" id="referencias" rows="1"></textarea>
                             </div>
                             <br>
@@ -54,17 +54,17 @@ top();
                             </div>
                             <br>
                             <div class="field half">
-                                <label for="caracteristicasfisical">Caracteristicas Físical</label>
+                                <label for="caracteristicasfisical">Caracteristicas FÃ­sical</label>
                                 <textarea name="caracteristicasfisical" id="caracteristicasfisical" rows="1"></textarea>
                             </div>
                             <br>
                             <div class="field half">
-                                <label for="memoria">Memória e Armazenamento</label>
+                                <label for="memoria">MemÃ³ria e Armazenamento</label>
                                 <textarea name="memoria" id="memoria" rows="1"></textarea>
                             </div>
                             <br>
                             <div class="field half">
-                                <label for="conexoes">Conexões</label>
+                                <label for="conexoes">ConexÃµes</label>
                                 <textarea name="conexoes" id="conexoes" rows="1"></textarea>
                             </div>
                             <br>
@@ -74,7 +74,7 @@ top();
                             </div>
                             <br>
                             <div class="field half">
-                                <label for="placagrafica">Placa Gráfica</label>
+                                <label for="placagrafica">Placa GrÃ¡fica</label>
                                 <textarea name="placagrafica" id="placagrafica" rows="1"></textarea>
                             </div>
                             <br>

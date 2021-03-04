@@ -83,7 +83,7 @@ top();
 										<img src="images/acessoariosLogo.jpg" alt="" />
 									</span>
             <header class="major">
-                <h3>Acessórios Gaming PC</h3>
+                <h3>AcessÃ³rios Gaming PC</h3>
 
                 <p>-----</p>
 

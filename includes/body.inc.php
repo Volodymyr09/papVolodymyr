@@ -14,6 +14,16 @@ function top()
 
         <link rel="icon" href="images/log.jpg">
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+        <style>
+        .cardNoticias {
+
+             border: 0px solid rgba(0,0,0,.125);
+             border-radius: .25rem;
+    }
+</style>
+
+
     </head>
     <body class="is-preload">
 
