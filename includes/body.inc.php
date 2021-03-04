@@ -50,6 +50,8 @@ function top(){
 
                 <li><a href="configurador.php">Configurador</a></li>
 
+                <li><a href="Administrador.php">Admin</a></li>
+
                 <li><a href="team.php">Equipa</a></li>
 
             </ul>
