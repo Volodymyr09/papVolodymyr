@@ -1,7 +1,5 @@
 <?php
-
-function top()
-{
+function top(){
     ?>
 
     <!DOCTYPE HTML>
@@ -51,8 +49,6 @@ function top()
                 <li><a href="contact.php">Contactos</a></li>
 
                 <li><a href="configurador.php">Configurador</a></li>
-
-                <li><a href="Administrador.php">Administrador</a></li>
 
                 <li><a href="team.php">Equipa</a></li>
 
