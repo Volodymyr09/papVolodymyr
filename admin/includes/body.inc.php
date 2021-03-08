@@ -1,7 +1,7 @@
 <?php
 
 include_once("config.inc.php");
-    $con=mysqli_connect(HOST,USER,PWD,DATABASE);
+    $con=mysqli_connect("localhost","root","","pap2021pcgammer");
     $con->set_charset("utf8");
 function top()
 {
