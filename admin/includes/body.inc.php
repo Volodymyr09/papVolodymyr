@@ -43,11 +43,11 @@ function top()
 
 
             <ul class="links">
-                <li class="active"> <a href="#">Categorias</a> </li>
+                <li class="active"> <a href="listaCategoria.php">Categorias</a> </li>
 
-                <li> <a href="#">Produtos</a> </li>
+                <li class="active"> <a href="listaProduto.php">Produtos</a> </li>
 
-                <li> <a href="ListaChave.php">Chaves</a> </li>
+                <li class="active"> <a href="listaChave.php">Chaves</a> </li>
 
             </ul>
         </nav>
