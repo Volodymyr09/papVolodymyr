@@ -2,7 +2,7 @@
 include_once("includes/body.inc.php");
 $con=mysqli_connect("localhost","root","","pap2021pcgammer");
 $con->set_charset("utf8");
-$sql="Select * from chaves ";
+$sql="Select * from chaves inner join categorias ";
 $result=mysqli_query($con,$sql);
 
 top();
@@ -13,7 +13,7 @@ top();
             url:"AJAX/AJAXGetNameChave.php",
             type:"post",
             data:{
-                idEmpresa:id
+                idChaves:id
             },
             success:function (result){
                 if(confirm('Confirma que deseja eliminar a chave:'+result+"?"))
