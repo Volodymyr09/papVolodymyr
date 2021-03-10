@@ -1,0 +1,19 @@
+Index: admin/listaChave.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\ninclude_once(\"includes/body.inc.php\");\r\n$con=mysqli_connect(\"localhost\",\"root\",\"\",\"pap2021pcgammer\");\r\n$con->set_charset(\"utf8\");\r\n$sql=\"Select * from chaves \";\r\n$result=mysqli_query($con,$sql);\r\n\r\ntop();\r\n?>\r\n<script>\r\n    function confirmaElimina(id) {\r\n        $.ajax({\r\n            url:\"AJAX/AJAXGetNameChave.php\",\r\n            type:\"post\",\r\n            data:{\r\n                idEmpresa:id\r\n            },\r\n            success:function (result){\r\n                if(confirm('Confirma que deseja eliminar a chave:'+result+\"?\"))\r\n                    window.location=\"eliminaChave.php?id=\" + id;\r\n            }\r\n        })\r\n    };\r\n\r\n\r\n\r\n\r\n    $('document').ready(function (){\r\n        $('#search').keyup(function (){\r\n            fillTableChaves(this.value);\r\n        });\r\n        fillTableChaves();\r\n    })\r\n</script>\r\n\r\n    <div class=\"container\">\r\n        <h1>Chaves</h1>\r\n\r\n        <table class='table table-striped' width=\"100%\">\r\n            <tr>\r\n                <td colspan=\"5\" align='right'>\r\n                    <a href=\"adicionaChave.php\"><i class='btn btn-success btn-xs'>Adicionar</i></a>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <th>Id</th>\r\n                <th>Nome</th>\r\n                <th>Categoria</th>\r\n                <th colspan=\"2\">opções</th>\r\n            </tr>\r\n            <?php\r\n            while($dados=mysqli_fetch_array($result)){\r\n                ?>\r\n\r\n                <tr>\r\n                    <td><?php echo $dados['chaveId']?></td>\r\n                    <td><?php echo $dados['chaveNome']?></td>\r\n                    <td><?php echo $dados['categoriaNome']?></td>\r\n\r\n                    <td><a class='btn btn-warning btn-xs' href=\"editaChave.php?id=<?php echo $dados['chaveId']?>\"><i class='fa fa-pencil'></i>Editar</a></td>\r\n                    <td><a class='btn btn-danger btn-xs' href=\"#\" onclick=\"confirmaElimina(<?php echo $dados['chaveId']?>);\"> <i class='fa fa-trash'></i>Eliminar</a></td>\r\n\r\n                </tr>\r\n                <?php\r\n            }\r\n            ?>\r\n\r\n\r\n        </table>\r\n\r\n\r\n    </div>\r\n\r\n<?php\r\n    Bottom();\r\n?>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/admin/listaChave.php b/admin/listaChave.php
+--- a/admin/listaChave.php	(revision beb630c74551757ca108f616d50fde0d912e08cb)
++++ b/admin/listaChave.php	(date 1615394758085)
+@@ -2,7 +2,7 @@
+ include_once("includes/body.inc.php");
+ $con=mysqli_connect("localhost","root","","pap2021pcgammer");
+ $con->set_charset("utf8");
+-$sql="Select * from chaves ";
++$sql="Select * from chaves inner join categorias ";
+ $result=mysqli_query($con,$sql);
+ 
+ top();
