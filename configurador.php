@@ -21,7 +21,7 @@ top();
                         <div class="row">
 
                             <div class="col-lg-8">
-                                <select id="configurador-tipos" name="configuracion" class="form-control"><option value="0">Seleciona configuraÁ„o</option>
+                                <select id="configurador-tipos" name="configuracion" class="form-control"><option value="0">Seleciona configura√ß√£o</option>
                                     <option value="2">Processador Intel Socket 1150</option>
                                     <option value="4">Processador Intel Socket 1151 Gen 6/7</option>
                                     <option value="17">Processador Intel Socket 1151 Gen 8</option>
@@ -61,7 +61,7 @@ top();
                     </div>
 
                     <div class="field half">
-                        <label for="field-1">MemÛria RAM</label>
+                        <label for="field-1">Mem√≥ria RAM</label>
 
                         <select>
                             <option value="">-- Choose --</option>
@@ -105,7 +105,7 @@ top();
                     </div>
 
                     <div class="field half">
-                        <label for="field-1">Fonte de AlimentaÁ„o</label>
+                        <label for="field-1">Fonte de Alimenta√ß√£o</label>
 
                         <select>
                             <option value="">-- Choose --</option>
@@ -138,7 +138,7 @@ top();
                     </div>
 
                     <div class="field half">
-                        <label for="field-1">Leitor de Cartıes</label>
+                        <label for="field-1">Leitor de Cart√µes</label>
 
                         <select>
                             <option value="">-- Choose --</option>
@@ -198,7 +198,7 @@ top();
                         <select>
                             <option value="">-- Choose --</option>
                             <option value="">-- Sim --</option>
-                            <option value="">-- N„o --</option>
+                            <option value="">-- N√£o --</option>
                         </select>
                     </div>
 
@@ -222,7 +222,7 @@ top();
                 <br>
                 <div class="contact-method">
                     <span class="icon alt fa-credit-card"></span>
-                    <h3>PreÁo Total</h3>
+                    <h3>Pre√ßo Total</h3>
                     <span>$ 128.00</span>
                 </div>
 

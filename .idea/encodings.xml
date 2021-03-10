@@ -1,19 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/AdminAdicionarAcessoarios.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AdminAdicionarHardware.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AdminAdicionarMonitor.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AdminAdicionarPcPort.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AdminEditar.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Administrador.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListaAcessoarios.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListaCaixas.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListaDesktop.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListaHardware.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ListaMonitores.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ListaPortatil.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/acessoarios.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/adicionaCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/adicionaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/adicionaProduto.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/confirmaEditaCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaEditaChave.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/confirmaNovaCategoria.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/confirmaNovaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaNovoProduto.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/editaCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/editaChave.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/eliminaCategoria.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/eliminaChave.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/eliminaProduto.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/listaCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/listaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/listaProduto.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/asus.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caixas.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/carrinho.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/configurador.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/contact.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/desktops.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hardware.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/index.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/legion.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitores.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/msi.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/omen.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/portateis.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/predator.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/products.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/team.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tsunami.php" charset="UTF-8" />
     <file url="PROJECT" charset="ISO-8859-1" />
   </component>
 </project>

@@ -8,7 +8,7 @@ top();
 <form action="confirmaNovaCategoria.php" method="post" enctype="multipart/form-data">
     <label>Nome: </label>
     <input type="text" name="nomeCategoria"><br>
-    <label>Logótipo:</label>
+    <label>LogÃ³tipo:</label>
     <input type="file" name="imagemCategoria"><br>
      <br>
     <input type="Submit" value="Adiciona"><br>

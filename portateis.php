@@ -22,7 +22,7 @@ top();
 										<img src="images/PorAsusRogStrixG15.jpg" alt="" />
 									</span>
             <header class="major">
-                <h3>Port·til Gaming ASUS ROG Strix G15</h3>
+                <h3>Port√°til Gaming ASUS ROG Strix G15</h3>
 
                 <p><del>99.00 </del> <strong>79.00</strong></p>
 

@@ -15,7 +15,7 @@ top();
                 <th width="3%">Id</th>
                 <th width="50%">Nome</th>
                 <th width="22%">Imagem</th>
-                <th width="7%">Preço</th>
+                <th width="7%">PreÃ§o</th>
                 <th >Quant.</th>
                 <th width="5%">&nbsp;</th>
             </tr>
@@ -67,7 +67,7 @@ top();
 
                     </div>
                     <div class="col-md-6">
-                        <label for="inputTelephone4" class="form-label">Telemóvel</label>
+                        <label for="inputTelephone4" class="form-label">TelemÃ³vel</label>
                         <input type="email" class="form-control" id="inputTelephone4">
                     </div>
                     <div class="col-md-6">
@@ -84,7 +84,7 @@ top();
                         <input type="text" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputState" class="form-label">País</label>
+                        <label for="inputState" class="form-label">PaÃ­s</label>
                         <select id="inputState" class="form-select">
                             <option selected>Choose...</option>
                             <option>...</option>

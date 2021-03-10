@@ -1,6 +1,6 @@
 <?php
 include_once ("includes/body.inc.php");
-$con=mysqli_connect("localhost","root","","pap2021pcgammer");
+
 
 $nome=addslashes($_POST['nomeCategoria']);
 $imagem=$_FILES['imagemCategoria']['name'];

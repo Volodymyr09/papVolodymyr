@@ -20,7 +20,7 @@ top();
                 <div class="col-md-7">
                     <h2><del>1699.00</del>79.00</h2>
 
-                    <p>(Membrana - Português - Preto.</p>
+                    <p>(Membrana - PortuguÃªs - Preto.</p>
 
                     <div class="row">
 
@@ -52,31 +52,31 @@ top();
         <div class="inner">
             <section>
                 <header class="major">
-                    <h1>Características</h1>
+                    <h1>CaracterÃ­sticas</h1>
                 </header>
 
                 <form method="post" action="#">
                     <div class="fields">
                         <div class="field half">
-                            <label for="field-1">Referências:</label>
+                            <label for="field-1">ReferÃªncias:</label>
                             <p>Marca: ASUS</p>
                             <p>Modelo: ROG Strix G15 G512LU-70AT6PB1</p>
 
                         </div>
 
                         <div class="field half">
-                            <label for="field-2">Características Específicas:</label>
+                            <label for="field-2">CaracterÃ­sticas EspecÃ­ficas:</label>
                             <p>CPU: Intel Core i7-10750H</p>
                             <p>Familia de Processador: Intel Core i7</p>
                             <p>Velocidade Processador: 2.6 GHz (Turbo: 5 GHz)</p>
-                            <p>Geração do Processador: 10ª Geração</p>
+                            <p>GeraÃ§Ã£o do Processador: 10Âª GeraÃ§Ã£o</p>
                             <p>Arquitetura CPU: Comet Lake</p>
-                            <p>Número de Núcleos Core: Hexa Core</p>
+                            <p>NÃºmero de NÃºcleos Core: Hexa Core</p>
 
                         </div>
 
                         <div class="field half">
-                            <label for="field-3">Características Físicas:</label>
+                            <label for="field-3">CaracterÃ­sticas FÃ­sicas:</label>
                             <p>Cor: Preto</p>
                             <p>Peso (kg): 2.4</p>
                             <p>Altura: 2.1</p>
@@ -106,7 +106,7 @@ top();
                 <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
             </ul>
             <ul class="copyright">
-                <li>Copyright © 2020 Company Name - Template by:</li>
+                <li>Copyright Â© 2020 Company Name - Template by:</li>
                 <li> <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></li>
             </ul>
         </div>

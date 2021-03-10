@@ -37,25 +37,25 @@ top();
                             </div>
                             <br>
                             <div class="field half">
-                                <label for="preço">Preço</label>
-                                <input type="text" name="preço" id="preço" />
+                                <label for="preÃ§o">PreÃ§o</label>
+                                <input type="text" name="preÃ§o" id="preÃ§o" />
                             </div>
                             <br>
 
-                            <h1>Características</h1>
+                            <h1>CaracterÃ­sticas</h1>
 
                             <div class="field half">
-                                <label for="referencias">Referências</label>
+                                <label for="referencias">ReferÃªncias</label>
                                 <textarea name="referencias" id="referencias" rows="1"></textarea>
                             </div>
                             <br>
                             <div class="field half">
-                                <label for="caracteristicasfisical">Caracteristicas Físical</label>
+                                <label for="caracteristicasfisical">Caracteristicas FÃ­sical</label>
                                 <textarea name="caracteristicasfisical" id="caracteristicasfisical" rows="1"></textarea>
                             </div>
                             <br>
                             <div class="field half">
-                                <label for="carespecificas">Características Específicas</label>
+                                <label for="carespecificas">CaracterÃ­sticas EspecÃ­ficas</label>
                                 <textarea name="carespecificas" id="carespecificas" rows="1"></textarea>
                             </div>
                             <br>
@@ -65,7 +65,7 @@ top();
                             </div>
                             <br>
                             <div class="field half">
-                                <label for="memoria2">Memória</label>
+                                <label for="memoria2">MemÃ³ria</label>
                                 <textarea name="memoria2" id="memoria2" rows="1"></textarea>
                             </div>
 

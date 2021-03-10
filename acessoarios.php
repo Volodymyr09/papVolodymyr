@@ -9,7 +9,7 @@ top();
     <section id="one">
         <div class="inner">
             <header class="major">
-                <h1>Acessórios Gaming PC</h1>
+                <h1>AcessÃ³rios Gaming PC</h1>
             </header>
             <a class="btn btn-primary" href="products.php" role="button">Voltar</a>
         </div>

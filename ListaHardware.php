@@ -52,31 +52,31 @@ top();
         <div class="inner">
             <section>
                 <header class="major">
-                    <h1>Características</h1>
+                    <h1>CaracterÃ­sticas</h1>
                 </header>
 
                 <form method="post" action="#">
                     <div class="fields">
                         <div class="field half">
-                            <label for="field-1">Referências:</label>
+                            <label for="field-1">ReferÃªncias:</label>
                             <p>Marca: ASUS</p>
                             <p>Modelo: ROG Strix G15 G512LU-70AT6PB1</p>
 
                         </div>
 
                         <div class="field half">
-                            <label for="field-2">Características Específicas:</label>
+                            <label for="field-2">CaracterÃ­sticas EspecÃ­ficas:</label>
                             <p>CPU: Intel Core i7-10750H</p>
                             <p>Familia de Processador: Intel Core i7</p>
                             <p>Velocidade Processador: 2.6 GHz (Turbo: 5 GHz)</p>
-                            <p>Geração do Processador: 10ª Geração</p>
+                            <p>GeraÃ§Ã£o do Processador: 10Âª GeraÃ§Ã£o</p>
                             <p>Arquitetura CPU: Comet Lake</p>
-                            <p>Número de Núcleos Core: Hexa Core</p>
+                            <p>NÃºmero de NÃºcleos Core: Hexa Core</p>
 
                         </div>
 
                         <div class="field half">
-                            <label for="field-3">Características Físicas:</label>
+                            <label for="field-3">CaracterÃ­sticas FÃ­sicas:</label>
                             <p>Cor: Preto</p>
                             <p>Peso (kg): 2.4</p>
                             <p>Altura: 2.1</p>
@@ -87,29 +87,29 @@ top();
 
                         <div class="field half">
                             <label for="field-4">Performance:</label>
-                            <p>Memória RAM: 16 GB</p>
+                            <p>MemÃ³ria RAM: 16 GB</p>
                             <p>Armazenamento: 1 TB SSD</p>
                             <p>Tipo de Armazenamento: SSD</p>
 
                         </div>
 
                         <div class="field half">
-                            <label for="field-5">Memória:</label>
-                            <p>Drive: Não
+                            <label for="field-5">MemÃ³ria:</label>
+                            <p>Drive: NÃ£o
 
                             </p>
                             <p>Conetividade: Wi-Fi e Bluetooth</p>
-                            <p>Conexões: 3x USB 3.2 Gen 1, 1x USB-C 3.2 Gen 2 with Display Port and G-Sync, 1x 3.5mm combo audio jack, 1x HDMI 2.0b</p>
+                            <p>ConexÃµes: 3x USB 3.2 Gen 1, 1x USB-C 3.2 Gen 2 with Display Port and G-Sync, 1x 3.5mm combo audio jack, 1x HDMI 2.0b</p>
 
                         </div>
 
                         <div class="field half">
-                            <label for="field-5">Conexões:</label>
-                            <p>Drive: Não
+                            <label for="field-5">ConexÃµes:</label>
+                            <p>Drive: NÃ£o
 
                             </p>
                             <p>Conetividade: Wi-Fi e Bluetooth</p>
-                            <p>Conexões: 3x USB 3.2 Gen 1, 1x USB-C 3.2 Gen 2 with Display Port and G-Sync, 1x 3.5mm combo audio jack, 1x HDMI 2.0b</p>
+                            <p>ConexÃµes: 3x USB 3.2 Gen 1, 1x USB-C 3.2 Gen 2 with Display Port and G-Sync, 1x 3.5mm combo audio jack, 1x HDMI 2.0b</p>
 
                         </div>
 
@@ -132,7 +132,7 @@ top();
                 <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
             </ul>
             <ul class="copyright">
-                <li>Copyright © 2020 Company Name - Template by:</li>
+                <li>Copyright Â© 2020 Company Name - Template by:</li>
                 <li> <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></li>
             </ul>
         </div>

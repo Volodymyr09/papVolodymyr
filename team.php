@@ -57,7 +57,7 @@ top();
 
                     <h3>Volodymyr Babaiev</h3>
 
-                    <h4><em>Propriet·rio</em></h4>
+                    <h4><em>Propriet√°rio</em></h4>
 
                     <ul class="icons">
                         <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>

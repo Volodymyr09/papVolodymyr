@@ -25,7 +25,7 @@ top();
         <section>
             <header class="major">
                 <h2>Contactos</h2>
-                <p>Pode contactar com a loja  das 9:00 até 17:00</p>
+                <p>Pode contactar com a loja  das 9:00 atÃ© 17:00</p>
             </header>
 
             <form method="post" action="#">
@@ -75,7 +75,7 @@ top();
             <section>
                 <div class="contact-method">
                     <span class="icon alt fa-home"></span>
-                    <h3>Endereço</h3>
+                    <h3>EndereÃ§o</h3>
                     <span>212 Barrington Court <br> New York, ABC 10001 <br> Portugal</span>
                 </div>
             </section>

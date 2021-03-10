@@ -35,7 +35,7 @@ top();
                             <th width="5%">Id</th>
                             <th width="25%">Imagem</th>
                             <th width="50%">Nome</th>
-                            <th width="10%">opçoes</th>
+                            <th width="10%">opÃ§oes</th>
 
                         </tr>
                         <tr>

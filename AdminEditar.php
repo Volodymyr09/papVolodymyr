@@ -34,8 +34,8 @@ top();
                         </div>
                         <br>
                         <div class="field half">
-                            <label for="preço">Preço</label>
-                            <input type="text" name="preço" id="preço" />
+                            <label for="preÃ§o">PreÃ§o</label>
+                            <input type="text" name="preÃ§o" id="preÃ§o" />
                         </div>
                         <br>
                     </form>
