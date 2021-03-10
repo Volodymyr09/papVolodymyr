@@ -8,13 +8,27 @@ top();
 <form action="confirmaNovoProduto.php" method="post" enctype="multipart/form-data">
     <label>Nome: </label>
     <input type="text" name="nomeProduto"><br>
-    <label>Logótipo: </label>
+    <label>LogÃ³tipo: </label>
     <input type="file" name="imagemProduto"><br>
-    <label>Descrição: </label>
-    <input type="text" name="descricaoProduto"><br>
-    <label>Preço: </label>
+    <label>DescriÃ§Ã£o: </label>
+    <textarea type="text" name="descricaoProduto">
+    </textarea>
+    <label>PreÃ§o: </label>
     <input type="text" name="precoProduto"><br>
+    <select name="produtoCategoria">
+        <option value="-1">Escolha a categoria...</option>
+        <?php
+        $sql="select * from categorias order by categoriaNome";
+        $result=mysqli_query($con,$sql);
+        while ($dados=mysqli_fetch_array($result)){
+            ?>
+            <option value="<?php echo $dados['categoriaId']?>"><?php echo $dados['categoriaNome']?></option>
+            <?php
+        }
 
+
+        ?>
+    </select>
      <br>
     <input type="Submit" value="Adiciona"><br>
 </div>

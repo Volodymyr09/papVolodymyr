@@ -1,14 +1,14 @@
 <?php
 include_once ("includes/body.inc.php");
-$con=mysqli_connect("localhost","root","","pap2021pcgammer");
 
 
-$nome=$_POST['nomeChave'];
+$nome=addslashes($_POST['nomeChave']);
+$idCat=intval($_POST['chaveCategoria']);
 
 
 copy($_FILES['tmp_name']);
 
-$sql="insert into chaves(chaveNome) values('".$nome."');";
+$sql="insert into chaves(chaveNome, chaveCategoriaId) values('".$nome."',".$idCat.");";
 mysqli_query($con,$sql);
 header("location:listaChave.php");
 ?>

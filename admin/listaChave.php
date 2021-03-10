@@ -1,8 +1,6 @@
 <?php
 include_once("includes/body.inc.php");
-$con=mysqli_connect("localhost","root","","pap2021pcgammer");
-$con->set_charset("utf8");
-$sql="Select * from chaves inner join categorias ";
+$sql="Select * from chaves inner join categorias on chaveCategoriaId=categoriaId ";
 $result=mysqli_query($con,$sql);
 
 top();

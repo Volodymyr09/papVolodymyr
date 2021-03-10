@@ -11,7 +11,7 @@ top();
     <select name="chaveCategoria">
         <option value="-1">Escolha a categoria...</option>
         <?php
-        $sql="select * from categorias order by categoriaNome";
+        $sql="select * from categorias where categoriaCategoriaId is null order by categoriaNome";
         $result=mysqli_query($con,$sql);
         while ($dados=mysqli_fetch_array($result)){
             ?>

@@ -57,7 +57,7 @@ top();
             <tr>
                 <td><?php echo $dados['produtoId']?></td>
                 <td><?php echo $dados['produtoNome']?></td>
-                <td><img width='90' src=<?php  echo $dados['produtoImagemURL']?>></td>
+                <td><img width='90' src="../<?php  echo $dados['produtoImagemURL']?>"></td>
                 <td><?php echo $dados['produtoDescricao']?></td>
                 <td><?php echo $dados['produtoPreco']?></td>
 

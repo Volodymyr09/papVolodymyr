@@ -1,6 +1,5 @@
 <?php
 include_once ("includes/body.inc.php");
-$con=mysqli_connect("localhost","root","","pap2021pcgammer");
     $id=intval($_GET['id']);
     $sql="select * from chaves where chaveId=$id";
     $resultChaves=mysqli_query($con,$sql);

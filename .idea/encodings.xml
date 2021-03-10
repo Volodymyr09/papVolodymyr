@@ -2,6 +2,13 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/AdminAdicionarPcPort.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListaMonitores.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListaPortatil.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/adicionaChave.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/adicionaProduto.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/confirmaEditaChave.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/confirmaNovoProduto.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/editaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/listaCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/listaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/listaProduto.php" charset="UTF-8" />

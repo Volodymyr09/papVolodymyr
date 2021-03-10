@@ -9,7 +9,7 @@ top();
     <section id="one">
         <div class="inner">
             <header class="major">
-                <h1>Portátil Gaming ASUS ROG Strix G15</h1>
+                <h1>PortÃ¡til Gaming ASUS ROG Strix G15</h1>
             </header>
 
             <div class="row">
@@ -43,7 +43,7 @@ top();
 
             <br>
             <h3>Sobre:</h3>
-            <p>ROG Strix G15,O ROG Strix G15  incorpora um design aperfeiçoado, oferecendo uma experiência formidável para gaming sério e multitasking no Windows 10 Home. Com a mais recente 10ª geração de CPUs Intel® Core? e GPU NVIDIA GeForce, oferece FPS elevadas e tira partido total do rápido ecrã de 144Hz. Inovações de arrefecimento inteligentes como metal líquido levam a performance a outro nível. Conetividade Wi-Fi 6 ultrarrápida e capacidade para 2 SSDs em RAID 0 aceleram o trabalho e a diversão. Espaço para um terceiro SSD significa que é possível fazer upgrade futuro ao armazenamento e transportar a coleção de jogos onde quer que vás.
+            <p>ROG Strix G15,O ROG Strix G15  incorpora um design aperfeiÃ§oado, oferecendo uma experiÃªncia formidÃ¡vel para gaming sÃ©rio e multitasking no Windows 10 Home. Com a mais recente 10Âª geraÃ§Ã£o de CPUs IntelÂ® Core? e GPU NVIDIA GeForce, oferece FPS elevadas e tira partido total do rÃ¡pido ecrÃ£ de 144Hz. InovaÃ§Ãµes de arrefecimento inteligentes como metal lÃ­quido levam a performance a outro nÃ­vel. Conetividade Wi-Fi 6 ultrarrÃ¡pida e capacidade para 2 SSDs em RAID 0 aceleram o trabalho e a diversÃ£o. EspaÃ§o para um terceiro SSD significa que Ã© possÃ­vel fazer upgrade futuro ao armazenamento e transportar a coleÃ§Ã£o de jogos onde quer que vÃ¡s.
 
 
 
@@ -53,13 +53,13 @@ top();
         <div class="inner">
             <section>
                 <header class="major">
-                    <h1>Características</h1>
+                    <h1>CaracterÃ­sticas</h1>
                 </header>
 
                 <form method="post" action="#">
                     <div class="fields">
                         <div class="field half">
-                            <label for="field-1">Referências:</label>
+                            <label for="field-1">ReferÃªncias:</label>
                             <p>Marca: ASUS</p>
                             <p>Modelo: ROG Strix G15 G512LU-70AT6PB1</p>
 
@@ -70,14 +70,14 @@ top();
                             <p>CPU: Intel Core i7-10750H</p>
                             <p>Familia de Processador: Intel Core i7</p>
                             <p>Velocidade Processador: 2.6 GHz (Turbo: 5 GHz)</p>
-                            <p>Geração do Processador: 10ª Geração</p>
+                            <p>GeraÃ§Ã£o do Processador: 10Âª GeraÃ§Ã£o</p>
                             <p>Arquitetura CPU: Comet Lake</p>
-                            <p>Número de Núcleos Core: Hexa Core</p>
+                            <p>NÃºmero de NÃºcleos Core: Hexa Core</p>
 
                         </div>
 
                         <div class="field half">
-                            <label for="field-3">Características Físicas:</label>
+                            <label for="field-3">CaracterÃ­sticas FÃ­sicas:</label>
                             <p>Cor: Preto</p>
                             <p>Peso (kg): 2.4</p>
                             <p>Altura: 2.1</p>
@@ -87,38 +87,38 @@ top();
                         </div>
 
                         <div class="field half">
-                            <label for="field-4">Memória e Armazenamento:</label>
-                            <p>Memória RAM: 16 GB</p>
+                            <label for="field-4">MemÃ³ria e Armazenamento:</label>
+                            <p>MemÃ³ria RAM: 16 GB</p>
                             <p>Armazenamento: 1 TB SSD</p>
                             <p>Tipo de Armazenamento: SSD</p>
 
                         </div>
 
                         <div class="field half">
-                            <label for="field-5">Conexões:</label>
-                            <p>Drive: Não
+                            <label for="field-5">ConexÃµes:</label>
+                            <p>Drive: NÃ£o
 
                             </p>
                             <p>Conetividade: Wi-Fi e Bluetooth</p>
-                            <p>Conexões: 3x USB 3.2 Gen 1, 1x USB-C 3.2 Gen 2 with Display Port and G-Sync, 1x 3.5mm combo audio jack, 1x HDMI 2.0b</p>
+                            <p>ConexÃµes: 3x USB 3.2 Gen 1, 1x USB-C 3.2 Gen 2 with Display Port and G-Sync, 1x 3.5mm combo audio jack, 1x HDMI 2.0b</p>
 
                         </div>
 
 
                         <div class="field half">
-                            <label for="field-7">Placa Gráfica:</label>
-                            <p>Gráfica: NVIDIA GeForce GTX 1660 Ti</p>
-                            <p>Tipo de Placa Gráfica: NVIDIA GeForce GTX</p>
-                            <p>Memória GPU: 6 GB</p>
+                            <label for="field-7">Placa GrÃ¡fica:</label>
+                            <p>GrÃ¡fica: NVIDIA GeForce GTX 1660 Ti</p>
+                            <p>Tipo de Placa GrÃ¡fica: NVIDIA GeForce GTX</p>
+                            <p>MemÃ³ria GPU: 6 GB</p>
 
                         </div>
 
                         <div class="field half">
-                            <label for="field-8">Ecrã:</label>
-                            <p>Diagonal do Ecrã: 15.6</p>
-                            <p>Ecrã: IPS 144 Hz</p>
-                            <p>Resolução de Ecrã: 1920 x 1080 (FHD)</p>
-                            <p>Ecrã Tátil: Não</p>
+                            <label for="field-8">EcrÃ£:</label>
+                            <p>Diagonal do EcrÃ£: 15.6</p>
+                            <p>EcrÃ£: IPS 144 Hz</p>
+                            <p>ResoluÃ§Ã£o de EcrÃ£: 1920 x 1080 (FHD)</p>
+                            <p>EcrÃ£ TÃ¡til: NÃ£o</p>
 
                         </div>
 
