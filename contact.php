@@ -11,6 +11,7 @@ top();
         <div class="inner">
             <header class="major">
                 <h1>Contactos</h1>
+                <p>Pode contactar com a loja  das 9:00 até 17:00</p>
             </header>
             <span class="image main"><img src="images/map.jpg" alt="" /></span>
             <p></p>
@@ -24,8 +25,7 @@ top();
     <div class="inner">
         <section>
             <header class="major">
-                <h2>Contactos</h2>
-                <p>Pode contactar com a loja  das 9:00 até 17:00</p>
+                <h2>Contactar</h2>
             </header>
 
             <form method="post" action="#">
@@ -59,23 +59,24 @@ top();
             <section>
                 <div class="contact-method">
                     <span class="icon alt fa-envelope"></span>
-                    <h3>E-mail</h3>
+                    <h3>E-mail:</h3>
                     <a href="#">contact@company.com</a>
                 </div>
             </section>
             <section>
                 <div class="contact-method">
                     <span class="icon alt fa-phone"></span>
-                    <h3>Telefone</h3>
+                    <h3>Telefone:</h3>
                     <span>+1 333 4040 5566</span>
                     <br>
                     <span>+1 333 5550 3366</span>
+                    <br>
                 </div>
             </section>
             <section>
                 <div class="contact-method">
                     <span class="icon alt fa-home"></span>
-                    <h3>Endereço</h3>
+                    <h3>Endereço:</h3>
                     <span>212 Barrington Court <br> New York, ABC 10001 <br> Portugal</span>
                 </div>
             </section>

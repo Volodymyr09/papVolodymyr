@@ -210,7 +210,7 @@ top();
 
                     <div class="field half text-right">
                         <ul class="actions">
-                            <li><input type="submit" value="Finish" class="primary" /></li>
+                            <li><input type="submit" value="Comprar" class="primary" /></li>
                         </ul>
                     </div>
                 </div>

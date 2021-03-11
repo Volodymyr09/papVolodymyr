@@ -19,7 +19,7 @@ top();
         <label>Descrição: </label>
         <textarea type="text" name="descricaoProduto"><?php echo $dadosProduto['produtoDescricao'];?></textarea>
         <label>Preço: </label>
-        <input type="text" name="precoProduto"><br>
+        <input type="text" name="precoProduto" value="<?php echo $dadosProduto['produtoPreco']?>"><br>
         <select name="produtoCategoria">
             <option value="-1">Escolha a categoria...</option>
             <?php

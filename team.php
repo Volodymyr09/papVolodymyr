@@ -24,6 +24,7 @@ top();
                         <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
                         <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
                     </ul>
+                    <a href="contact.php"><input type="submit" value="Contactar" class="btn-info" /></a>
                 </div>
 
                 <div class="col-md-3 col-sm-6 co-xs-12 text-center">
@@ -37,6 +38,7 @@ top();
                         <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
                         <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
                     </ul>
+                    <a href="contact.php"><input type="submit" value="Contactar" class="btn-info" /></a>
                 </div>
 
                 <div class="col-md-3 col-sm-6 co-xs-12 text-center">
@@ -50,6 +52,7 @@ top();
                         <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
                         <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
                     </ul>
+                    <a href="contact.php"><input type="submit" value="Contactar" class="btn-info" /></a>
                 </div>
 
                 <div class="col-md-3 col-sm-6 co-xs-12 text-center">
@@ -59,12 +62,15 @@ top();
 
                     <h4><em>Proprietário</em></h4>
 
+
+
                     <ul class="icons">
                         <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
                         <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
                     </ul>
-                </div>
 
+                    <a href="contact.php"><input type="submit" value="Contactar" class="btn-info" /></a>
+                </div>
             </div>
         </div>
     </section>

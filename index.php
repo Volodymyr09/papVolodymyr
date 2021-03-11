@@ -56,7 +56,7 @@
             </article>
     </section>
 </div>
-
+<br>
     <div class="container">
 
     <header class="major">
@@ -65,11 +65,11 @@
 
     <div class="card-group">
         <div div class="card cardNoticias  text-white bg-primary mb-3" style="max-width: 18rem; background-color: #242941!important ">
-            <img src="images/caixaLogo.jpg" class="card-img-top" alt="...">
+            <a href="ListaCaixas.php"><img src="images/ListaCaixaNoxInfinityAtomRGB.jpg" class="card-img-top" alt="..."></a>
             <div class="card cardNoticias text-white bg-primary " style="max-width: 18rem; background-color: #242941!important ">
 
                 <div class="card-body">
-                    <h5 class="card-title">Primary card title</h5>
+                    <h5 class="card-title">Nova super caixa já no site PC-Gamer</h5>
 
                 </div>
             </div>
@@ -89,7 +89,7 @@
             <div class="card cardNoticias text-white bg-primary mb-3" style="max-width: 18rem; background-color: #242941!important">
 
                 <div class="card-body">
-                    <h5 class="card-title">Parabólicas vão parar de funcionar com a chegada do 5G; entenda</h5>
+                    <h5 class="card-title">Parabólicas vão parar de funcionar com a chegada do 5G</h5>
 
                 </div>
             </div>

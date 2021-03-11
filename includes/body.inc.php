@@ -18,10 +18,10 @@ function top()
         <style>
         .cardNoticias {
 
-             border: 0px solid rgba(0,0,0,.125);
+             border: 1px solid rgba(36,41,67,0.12);
              border-radius: .25rem;
-    }
-</style>
+        }
+        </style>
 
 
     </head>
@@ -156,7 +156,7 @@ function top()
             <div class="inner">
                 <ul class="icons">
 
-                    <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
                     <li><a href="https://www.instagram.com/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
 
                 </ul>
