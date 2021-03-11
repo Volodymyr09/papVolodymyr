@@ -8,7 +8,7 @@ top();
 <form action="confirmaNovoProduto.php" method="post" enctype="multipart/form-data">
     <label>Nome: </label>
     <input type="text" name="nomeProduto"><br>
-    <label>Logótipo: </label>
+    <label>Imagem: </label>
     <input type="file" name="imagemProduto"><br>
     <label>Descrição: </label>
     <textarea type="text" name="descricaoProduto">

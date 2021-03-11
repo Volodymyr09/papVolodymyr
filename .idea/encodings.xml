@@ -19,11 +19,13 @@
     <file url="file://$PROJECT_DIR$/admin/adicionaProduto.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaEditaCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaEditaChave.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/confirmaEditaProduto.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaNovaCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaNovaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaNovoProduto.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/editaCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/editaChave.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/editaProduto.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/eliminaCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/eliminaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/eliminaProduto.php" charset="UTF-8" />
