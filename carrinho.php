@@ -90,6 +90,13 @@ top();
                             <option>...</option>
                         </select>
                     </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Pagamento</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>Pagamento a cobrança</option>
+                        </select>
+                    </div>
 
                 </form>
             </div>
