@@ -16,7 +16,7 @@ function top()
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/css/main.css" />
 
-        <link rel="icon" href="images/log.jpg">
+        <link rel="icon" href="../images/log.jpg">
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
     </head>
@@ -43,6 +43,8 @@ function top()
 
 
             <ul class="links">
+                <li class="active"> <a href="../index.php">Pagina Principal</a> </li>
+
                 <li class="active"> <a href="listaCategoria.php">Categorias</a> </li>
 
                 <li class="active"> <a href="listaProduto.php">Produtos</a> </li>
