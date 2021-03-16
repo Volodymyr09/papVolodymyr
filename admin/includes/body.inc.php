@@ -51,6 +51,8 @@ function top()
 
                 <li class="active"> <a href="listaChave.php">Chaves</a> </li>
 
+                <li class="active"> <a href="listaNoticia.php">Noticias</a> </li>
+
             </ul>
         </nav>
 
