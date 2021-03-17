@@ -1,5 +1,8 @@
 <?php
 include_once("includes/body.inc.php");
+$con=mysqli_connect("localhost","root","","pap2021pcgammer");
+$sql="select * from produtos inner join categorias on produtoCategoriaId=categoriaId";
+$result=mysqli_query($con,$sql);
 top();
 ?>
 
@@ -7,20 +10,24 @@ top();
 
     <!-- One -->
     <section id="one">
+        <?php
+        while($dados=mysqli_fetch_array($result)){
+
+        ?>
         <div class="inner">
             <header class="major">
-                <h1>Caixa PC NOX Infinity Atom RGB</h1>
+                <h1><?php echo $dados['produtoNome']?></h1>
             </header>
 
             <div class="row">
                 <div class="col-md-5">
-                    <img src="images/ListaCaixaNoxInfinityAtomRGB.jpg" class="img-responsive" alt="">
+                    <img src="<?php echo $dados['produtoImagemURL']?>" class="img-responsive" alt="">
                 </div>
 
                 <div class="col-md-7">
-                    <h2><del>1699.00</del>79.00</h2>
+                    <h2><?php echo $dados['produtoPreco']?></h2>
 
-                    <p> (ATX Mid Tower - Preto).</p>
+                    <p>(ATX Mid Tower - Preto).</p>
 
                     <div class="row">
 
@@ -43,9 +50,8 @@ top();
 
 
             <br>
-
-
-
+            <h3>Sobre:</h3>
+            <p><?php echo $dados['produtoDescricao']?></p>
         </div>
 
 
@@ -107,6 +113,9 @@ top();
                 </form>
             </section>
         </div>
+            <?php
+        }
+        ?>
     </section>
 
 </div>

@@ -29,7 +29,7 @@ top();
 
 
                 <div class="major-actions">
-                    <a href="ListaHardware.php" class="button small next">View Product</a>
+                    <a href="ProdutoHardware.php" class="button small next">View Product</a>
                 </div>
             </header>
         </article>

@@ -28,7 +28,7 @@ top();
 
 
                 <div class="major-actions">
-                    <a href="ListaDesktop.php" class="button small next">Ver Produto</a>
+                    <a href="ProdutoDesktop.php" class="button small next">Ver Produto</a>
                 </div>
             </header>
         </article>

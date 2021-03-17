@@ -34,7 +34,7 @@ top();
 
 
                 <div class="major-actions">
-                    <a href="ListaMonitores.php" class="button small next">Ver Produto</a>
+                    <a href="ProdutoMonitores.php" class="button small next">Ver Produto</a>
                 </div>
             </header>
         </article>
