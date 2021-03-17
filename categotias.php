@@ -1,8 +1,14 @@
 <?php
 include_once("includes/body.inc.php");
-
+$id=0;
+if(isset($_GET['idCat']))
+    $id=intval($_GET['idCat']);
 $con=mysqli_connect("localhost","root","","pap2021pcgammer");
-$sql="select * from categorias ";
+$sql="select * from categorias where categoriaCategoriaId";
+if($id==0)
+    $sql.=" is null ";
+else
+    $sql.="=".$id;
 $result=mysqli_query($con,$sql);
 top();
 ?>
@@ -41,7 +47,7 @@ top();
                 <h3><?php echo $dados['categoriaNome']?></h3>
 
                 <div class="major-actions">
-                    <a href="<?php echo $dados['categoriaNome']?>.php" class="button small next">Ver Produtos</a>
+                    <a href="categotias.php?idCat=<?php echo $dados['categoriaId']?>" class="button small next">Ver Produtos</a>
                 </div>
             </header>
         </article>

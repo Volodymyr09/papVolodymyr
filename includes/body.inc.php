@@ -1,4 +1,6 @@
 <?php
+
+$con=mysqli_connect(HOST,USER,PWD,DATABASE);
 function top()
 {
     ?>
