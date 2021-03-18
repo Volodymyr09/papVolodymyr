@@ -11,7 +11,7 @@ top();
             <header class="major">
                 <h1>Portateis</h1>
             </header>
-            <a class="btn btn-primary" href="categotias.php" role="button">Voltar</a>
+            <a class="btn btn-primary" href="categorias.php" role="button">Voltar</a>
         </div>
     </section>
 
