@@ -19,7 +19,7 @@ top();
     <section id="one">
         <div class="inner">
             <header class="major">
-                <h1>Produtos</h1>
+                <h1>Categorias</h1>
             </header>
             <div class="container">
                 <div class="row">
@@ -47,7 +47,7 @@ top();
                 <h3><?php echo $dados['categoriaNome']?></h3>
 
                 <div class="major-actions">
-                    <a href="categotias.php?idCat=<?php echo $dados['categoriaId']?>" class="button small next">Ver Produtos</a>
+                    <a href="categorias.php?idCat=<?php echo $dados['categoriaId']?>" class="button small next">Ver Produtos</a>
                 </div>
             </header>
         </article>

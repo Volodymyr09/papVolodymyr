@@ -1,5 +1,5 @@
 <?php
-
+include_once("config.inc.php");
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 function top()
 {
