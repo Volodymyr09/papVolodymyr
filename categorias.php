@@ -11,6 +11,8 @@ if($id==0)
 else
     $sql.="=".$id;
 $result=mysqli_query($con,$sql);
+if(mysqli_affected_rows($con)==0)// não há nenhuma sub-categoria
+    header("location:produtos.php?idCat=".$id);
 top();
 ?>
 

@@ -3,6 +3,15 @@
 include_once ("admin/includes/config.inc.php");
 include_once("includes/body.inc.php");
 $id=intval($_GET['idCat']);
+
+// dados da categoria
+
+$sql=" select categoriaNome from categorias where categoriaId=$id";
+$result=mysqli_query($con,$sql);
+$dados=mysqli_fetch_array($result);
+//***********************************
+
+// dados dos produtos
 $sql="select * from produtos inner join categorias on produtoCategoriaId=categoriaId";
 $sql.=" where produtoCategoriaId=".$id;
 $result=mysqli_query($con,$sql);
@@ -15,7 +24,7 @@ top();
     <section id="one">
         <div class="inner">
             <header class="major">
-                <h1>Caixas</h1>
+                <h1><?php echo $dados['categoriaNome']?></h1>
             </header>
             <a class="btn btn-primary" href="categorias.php" role="button">Voltar</a>
         </div>
@@ -25,7 +34,6 @@ top();
     <section class="tiles">
         <?php
         while($dados=mysqli_fetch_array($result)){
-
         ?>
 
         <article>

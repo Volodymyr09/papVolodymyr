@@ -55,7 +55,7 @@ function top()
             <ul class="links">
                 <li class="active"> <a href="index.php">Pagina Principal</a> </li>
 
-                <li> <a href="categotias.php">Categorias</a> </li>
+                <li> <a href="categorias.php">Categorias</a> </li>
 
                 <li> <a href="carrinho.php">Carrinho de Compras</a> </li>
 
