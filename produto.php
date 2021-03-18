@@ -1,7 +1,8 @@
 <?php
 include_once ("includes/config.inc.php");
 include_once("includes/body.inc.php");
-$sql="select * from produtos where ";
+$id=intval($_GET['idPrd']);
+$sql="select * from produtos where produtoId=$id";
 $result=mysqli_query($con,$sql);
 top();
 ?>

@@ -44,7 +44,7 @@ top();
                 <h3><?php echo $dados['produtoNome']?></h3>
                 <p><strong><?php echo $dados['produtoPreco']?></strong></p>
                 <div class="major-actions">
-                    <a href="produto.php?idCat=<?php echo $dados['produtoId']?>" class="button small next">Ver Produto</a>
+                    <a href="produto.php?idPrd=<?php echo $dados['produtoId']?>" class="button small next">Ver Produto</a>
                 </div>
             </header>
         </article>
