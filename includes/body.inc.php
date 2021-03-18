@@ -1,6 +1,7 @@
 <?php
 include_once("config.inc.php");
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
+
 function top()
 {
     ?>
@@ -92,7 +93,7 @@ function top()
 
                             </div>
 
-                            <h8>Ainda não tem conta?</h8>
+                            <h8>Ainda nÃ£o tem conta?</h8>
                             <a href="#" onclick="fecha()" data-toggle="modal" data-target="#regista"><button type="submit" class="btn btn-outline-warning">Registar</button></a>
                         </form>
                     </div>
@@ -163,7 +164,7 @@ function top()
 
                 </ul>
                 <ul class="copyright">
-                    <li>Copyright © 2020 Company Name - Template by</li>
+                    <li>Copyright Â© 2020 Company Name - Template by</li>
                     <li> <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></li>
                 </ul>
             </div>

@@ -1,6 +1,6 @@
 <?php
 
-include_once ("admin/includes/config.inc.php");
+include_once ("includes/config.inc.php");
 include_once("includes/body.inc.php");
 $id=intval($_GET['idCat']);
 
@@ -44,7 +44,7 @@ top();
                 <h3><?php echo $dados['produtoNome']?></h3>
                 <p><strong><?php echo $dados['produtoPreco']?></strong></p>
                 <div class="major-actions">
-                    <a href="<?php echo $dados['produtoNome']?>.php" class="button small next">Ver Produto</a>
+                    <a href="produto.php?idCat=<?php echo $dados['produtoId']?>" class="button small next">Ver Produto</a>
                 </div>
             </header>
         </article>

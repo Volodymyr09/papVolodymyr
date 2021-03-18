@@ -18,6 +18,26 @@ top();
     <img src="../<?php echo $dadosCategoria['categoriaImagemURL']?>" width="220"><br>
     <input type="file" name="imagemCategoria"><br>
     <br>
+    <select name="categoriaCategoria">
+        <option value="-1">Escolha a categoria...</option>
+        <?php
+        $sql="select * from categorias order by categoriaNome";
+        $result=mysqli_query($con,$sql);
+        while ($dados=mysqli_fetch_array($result)){
+            ?>
+            <option
+                <?php
+                if($dadosCategoria['categoriaCategoriaId']==$dados['categoriaId'])
+                    echo " selected ";
+                ?>
+                    value="<?php echo $dados['categoriaId']?>"><?php echo $dados['categoriaNome']?></option>
+            <?php
+        }
+
+
+        ?>
+    </select>
+    <br>
     <input type="Submit" value="Edita"><br>
 </div>
 
