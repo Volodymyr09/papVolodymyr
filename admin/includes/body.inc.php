@@ -10,7 +10,7 @@ function top()
     <!DOCTYPE HTML>
     <html>
     <head>
-        <title>PC-GAMER</title>
+        <title>PC-GAMER-Admin</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
@@ -43,7 +43,7 @@ function top()
 
 
             <ul class="links">
-                <li class="active"> <a href="../index.php">Pagina Principal</a> </li>
+                <li class="active"> <a href="indexAdmin.php">Pagina Principal</a> </li>
 
                 <li class="active"> <a href="listaCategoria.php">Categorias</a> </li>
 

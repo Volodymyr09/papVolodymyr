@@ -1,5 +1,9 @@
 <?php
     include_once("includes/body.inc.php");
+    include_once ("includes/config.inc.php");
+    $sql="select * from produtos";
+    $result=mysqli_query($con,$sql);
+    $dados=mysqli_fetch_array($result);
     top();
 ?>
 
@@ -15,45 +19,24 @@
     <!-- About us -->
     <!-- Featured Products -->
         <section class="tiles">
+            <?php
+            while($dados=mysqli_fetch_array($result)){
+            ?>
             <article>
                 <span class="image">
-                    <img src="images/PorAsusRogStrixG15.jpg" alt="" />
+                    <img src="<?php echo $dados['produtoImagemURL']?>" alt="" />
                 </span>
                 <header class="major">
-                        <h3>Portátil Gaming ASUS ROG Strix G15 </h3>
-                        <p>(Intel Core i7 -NVIDIA GeForce GTX 1660 Ti - RAM: 16 GB - 1 TB SSD - 15.6)</p>
+                        <h3><?php echo $dados['produtoNome']?></h3>
                         <p><del><span style="padding: 10px; font-size: 10px"  class="badge badge-success">New</span></del></p>
                     <div class="major-actions">
-                        <a href="ProdutoPortatil.php" class="button small next">Ver Produto</a>
+                        <a href="produto.php?idPrd=<?php echo $dados['produtoId']?>" class="button small next">Ver Produto</a>
                     </div>
                 </header>
             </article>
-            <article>
-                <span class="image">
-                    <img src="images/MonitorGamAOC.jpg" alt="" />
-                </span>
-                <header class="major">
-                        <h3>Monitor Gaming AOC CQ32G1</h3>
-                        <p>(31.5'' - 4 ms - 144Hz - FreeSync)</p>
-                        <p><del><span style="padding: 10px; font-size: 10px"  class="badge badge-success">New</span></del></p>
-                    <div class="major-actions">
-                        <a href="ProdutoMonitores.php" class="button small next">Ver Produto</a>
-                    </div>
-                </header>
-            </article>
-            <article>
-                <span class="image">
-                    <img src="images/ListaCaixaNoxInfinityAtomRGB.jpg" alt="" />
-                </span>
-                <header class="major">
-                        <h3>Caixa PC NOX Infinity Atom RGB</h3>
-                        <p>(ATX Mid Tower - Preto)</p>
-                        <p><del><span style="padding: 10px; font-size: 10px"  class="badge badge-success">New</span></del></p>
-                    <div class="major-actions">
-                        <a href="ProdutoCaixas.php" class="button small next">Ver Produto</a>
-                    </div>
-                </header>
-            </article>
+                <?php
+            }
+            ?>
     </section>
 </div>
 <br>

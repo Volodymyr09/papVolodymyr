@@ -65,8 +65,6 @@ function top()
                 <li><a href="configurador.php">Configurador</a></li>
 
                 <li><a href="team.php">Equipa</a></li>
-
-                <li><a href="admin/indexAdmin.php">Administrador</a></li>
             </ul>
         </nav>
 
