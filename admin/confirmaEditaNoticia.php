@@ -1,6 +1,6 @@
 <?php
 include_once ("includes/body.inc.php");
-$nome=addslashes($_POST['nomeNoticia']);
+$nome=addslashes($_POST['tituloNoticia']);
 $id=intval($_POST['noticiaId']);
 $imagem=$_FILES['imagemNoticia']['name'];
 $novoNome="images/".$imagem;

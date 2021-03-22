@@ -29,6 +29,7 @@ top();
 
         ?>
     </select>
+
      <br>
     <input type="Submit" value="Adiciona"><br>
 </div>

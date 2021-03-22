@@ -5,7 +5,7 @@ $id=intval($_POST['categoriaId']);
 $imagem=$_FILES['imagemCategoria']['name'];
 $novoNome="images/".$imagem;
 $catId=intval($_POST['categoriaCategoria']);
-$sql="Update categorias set categoriaNome='".$nome."', categoriaCategoriaId='".$catId."' ";
+$sql="Update categorias set categoriaNome='".$nome."', categoriaCategoriaId='".$catId."'";
 if($imagem!=''){
     $sql.=", categoriaImagemURL='images/".$imagem."'";
     copy($_FILES['imagemCategoria']['tmp_name'],$novoNome);

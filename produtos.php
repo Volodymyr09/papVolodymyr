@@ -5,7 +5,6 @@ include_once("includes/body.inc.php");
 $id=intval($_GET['idCat']);
 
 // dados da categoria
-
 $sql=" select categoriaNome from categorias where categoriaId=$id";
 $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);

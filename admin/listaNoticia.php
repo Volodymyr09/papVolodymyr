@@ -27,9 +27,9 @@ top();
 
     $('document').ready(function (){
         $('#search').keyup(function (){
-            fillTableCategorias(this.value);
+            fillTableNoticias(this.value);
         });
-        fillTableCategorias();
+        fillTableNoticias();
     })
 </script>
 
@@ -54,7 +54,7 @@ top();
 
             <tr>
                 <td><?php echo $dados['noticiaId']?></td>
-                <td><?php echo $dados['noticiaNome']?></td>
+                <td><?php echo $dados['noticiaTitulo']?></td>
                 <td><img width='90' src=../<?php  echo $dados['noticiaImagemURL']?>></td>
                 <td><a class='btn btn-warning btn-xs' href="editaNoticia.php?id=<?php echo $dados['noticiaId']?>"><i class='fa fa-pencil'></i>Editar</a></td>
                 <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaElimina(<?php echo $dados['noticiaId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>

@@ -7,7 +7,7 @@ top();
 <h1>Adicionar Noticias</h1>
 <form action="confirmaNovaNoticia.php" method="post" enctype="multipart/form-data">
     <label>Nome: </label>
-    <input type="text" name="nomeNoticia"><br>
+    <input type="text" name="tituloNoticia"><br>
     <label>Imagem:</label>
     <input type="file" name="imagemNoticia"><br>
      <br>
