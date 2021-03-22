@@ -43,7 +43,7 @@ function top()
 
 
             <ul class="links">
-                <li class="active"> <a href="indexAdmin.php">Pagina Principal</a> </li>
+                <li class="active"> <a href="index.php">Pagina Principal</a> </li>
 
                 <li class="active"> <a href="listaCategoria.php">Categorias</a> </li>
 
