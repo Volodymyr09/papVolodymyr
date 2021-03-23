@@ -44,7 +44,7 @@ top();
         </tr>
         <tr>
             <th>Id</th>
-            <th>Nome</th>
+            <th>Titulo</th>
             <th>Imagem</th>
             <th colspan="2">opções</th>
         </tr>

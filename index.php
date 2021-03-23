@@ -3,7 +3,7 @@
     include_once ("includes/config.inc.php");
 
     // dados produtosDestaque
-    $sql="select * from produtos where produtoDestaque='sim'";
+    $sql="select * from produtos where produtoDestaque like 'sim'";
     $result=mysqli_query($con,$sql);
     $dados=mysqli_fetch_array($result);
 

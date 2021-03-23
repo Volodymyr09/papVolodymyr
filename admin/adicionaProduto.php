@@ -29,6 +29,11 @@ top();
 
         ?>
     </select>
+    <br>
+    <label>Destaque</label>
+
+    <p><input type="radio" name="destaqueProduto" value="sim" >&nbsp;Sim</p>
+    <p><input type="radio" name="destaqueProduto" value="nao" checked>&nbsp;Não</p>
 
      <br>
     <input type="Submit" value="Adiciona"><br>

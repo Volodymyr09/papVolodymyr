@@ -6,11 +6,11 @@ $novoNome="../images/".$imagem;
 $descricao=addslashes($_POST['descricaoProduto']);
 $preco=floatval($_POST['precoProduto']);
 $catId=floatval($_POST['produtoCategoria']);
-
+$destaque=addslashes($_POST['destaqueProduto']);
 copy($_FILES['imagemProduto']['tmp_name'],$novoNome);
 
-$sql="insert into produtos(produtoNome,produtoImagemURL,produtoDescricao,produtoPreco, produtoCategoriaId) 
-        values('".$nome."','images/".$imagem."','".$descricao."',".$preco.",".$catId.")";
+$sql="insert into produtos(produtoNome,produtoImagemURL,produtoDescricao,produtoPreco, produtoCategoriaId, produtoDestaque) 
+        values('".$nome."','images/".$imagem."','".$descricao."',".$preco.",".$catId.",".$destaque.")";
 mysqli_query($con,$sql);
 
 header("location:listaProduto.php");
