@@ -10,7 +10,7 @@ $destaque=addslashes($_POST['destaqueProduto']);
 copy($_FILES['imagemProduto']['tmp_name'],$novoNome);
 
 $sql="insert into produtos(produtoNome,produtoImagemURL,produtoDescricao,produtoPreco, produtoCategoriaId, produtoDestaque) 
-        values('".$nome."','images/".$imagem."','".$descricao."',".$preco.",".$catId.",".$destaque.")";
+        values('".$nome."','images/".$imagem."','".$descricao."',".$preco.",".$catId.",'".$destaque."')";
 mysqli_query($con,$sql);
 
 header("location:listaProduto.php");

@@ -8,7 +8,9 @@ $descricao=addslashes($_POST['descricaoProduto']);
 $preco=floatval($_POST['precoProduto']);
 $id=intval($_POST['produtoId']);
 $catId=intval($_POST['produtoCategoria']);
-$sql="Update produtos set produtoNome='".$nome."', produtoDescricao='".$descricao."', produtoPreco='".$preco."', produtoCategoriaId=".$catId;
+$destaque=addcslashes($_POST['destaqueProduto']);
+
+$sql="Update produtos set produtoNome='".$nome."', produtoDescricao='".$descricao."', produtoPreco='".$preco."', produtoCategoriaId='".$catId."', produtoDestaque='".$destaque."'";
 if($imagem!=''){
     $sql.=", produtoImagemURL='images/".$imagem."'";
     copy($_FILES['imagemProduto']['tmp_name'],$novoNome);
