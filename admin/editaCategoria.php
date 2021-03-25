@@ -38,7 +38,9 @@ top();
         ?>
     </select>
     <br>
+
     <input type="Submit" value="Edita"><br>
+</form>
 </div>
 
 <?php

@@ -4,7 +4,9 @@ $nome=addslashes($_POST['tituloNoticia']);
 $id=intval($_POST['noticiaId']);
 $imagem=$_FILES['imagemNoticia']['name'];
 $novoNome="images/".$imagem;
-$sql="Update noticias set noticiaNome='".$nome."'";
+$destaque=addslashes($_POST['destaqueNoticia']);
+$link=addslashes($_POST['linkNoticia']);
+$sql="Update noticias set noticiaTitulo='".$nome."', noticiaLinkURL='".$link."', noticiaDestaque='".$destaque."'";
 if($imagem!=''){
     $sql.=", noticiaImagemURL='images/".$imagem."'";
     copy($_FILES['imagemNoticia']['tmp_name'],$novoNome);

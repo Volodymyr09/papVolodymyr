@@ -36,6 +36,7 @@ top();
         </select>
         <br>
         <input type="Submit" value="Editar">
+    </form>
 </div>
 
 <?php
