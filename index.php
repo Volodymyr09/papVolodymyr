@@ -61,7 +61,7 @@
         while($dados=mysqli_fetch_array($result)){
         ?>
         <div div class="card cardNoticias  text-white bg-primary mb-3" style="max-width: 18rem; background-color: #242941!important ">
-            <a href="ProdutoCaixas.php"><img src="<?php echo $dados['produtoImagemURL']?>" class="card-img-top" alt="..."></a>
+            <a href="<?php echo $dados['noticiaLinkURL']?>"><img src="<?php echo $dados['noticiaImagemURL']?>" class="card-img-top" alt="..."></a>
             <div class="card cardNoticias text-white bg-primary " style="max-width: 18rem; background-color: #242941!important ">
 
                 <div class="card-body">

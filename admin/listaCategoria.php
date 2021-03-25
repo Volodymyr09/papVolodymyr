@@ -13,7 +13,7 @@ top();
             url:"AJAX/AJAXGetNameCategoria.php",
             type:"post",
             data:{
-                idEmpresa:id
+                idCategoria:id
             },
             success:function (result){
                 if(confirm('Confirma que deseja eliminar a categoria:'+result+"?"))

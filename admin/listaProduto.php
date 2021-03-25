@@ -13,7 +13,7 @@ top();
             url:"AJAX/AJAXGetNameProduto.php",
             type:"post",
             data:{
-                idEmpresa:id
+                idProduto:id
             },
             success:function (result){
                 if(confirm('Confirma que deseja eliminar o produto:'+result+"?"))

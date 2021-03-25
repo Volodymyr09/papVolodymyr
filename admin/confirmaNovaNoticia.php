@@ -6,7 +6,7 @@ $nome=addslashes($_POST['tituloNoticia']);
 $link=addslashes($_POST['linkNoticia']);
 $imagem=$_FILES['imagemNoticia']['name'];
 $novoNome="../images/".$imagem;
-$destaque=addslashes($_POST['destaqueProduto']);
+$destaque=addslashes($_POST['destaqueNoticia']);
 
 
 copy($_FILES['imagemNoticia']['tmp_name'],$novoNome);

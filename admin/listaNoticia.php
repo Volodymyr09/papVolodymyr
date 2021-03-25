@@ -13,7 +13,7 @@ top();
             url:"AJAX/AJAXGetNameNoticia.php",
             type:"post",
             data:{
-                idEmpresa:id
+                idNoticia:id
             },
             success:function (result){
                 if(confirm('Confirma que deseja eliminar a noticia:'+result+"?"))

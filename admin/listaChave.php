@@ -11,7 +11,7 @@ top();
             url:"AJAX/AJAXGetNameChave.php",
             type:"post",
             data:{
-                idChaves:id
+                idChave:id
             },
             success:function (result){
                 if(confirm('Confirma que deseja eliminar a chave:'+result+"?"))
