@@ -43,11 +43,16 @@ top();
         <br>
         <label>Destaque</label>
 
-        <p><input type="radio" name="destaqueProduto" value="<?php echo $dadosProduto['produtoDestaque']?>">&nbsp;Sim</p>
-        <p><input type="radio" name="destaqueProduto" value="<?php echo $dadosProduto['produtoDestaque']?>">&nbsp;Não</p>
+        <p><input type="radio" name="destaqueProduto" value="sim"
+            <?php if( $dadosProduto['produtoDestaque'] == 'sim') echo " checked ";?>
+            >&nbsp;Sim</p>
+        <p><input type="radio" name="destaqueProduto" value="nao"
+                <?php if( $dadosProduto['produtoDestaque'] == 'nao') echo " checked ";?>
+            >&nbsp;Não</p>
         <br>
         <input type="hidden" name="produtoId" value="<?php echo $id?>">
         <input type="Submit" value="Edita"><br>
+    </form>
 </div>
 
 <?php

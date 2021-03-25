@@ -58,6 +58,8 @@
 
     <div class="card-group">
         <?php
+        $sql="Select * from noticias where noticiaDestaque = 'sim'";
+        $result=mysqli_query($con,$sql);
         while($dados=mysqli_fetch_array($result)){
         ?>
         <div div class="card cardNoticias  text-white bg-primary mb-3" style="max-width: 18rem; background-color: #242941!important ">
