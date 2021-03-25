@@ -12,7 +12,7 @@ $destaque=addslashes($_POST['destaqueProduto']);
 copy($_FILES['imagemNoticia']['tmp_name'],$novoNome);
 
 echo $sql="insert into noticias(noticiaTitulo, noticiaLinkURL, noticiaImagemURL, noticiaDestaque)
-values('".$nome."','".$link."','images/".$imagem."',".$destaque.")";
+values('".$nome."','".$link."','images/".$imagem."','".$destaque."')";
 mysqli_query($con,$sql);
 header("location:listaNoticia.php");
 ?>
