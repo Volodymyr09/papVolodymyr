@@ -6,13 +6,7 @@
     $sql="select * from produtos where produtoDestaque='sim'";
     $result=mysqli_query($con,$sql);
     $dados=mysqli_fetch_array($result);
-
-    /*
-    // dados noticiasDestaque
-    $sql="select * from noticias where noticiaDestaque='sim'";
-    $result=mysqli_query($con,$sql);
-    $dados=mysqli_fetch_array($result);
-    */
+    
     top();
 ?>
 
