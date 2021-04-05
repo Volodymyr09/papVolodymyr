@@ -18,6 +18,7 @@ top();
     <p><input type="radio" name="destaqueNoticia" value="nao" checked>&nbsp;Não</p>
      <br>
     <input type="Submit" value="Adiciona"><br>
+</form>
 </div>
 
     <?php

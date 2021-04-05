@@ -4,17 +4,14 @@ include_once ("includes/body.inc.php");
 top();
 ?>
 <div class="container">
-<h1>Adicionar Categoria</h1>
-<form action="confirmaNovaCategoria.php" method="post" enctype="multipart/form-data">
+<h1>Adicionar Chave</h1>
+<form action="confirmaNovaChave2.php" method="post" enctype="multipart/form-data">
     <label>Nome: </label>
-    <input type="text" name="nomeCategoria"><br>
-    <label>Logótipo:</label>
-    <input type="file" name="imagemCategoria"><br>
-     <br>
-    <select name="categoriaCategoria">
+    <input type="text" name="nomeChave"><br>
+    <select name="chaveCategoria">
         <option value="-1">Escolha a categoria...</option>
         <?php
-        $sql="select * from categorias order by categoriaNome";
+        $sql="select * from categorias where categoriaCategoriaId is null order by categoriaNome";
         $result=mysqli_query($con,$sql);
         while ($dados=mysqli_fetch_array($result)){
             ?>
@@ -25,7 +22,7 @@ top();
 
         ?>
     </select>
-    <br>
+     <br>
     <input type="Submit" value="Adiciona"><br>
 </form>
 </div>

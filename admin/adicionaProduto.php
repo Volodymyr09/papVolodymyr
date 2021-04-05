@@ -37,6 +37,7 @@ top();
 
      <br>
     <input type="Submit" value="Adiciona"><br>
+</form>
 </div>
 
     <?php

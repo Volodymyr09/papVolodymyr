@@ -24,6 +24,7 @@ top();
     </select>
      <br>
     <input type="Submit" value="Adiciona"><br>
+</form>
 </div>
 
     <?php

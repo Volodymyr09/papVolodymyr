@@ -56,6 +56,7 @@ top();
                 <td><?php echo $dados['categoriaId']?></td>
                 <td><?php echo $dados['categoriaNome']?></td>
                 <td><img width='90' src=../<?php  echo $dados['categoriaImagemURL']?>></td>
+                <td><a class='btn btn-primary btn-xs' href="gerirCategoria.php?id=<?php echo $dados['categoriaId']?>"><i class='fa fa-cog'></i>Gerir</a></td>
                 <td><a class='btn btn-warning btn-xs' href="editaCategoria.php?id=<?php echo $dados['categoriaId']?>"><i class='fa fa-pencil'></i>Editar</a></td>
                 <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaElimina(<?php echo $dados['categoriaId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>
 
