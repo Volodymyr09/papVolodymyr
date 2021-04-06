@@ -1,6 +1,6 @@
 <?php
 include_once("includes/body.inc.php");
-$sql="Select * from chaves inner join categorias on chaveCategoriaId=categoriaId ";
+$sql="Select * from chaves inner join categoriachaves on chaveCategoriaChaveId=categoriaChaveId ";
 $result=mysqli_query($con,$sql);
 
 top();
@@ -43,7 +43,7 @@ top();
             <tr>
                 <th>Id</th>
                 <th>Nome</th>
-                <th>Categoria</th>
+                <th>Categoria Chave</th>
                 <th colspan="2">opções</th>
             </tr>
             <?php
@@ -53,7 +53,7 @@ top();
                 <tr>
                     <td><?php echo $dados['chaveId']?></td>
                     <td><?php echo $dados['chaveNome']?></td>
-                    <td><?php echo $dados['categoriaNome']?></td>
+                    <td><?php echo $dados['categoriaChaveNome']?></td>
 
                     <td><a class='btn btn-warning btn-xs' href="editaChave.php?id=<?php echo $dados['chaveId']?>"><i class='fa fa-pencil'></i>Editar</a></td>
                     <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaElimina(<?php echo $dados['chaveId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>

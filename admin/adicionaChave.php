@@ -11,11 +11,11 @@ top();
     <select name="chaveCategoria">
         <option value="-1">Escolha a categoria...</option>
         <?php
-        $sql="select * from categorias where categoriaCategoriaId is null order by categoriaNome";
+        $sql="select * from categoriachaves where chaveCategoriaChaveId is null order by categoriaChaveNome";
         $result=mysqli_query($con,$sql);
         while ($dados=mysqli_fetch_array($result)){
             ?>
-            <option value="<?php echo $dados['categoriaId']?>"><?php echo $dados['categoriaNome']?></option>
+            <option value="<?php echo $dados['categoriaChaveId']?>"><?php echo $dados['categoriaChaveNome']?></option>
             <?php
         }
 

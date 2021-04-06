@@ -1,22 +1,22 @@
 <?php
 include_once("includes/body.inc.php");
-/*
-$sql="Select * from chaves inner join categorias on chaveCategoriaId=categoriaId ";
+
+$sql="Select * from categoriachaves inner join categorias on categoriaChaveCategoriaId=categoriaId ";
 $result=mysqli_query($con,$sql);
-*/
+
 top();
 ?>
 <script>
     function confirmaElimina(id) {
         $.ajax({
-            url:"AJAX/AJAXGetNameChave2.php",
+            url:"AJAX/AJAXGetNameCategoriaChave.php",
             type:"post",
             data:{
-                idChave:id
+                idcategoriaChave:id
             },
             success:function (result){
                 if(confirm('Confirma que deseja eliminar a chave:'+result+"?"))
-                    window.location="eliminaChave2.php?id=" + id;
+                    window.location="eliminaCategoriaChave.php?id=" + id;
             }
         })
     };
@@ -33,12 +33,12 @@ top();
 </script>
 
     <div class="container">
-        <h1>Chaves-2</h1>
+        <h1>Categoria Chaves</h1>
 
         <table class='table table-striped' width="100%">
             <tr>
                 <td colspan="5" align='right'>
-                    <a href="adicionaChave2.php"><i class='btn btn-success btn-xs'>Adicionar</i></a>
+                    <a href="adicionaCategoriaChave.php"><i class='btn btn-success btn-xs'>Adicionar</i></a>
                 </td>
             </tr>
             <tr>
@@ -52,12 +52,12 @@ top();
                 ?>
 
                 <tr>
-                    <td><?php echo $dados['chaveId']?></td>
-                    <td><?php echo $dados['chaveNome']?></td>
+                    <td><?php echo $dados['categoriaChaveId']?></td>
+                    <td><?php echo $dados['categoriaChaveNome']?></td>
                     <td><?php echo $dados['categoriaNome']?></td>
 
-                    <td><a class='btn btn-warning btn-xs' href="editaChave2.php?id=<?php echo $dados['chaveId']?>"><i class='fa fa-pencil'></i>Editar</a></td>
-                    <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaElimina(<?php echo $dados['chaveId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>
+                    <td><a class='btn btn-warning btn-xs' href="editaCategoriaChave.php?id=<?php echo $dados['categoriaChaveId']?>"><i class='fa fa-pencil'></i>Editar</a></td>
+                    <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaElimina(<?php echo $dados['categoriaChaveId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>
 
                 </tr>
                 <?php

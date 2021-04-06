@@ -1,21 +1,20 @@
 <?php
 include_once ("includes/body.inc.php");
-/*
+
     $id=intval($_GET['id']);
-    $sql="select * from chaves where chaveId=$id";
-    $resultChaves=mysqli_query($con,$sql);
-    $dadosChaves=mysqli_fetch_array($resultChaves);
-*/
+    $sql="select * from categoriaChaves where categoriaChaveId=$id";
+    $resultcategoriaChaves=mysqli_query($con,$sql);
+    $dadoscategoriaChaves=mysqli_fetch_array($resultcategoriaChaves);
 top();
 ?>
 <div class="container">
     <h1>Editar chave</h1>
-    <form action="confirmaEditaChave2.php" method="post" enctype="multipart/form-data">
-        <input type="hidden" name="chaveId" value="<?php echo $id?>">
+    <form action="confirmaEditaCategoriaChave.php" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="categoriaChaveId" value="<?php echo $id?>">
         <label>Nome: </label>
-        <input type="text" name="nomeChave" value="<?php echo $dadosChaves['chaveNome']?>"><br>
+        <input type="text" name="nomeCategoriaChave" value="<?php echo $dadoscategoriaChaves['categoriaChaveNome']?>"><br>
 
-        <select name="chaveCategoria">
+        <select name="categoriaCategoria">
             <option value="-1">Escolha a categoria...</option>
             <?php
             $sql="select * from categorias order by categoriaNome";
@@ -24,7 +23,7 @@ top();
                 ?>
                 <option value="<?php echo $dadosCategorias['categoriaId']?>"
                     <?php
-                    if($dadosChaves['chaveCategoriaId']==$dadosCategorias['categoriaId'])
+                    if($dadoscategoriaChaves['categoriaChaveCategoriaId']==$dadosCategorias['categoriaId'])
                         echo " selected ";
                     ?>
                 >

@@ -51,7 +51,7 @@ function top()
 
                 <li class="active"> <a href="listaChave.php">Chaves</a> </li>
 
-                <li class="active"> <a href="listaChave2.php">Chaves 2</a> </li>
+                <li class="active"> <a href="listaCategoriaChave.php">Categoria Chaves</a> </li>
 
                 <li class="active"> <a href="listaNoticia.php">Noticias</a> </li>
 

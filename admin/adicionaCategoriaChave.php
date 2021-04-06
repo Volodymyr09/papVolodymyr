@@ -4,11 +4,11 @@ include_once ("includes/body.inc.php");
 top();
 ?>
 <div class="container">
-<h1>Adicionar Chave</h1>
-<form action="confirmaNovaChave2.php" method="post" enctype="multipart/form-data">
+<h1>Adicionar Categoria Chave</h1>
+<form action="confirmaNovaCategoriaChave.php" method="post" enctype="multipart/form-data">
     <label>Nome: </label>
-    <input type="text" name="nomeChave"><br>
-    <select name="chaveCategoria">
+    <input type="text" name="nomeCategoriaChave"><br>
+    <select name="categoriaCategoria">
         <option value="-1">Escolha a categoria...</option>
         <?php
         $sql="select * from categorias where categoriaCategoriaId is null order by categoriaNome";
