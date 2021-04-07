@@ -1,7 +1,7 @@
 <?php
 include_once ("includes/body.inc.php");
     $id=intval($_GET['id']);
-    $sql="select * from chaves where chaveId=$id";
+    $sql="select * from chaves inner join categoriachaves on chaveCategoriaChaveId = categoriaChaveId";
     $resultChaves=mysqli_query($con,$sql);
     $dadosChaves=mysqli_fetch_array($resultChaves);
 top();
@@ -16,17 +16,17 @@ top();
         <select name="chaveCategoria">
             <option value="-1">Escolha a categoria...</option>
             <?php
-            $sql="select * from categorias order by categoriaNome";
+            $sql="select * from categoriaChaves order by categoriaChaveNome";
             $resultCategorias=mysqli_query($con,$sql);
             while ($dadosCategorias=mysqli_fetch_array($resultCategorias)){
                 ?>
-                <option value="<?php echo $dadosCategorias['categoriaId']?>"
+                <option value="<?php echo $dadosCategorias['categoriaChaveId']?>"
                     <?php
-                    if($dadosChaves['chaveCategoriaId']==$dadosCategorias['categoriaId'])
+                    if($dadosChaves['chaveCategoriaChaveId']==$dadosCategorias['categoriaChaveId'])
                         echo " selected ";
                     ?>
                 >
-                    <?php echo $dadosCategorias['categoriaNome']?>
+                    <?php echo $dadosCategorias['categoriaChaveNome']?>
                 </option>
                 <?php
             }

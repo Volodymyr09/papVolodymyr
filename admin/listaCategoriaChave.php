@@ -1,7 +1,7 @@
 <?php
 include_once("includes/body.inc.php");
 
-$sql="Select * from categoriachaves inner join categorias on categoriaChaveCategoriaId=categoriaId ";
+$sql="Select * from categoriachaves inner join categorias on categoriaChaveCategoriaId=categoriaId";
 $result=mysqli_query($con,$sql);
 
 top();
