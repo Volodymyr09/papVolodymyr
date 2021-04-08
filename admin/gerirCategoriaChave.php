@@ -5,9 +5,9 @@ top();
 ?>
     <div class="container">
         <h1>Detalhes</h1>
-        <form action="#" method="post" enctype="multipart/form-data">
+        <form action="ConfirmaNovoProdutoChave.php" method="post" enctype="multipart/form-data">
             <label>Categoria Chave</label>
-            <select name="chaveCategoria">
+            <select name="chaveChaveProduto">
                 <option value="-1">Escolha a categoria...</option>
                 <?php
                 $sql="select * from categoriachaves order by categoriaChaveNome";
@@ -23,7 +23,7 @@ top();
             </select>
             <br>
             <label>Chave</label>
-            <select name="chaveCategoria">
+            <select name="produtoChaveProduto">
                 <option value="-1">Escolha a categoria...</option>
                 <?php
                 $sql="select * from chaves order by chaveNome";
@@ -39,9 +39,45 @@ top();
             </select>
             <br>
             <label>Valor</label>
-            <input type="text" name="valor" class="w-50 p-3"><br>
+            <input type="text" name="valorChaveProduto" class="w-50 p-3"><br>
             <br>
-            <input type="Submit" value="Adiciona"><br>
+            <div class="container">
+
+                <table class='table table-striped' width="100%">
+                    <tr>
+                        <td colspan="5" align='right' width="25%">
+                            <input type="Submit" value="Adicionar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Categoria Chave</th>
+                        <th>Chave</th>
+                        <th>Valor</th>
+                        <th colspan="2">opções</th>
+                    </tr>
+                    <?php
+
+                    while($dados=mysqli_fetch_array($result)){
+                        ?>
+
+                        <tr>
+                            <td><?php echo $dados['produtoChaveChaveId']?></td>
+                            <td><?php echo $dados['produtoChaveProdutoId']?></td>
+                            <td><?php echo $dados['produtoChaveValor']?></td>
+
+                            <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaElimina(<?php echo $dados['categoriaId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>
+
+                        </tr>
+                        <?php
+                    }
+                    ?>
+
+
+                </table>
+
+
+
+            </div>
         </form>
     </div>
 
