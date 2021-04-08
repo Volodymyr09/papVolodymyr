@@ -56,7 +56,8 @@ top();
                         <th colspan="2">opções</th>
                     </tr>
                     <?php
-
+                    $sql="Select * from produtochaves ";
+                    $result=mysqli_query($con,$sql);
                     while($dados=mysqli_fetch_array($result)){
                         ?>
 
