@@ -1,14 +1,15 @@
 <?php
 include_once ("includes/body.inc.php");
 
+
 top();
 ?>
     <div class="container">
         <h1>Detalhes</h1>
         <form action="ConfirmaNovoProdutoChave.php" method="post" enctype="multipart/form-data">
-            <label>Categoria Chave</label>
+            <label>Categoria Chaves</label>
             <select name="chaveChaveProduto">
-                <option value="-1">Escolha a categoria...</option>
+                <option value="-1">Escolha a categoria chave...</option>
                 <?php
                 $sql="select * from categoriachaves order by categoriaChaveNome";
                 $result=mysqli_query($con,$sql);
@@ -22,9 +23,9 @@ top();
                 ?>
             </select>
             <br>
-            <label>Chave</label>
+            <label>Chaves</label>
             <select name="produtoChaveProduto">
-                <option value="-1">Escolha a categoria...</option>
+                <option value="-1">Escolha a chave...</option>
                 <?php
                 $sql="select * from chaves order by chaveNome";
                 $result=mysqli_query($con,$sql);
