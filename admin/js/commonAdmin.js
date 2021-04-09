@@ -7,7 +7,7 @@ function fillNovasOpcoes(idChave){
 
         },
         success: function (result) {
-            alert(result);
+
             $('#chave').html(result);
         }
     });
