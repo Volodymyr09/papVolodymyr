@@ -8,7 +8,7 @@ top();
         <h1>Detalhes</h1>
         <form action="ConfirmaNovoProdutoChave.php" method="post" enctype="multipart/form-data">
             <label>Categoria Chaves</label>
-            <select name="chaveChaveProduto">
+            <select name="chaveChaveProduto" id="chaveCategoria">
                 <option value="-1">Escolha a categoria chave...</option>
                 <?php
                 $sql="select * from categoriachaves order by categoriaChaveNome";
@@ -24,19 +24,8 @@ top();
             </select>
             <br>
             <label>Chaves</label>
-            <select name="produtoChaveProduto">
-                <option value="-1">Escolha a chave...</option>
-                <?php
-                $sql="select * from chaves order by chaveNome";
-                $result=mysqli_query($con,$sql);
-                while ($dados=mysqli_fetch_array($result)){
-                    ?>
-                    <option value="<?php echo $dados['chaveId']?>"><?php echo $dados['chaveNome']?></option>
-                    <?php
-                }
+            <select name="produtoChaveProduto" id="chave">
 
-
-                ?>
             </select>
             <br>
             <label>Valor</label>
