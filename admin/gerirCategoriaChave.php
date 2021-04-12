@@ -1,14 +1,15 @@
 <?php
 include_once ("includes/body.inc.php");
-
+$id=intval($_GET['id']);
 
 top();
 ?>
     <div class="container">
         <h1>Detalhes</h1>
-        <form action="ConfirmaNovoProdutoChave.php" method="post" enctype="multipart/form-data">
+        <form action="confirmaNovoProdutoChave.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" value="<?php echo $id?>" name="produtoChaveProduto">
             <label>Categoria Chaves</label>
-            <select name="chaveChaveProduto" id="chaveCategoria">
+            <select name="catChaveProduto" id="chaveCategoria">
                 <option value="-1">Escolha a categoria chave...</option>
                 <?php
                 $sql="select * from categoriachaves order by categoriaChaveNome";
@@ -24,7 +25,7 @@ top();
             </select>
             <br>
             <label>Chaves</label>
-            <select name="produtoChaveProduto" id="chave">
+            <select name="chaveChaveProduto" id="chave">
 
             </select>
             <br>
@@ -46,17 +47,20 @@ top();
                         <th colspan="2">opções</th>
                     </tr>
                     <?php
-                    $sql="Select * from produtochaves ";
+                    $sql="Select * from produtochaves 
+                                    inner join chaves on chaveId=produtoChaveChaveId
+                                    inner join categoriaChaves on categoriaChaveId = chaveCategoriaChaveId
+                                    where produtoChaveProdutoId=".$id;
                     $result=mysqli_query($con,$sql);
                     while($dados=mysqli_fetch_array($result)){
                         ?>
 
                         <tr>
-                            <td><?php echo $dados['produtoChaveChaveId']?></td>
-                            <td><?php echo $dados['produtoChaveProdutoId']?></td>
+                            <td><?php echo $dados['categoriaChaveNome']?></td>
+                            <td><?php echo $dados['chaveNome']?></td>
                             <td><?php echo $dados['produtoChaveValor']?></td>
 
-                            <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaElimina(<?php echo $dados['categoriaId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>
+                            <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaElimina(<?php echo $dados['chaveId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>
 
                         </tr>
                         <?php
