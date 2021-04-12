@@ -57,22 +57,12 @@ top();
             <div class="modal-body">
                 <form class="row g-3">
                     <div class="col-md-6">
-                        <label for="validationServer01" class="form-label">Primeiro Nome</label>
+                        <label for="validationServer01" class="form-label">Nome</label>
                         <input type="text" class="form-control" id="validationServer01"  required>
-
-                    </div>
-                    <div class="col-md-6">
-                        <label for="validationServer02" class="form-label">Apelido</label>
-                        <input type="text" class="form-control" id="validationServer02" required>
-
                     </div>
                     <div class="col-md-6">
                         <label for="inputTelephone4" class="form-label">Telemóvel</label>
                         <input type="email" class="form-control" id="inputTelephone4">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
                     </div>
 
                     <div class="col-12">

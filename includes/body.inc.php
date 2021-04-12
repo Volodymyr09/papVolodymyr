@@ -81,7 +81,7 @@ function top()
                     <div class="modal-body">
                         <form>
                             <div class="form-group">
-                                <label for="InputEmail">E-mail:</label>
+                                <label for="InputEmail">Nome:</label>
                                 <input type="email" class="form-control" id="InputEmail">
                             </div>
                             <div class="form-group">
@@ -120,10 +120,6 @@ function top()
                                 <label for="InputName">Nome:</label>
                                 <input type="name" class="form-control" id="InputName" aria-describedby="emailHelp">
 
-                            </div>
-                            <div class="form-group">
-                                <label for="InputEmail">E-mail:</label>
-                                <input type="email" class="form-control" id="InputEmail">
                             </div>
                             <div class="form-group">
                                 <label for="InputPassword1">Palavra-passe</label>
