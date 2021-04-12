@@ -1,5 +1,4 @@
 <?php
-
 include_once("config.inc.php");
     $con=mysqli_connect(HOST,USER,PWD,DATABASE);
     $con->set_charset("utf8");
