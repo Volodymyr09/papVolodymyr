@@ -86,7 +86,7 @@ top();
                             <td><?php echo $dados['chaveNome']?></td>
                             <td><?php echo $dados['produtoChaveValor']?></td>
 
-                            <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaElimina(<?php echo $dados['chaveId']?>);"><i class='fa fa-trash'></i>Eliminar</a></td>
+                            <td><a class='btn btn-danger btn-xs' href="#"  onclick="confirmaElimina(<?php echo $dados['chaveId']?>);"><i class='fa fa-trash'></i>Eliminar</a></td>
 
                         </tr>
                         <?php

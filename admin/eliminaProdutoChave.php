@@ -1,12 +1,9 @@
 <?php
 include_once ("includes/body.inc.php");
 $id=intval($_GET['id']);
-$produto=intval($_POST['produtoChaveProdutoId']);
-
-$sql= "delete from produtochaves where produtoChaveChaveId=".$id;
+$sql= "delete from produtochaves inner join chaves on produtoChaveChaveId=chaveId where chaveId=".$id;
 mysqli_query($con,$sql);
-header("location:gerirCategoriaChave.php?id=$produto");
+header("location:gerirCategoriaChave.php?id=".$produto);
 
 
 ?>
-
