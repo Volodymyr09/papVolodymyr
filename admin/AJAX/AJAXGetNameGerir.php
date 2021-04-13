@@ -1,7 +1,7 @@
 <?php
 // dados na base de dados
 include_once("includes/body.inc.php");
-$id=intval($_POST['id']);
+$id=intval($_POST['idChave']);
 $sql="Select * from produtochaves where produtoChaveChaveId=".$id;
 
 $result=mysqli_query($con,$sql);
