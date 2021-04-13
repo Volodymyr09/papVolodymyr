@@ -41,6 +41,7 @@
     <file url="file://$PROJECT_DIR$/admin/eliminaChave2.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/eliminaNoticia.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/eliminaProduto.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/eliminaProdutoChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/gerirCategoriaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/listaCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/listaChave.php" charset="UTF-8" />

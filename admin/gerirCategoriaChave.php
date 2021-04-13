@@ -4,6 +4,32 @@ $id=intval($_GET['id']);
 
 top();
 ?>
+    <script>
+        function confirmaElimina(id) {
+            $.ajax({
+                url:"AJAX/AJAXGetNameGerir.php",
+                type:"post",
+                data:{
+                    idChave:id
+                },
+                success:function (result){
+                    if(confirm('Confirma que deseja eliminar:'+result+"?"))
+                        window.location="eliminaProdutoChave.php?id=" + id;
+                }
+            })
+        };
+
+
+
+
+        $('document').ready(function (){
+            $('#search').keyup(function (){
+                fillTableProdutoChaves(this.value);
+            });
+            fillTableProdutoChaves();
+        })
+    </script>
+
     <div class="container">
         <h1>Detalhes</h1>
         <form action="confirmaNovoProdutoChave.php" method="post" enctype="multipart/form-data">
@@ -60,7 +86,7 @@ top();
                             <td><?php echo $dados['chaveNome']?></td>
                             <td><?php echo $dados['produtoChaveValor']?></td>
 
-                            <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaElimina(<?php echo $dados['chaveId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>
+                            <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaElimina(<?php echo $dados['chaveId']?>);"><i class='fa fa-trash'></i>Eliminar</a></td>
 
                         </tr>
                         <?php
