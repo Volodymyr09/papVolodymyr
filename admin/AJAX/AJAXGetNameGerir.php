@@ -7,4 +7,5 @@ $sql="Select * from produtochaves inner join chaves on produtoChaveChaveId=chave
 $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);
 echo $dados['chaveNome'];
+
 ?>
