@@ -1,7 +1,7 @@
 <?php
 include_once ("includes/body.inc.php");
     $id=intval($_GET['id']);
-    $sql="select * from chaves inner join categoriachaves on chaveCategoriaChaveId = categoriaChaveId";
+    $sql="select * from chaves inner join categoriachaves on chaveCategoriaChaveId = categoriaChaveId where chaveId=$id";
     $resultChaves=mysqli_query($con,$sql);
     $dadosChaves=mysqli_fetch_array($resultChaves);
 top();

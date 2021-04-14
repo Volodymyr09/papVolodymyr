@@ -15,7 +15,6 @@ function fillNovasOpcoes(idChave){
 
 function confirmaElimina(idChave,idProduto) {
     var nomeChave, nomeProduto;
-    //  alert('elimina chave '+idChave+' no produto '+idProduto);
     $.ajax({
         url:"AJAX/AJAXGetNameChave.php",
         type:"post",
@@ -43,6 +42,9 @@ function confirmaElimina(idChave,idProduto) {
 };
 
 
+
+
+
 $('document').ready(function (){
     $('#chaveCategoria').change(function (){
 
@@ -50,3 +52,89 @@ $('document').ready(function (){
       fillNovasOpcoes($(this).val());
     })
 })
+
+
+
+function confirmaEliminaCategoria(idCategoria) {
+    var nomeCategoria;
+    $.ajax({
+        url:"AJAX/AJAXGetNameCategoria.php",
+        type:"post",
+        data:{
+            idCategoria:idCategoria
+        },
+        success:function (result){
+            nomeCategoria=result;
+            if(confirm('Confirma que deseja eliminar a categoria:'+nomeCategoria+'?'))
+                window.location="eliminaCategoria.php?id=" + idCategoria;
+        }
+    })
+};
+
+
+function confirmaEliminaCatChave(idCategoriaChave) {
+    var nomeCategoriaChave;
+    $.ajax({
+        url:"AJAX/AJAXGetNameCategoriaChave.php",
+        type:"post",
+        data:{
+            idCategoriaChave:idCategoriaChave
+        },
+        success:function (result){
+            nomeCategoriaChave=result;
+            if(confirm('Confirma que deseja eliminar a Categoria Chave:'+nomeCategoriaChave+'?'))
+                window.location="eliminaCategoriaChave.php?id=" + idCategoriaChave;
+        }
+    })
+};
+
+
+function confirmaEliminaChave(idChave) {
+    var nomeChave;
+    $.ajax({
+        url:"AJAX/AJAXGetNameChave.php",
+        type:"post",
+        data:{
+            idChave:idChave
+        },
+        success:function (result){
+            nomeChave=result;
+            if(confirm('Confirma que deseja eliminar a chave:'+nomeChave+'?'))
+                window.location="eliminaChave.php?id=" + idChave;
+        }
+    })
+};
+
+
+function confirmaEliminaNoticia(idNoticia) {
+    var tituloNoticia;
+    $.ajax({
+        url:"AJAX/AJAXGetNameNoticia.php",
+        type:"post",
+        data:{
+            idNoticia:idNoticia
+        },
+        success:function (result){
+        tituloNoticia=result;
+            if(confirm('Confirma que deseja eliminar a noticia:'+tituloNoticia+'?'))
+                window.location="eliminaNoticia.php?id=" + idNoticia;
+        }
+    })
+};
+
+
+function confirmaEliminaProduto(idProduto) {
+    var nomeProduto;
+    $.ajax({
+        url:"AJAX/AJAXGetNameProduto.php",
+        type:"post",
+        data:{
+            idProduto:idProduto
+        },
+        success:function (result){
+            nomeProduto=result;
+            if(confirm('Confirma que deseja eliminar o produto:'+nomeProduto+'?'))
+                window.location="eliminaProduto.php?id=" + idProduto;
+        }
+    })
+};

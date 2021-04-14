@@ -6,31 +6,7 @@ $result=mysqli_query($con,$sql);
 
 top();
 ?>
-<script>
-    function confirmaElimina(id) {
-        $.ajax({
-            url:"AJAX/AJAXGetNameCategoriaChave.php",
-            type:"post",
-            data:{
-                idcategoriaChave:id
-            },
-            success:function (result){
-                if(confirm('Confirma que deseja eliminar a chave:'+result+"?"))
-                    window.location="eliminaCategoriaChave.php?id=" + id;
-            }
-        })
-    };
 
-
-
-
-    $('document').ready(function (){
-        $('#search').keyup(function (){
-            fillTableChaves(this.value);
-        });
-        fillTableChaves();
-    })
-</script>
 
     <div class="container">
         <h1>Categoria Chaves</h1>
@@ -57,7 +33,7 @@ top();
                     <td><?php echo $dados['categoriaNome']?></td>
 
                     <td><a class='btn btn-warning btn-xs' href="editaCategoriaChave.php?id=<?php echo $dados['categoriaChaveId']?>"><i class='fa fa-pencil'></i>Editar</a></td>
-                    <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaElimina(<?php echo $dados['categoriaChaveId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>
+                    <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaEliminaCatChave(<?php echo $dados['categoriaChaveId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>
 
                 </tr>
                 <?php

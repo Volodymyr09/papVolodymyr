@@ -1,6 +1,6 @@
 <?php
 // dados na base de dados
-include_once("includes/body.inc.php");
+include_once("../includes/body.inc.php");
 $id=intval($_POST['idCategoria']);
 $sql="Select * from categorias where categoriaId=$id";
 
