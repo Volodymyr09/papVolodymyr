@@ -1,5 +1,6 @@
 <?php
 include_once("config.inc.php");
+// session_start();
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 
 function top()
@@ -42,9 +43,22 @@ function top()
             </nav>
 
             <a href="index.php" class="logo"><strong>PC-GAMER</strong></a>
-
+             <!--
+             <?php
+                if(!isset($_SESSION['id'])){
+            ?>
+            -->
             <a href="carrinho.php" class="icon alt fa-shopping-cart"><span class="label"></span></a>
             <a href="#" class="icon alt fa-user-circle" data-toggle="modal" data-target="#login"><span class="label"></span></a>
+            <!--
+            <?php
+                }else{
+                    ?>
+                     <li><a href="#" data-toggle="modal" data-target="#login">Logout</a> </li>
+            <?php
+                }
+             ?>
+             -->
         </header>
 
 
