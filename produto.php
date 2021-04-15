@@ -69,21 +69,33 @@ top();
 
                     <div class="fields">
                         <?php
-                        $sql="Select * from produtochaves 
-                                    inner join chaves on chaveId=produtoChaveChaveId
-                                    inner join categoriaChaves on categoriaChaveId = chaveCategoriaChaveId
-                                    where produtoChaveProdutoId=".$id;
-                        $result=mysqli_query($con,$sql);
-                        while($dados=mysqli_fetch_array($result)){
-                        ?>
+                        $sql="select categoriaChaveId, categoriaChaveNome
+                from categoriachaves inner join chaves on categoriaChaveId = chaveCategoriaChaveId
+                inner join produtochaves on chaveId = produtoChaveChaveId
+                where produtoChaveProdutoId=$id group by categoriaChaveId";
+                        $resultCategorias=mysqli_query($con,$sql);
+                        while($dadosCategorias=mysqli_fetch_array($resultCategorias)){
+                            $sqlChaves="select chaveNome, produtoChaveValor
+                          from chaves inner join produtochaves on chaveId=produtoChaveChaveId
+                          where chaveCategoriaChaveId=".$dadosCategorias['categoriaChaveId']." and 
+                          produtoChaveProdutoId=$id";
+                            $resChaves=mysqli_query($con,$sqlChaves);
+                            ?>
                         <div class="field half">
-                            <label for="field-1"><?php echo $dados['categoriaChaveNome']?></label>
-                            <p><?php echo $dados['chaveNome']?>: <?php echo $dados['produtoChaveValor']?></p>
+                            <label for="field-1"><b><?php echo $dadosCategorias['categoriaChaveNome']?></b></label>
+                            <?php
+                            while($dadosChaves=mysqli_fetch_array($resChaves)){
+                                ?>
+                                <p><?php echo $dadosChaves['chaveNome']?> : <?php echo $dadosChaves['produtoChaveValor']?></p>
 
+                                <?php
+
+                            }
+                            ?>
                         </div>
-
                             <?php
                         }
+
                         ?>
                     </div>
                 </form>
