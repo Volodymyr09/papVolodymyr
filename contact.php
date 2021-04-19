@@ -11,7 +11,7 @@ top();
         <div class="inner">
             <header class="major">
                 <h1>Contactos</h1>
-                <p>Pode contactar com a loja  das 9:00 até 17:00</p>
+                <p>Pode contactar com a loja  das 9:00 até ás 17:00</p>
             </header>
             <span class="image main"><img src="images/map.jpg" alt="" /></span>
             <p></p>
