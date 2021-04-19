@@ -7,7 +7,9 @@ top();
 <h1>Adicionar Chave</h1>
 <form action="confirmaNovaChave.php" method="post" enctype="multipart/form-data">
     <label>Nome: </label>
-    <input type="text" name="nomeChave"><br>
+    <input type="text" name="nomeChave">
+    <br>
+    <label>Categoria Chave</label>
     <select name="chaveCategoria">
         <option value="-1">Escolha a categoria...</option>
         <?php

@@ -11,8 +11,9 @@ top();
     <form action="confirmaEditaChave.php" method="post" enctype="multipart/form-data">
         <input type="hidden" name="chaveId" value="<?php echo $id?>">
         <label>Nome: </label>
-        <input type="text" name="nomeChave" value="<?php echo $dadosChaves['chaveNome']?>"><br>
-
+        <input type="text" name="nomeChave" value="<?php echo $dadosChaves['chaveNome']?>">
+        <br>
+        <label>Categoria Chave</label>
         <select name="chaveCategoria">
             <option value="-1">Escolha a categoria...</option>
             <?php

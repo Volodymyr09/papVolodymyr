@@ -12,8 +12,9 @@ top();
     <form action="confirmaEditaCategoriaChave.php" method="post" enctype="multipart/form-data">
         <input type="hidden" name="categoriaChaveId" value="<?php echo $id?>">
         <label>Nome: </label>
-        <input type="text" name="nomeCategoriaChave" value="<?php echo $dadoscategoriaChaves['categoriaChaveNome']?>"><br>
-
+        <input type="text" name="nomeCategoriaChave" value="<?php echo $dadoscategoriaChaves['categoriaChaveNome']?>">
+        <br>
+        <label>Categoria</label>
         <select name="categoriaCategoria">
             <option value="-1">Escolha a categoria...</option>
             <?php

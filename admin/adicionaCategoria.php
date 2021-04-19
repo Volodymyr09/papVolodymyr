@@ -11,6 +11,7 @@ top();
     <label>Logótipo:</label>
     <input type="file" name="imagemCategoria"><br>
      <br>
+    <label>Categoria Mãe</label>
     <select name="categoriaCategoria">
         <option value="-1">Escolha a categoria...</option>
         <?php

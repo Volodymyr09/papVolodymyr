@@ -16,10 +16,14 @@ top();
         <img src="../<?php echo $dadosProduto['produtoImagemURL']?>" width="220">
         <label>Imagem: </label>
         <input type="file" name="imagemProduto"><br>
+        <br>
         <label>Descrição: </label>
         <textarea type="text" name="descricaoProduto"><?php echo $dadosProduto['produtoDescricao'];?></textarea>
+        <br>
         <label>Preço: </label>
-        <input type="text" name="precoProduto" value="<?php echo $dadosProduto['produtoPreco']?>"><br>
+        <input type="text" name="precoProduto" value="<?php echo $dadosProduto['produtoPreco']?>">
+        <br>
+        <label>Categoria</label>
         <select name="produtoCategoria">
             <option value="-1">Escolha a categoria...</option>
             <?php

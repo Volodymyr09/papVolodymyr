@@ -10,11 +10,15 @@ top();
     <input type="text" name="nomeProduto"><br>
     <label>Imagem: </label>
     <input type="file" name="imagemProduto"><br>
+    <br>
     <label>Descrição: </label>
     <textarea type="text" name="descricaoProduto">
     </textarea>
+    <br>
     <label>Preço: </label>
-    <input type="text" name="precoProduto"><br>
+    <input type="text" name="precoProduto">
+    <br>
+    <label>Categoria</label>
     <select name="produtoCategoria">
         <option value="-1">Escolha a categoria...</option>
         <?php

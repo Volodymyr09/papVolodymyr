@@ -15,7 +15,7 @@
     <section id="banner" class="major">
         <div class="inner">
             <header class="major">
-                <h1>Bem Vindo! <!--<?php if(isset($_SESSION['id'])) echo $_SESSION['nome']?> --></h1>
+                <h1>Bem Vindo! <?php if(isset($_SESSION['id'])) echo $_SESSION['nome']?> </h1>
             </header>
         </div>
     </section>
