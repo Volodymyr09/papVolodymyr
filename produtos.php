@@ -17,7 +17,7 @@ $result=mysqli_query($con,$sql);
 top();
 ?>
 
-<div id="main" class="container">
+<div id="main" class="container-fluid">
 
     <!-- One -->
     <section id="one">

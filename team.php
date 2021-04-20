@@ -9,7 +9,7 @@ top();
     <section id="one">
         <div class="inner">
             <header class="major">
-                <h1>Membros da nossa equipe</h1>
+                <h1>Membros da nossa equipa</h1>
             </header>
 
             <div class="row">

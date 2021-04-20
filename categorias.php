@@ -16,7 +16,7 @@ if(mysqli_affected_rows($con)==0)// não há nenhuma sub-categoria
 top();
 ?>
 
-<div id="main" class="container">
+<div id="main" class="container-fluid">
 
     <!-- One -->
     <section id="one">
