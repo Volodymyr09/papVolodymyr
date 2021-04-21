@@ -28,7 +28,7 @@
     </section>
 
 
-
+<div class="container-fluid">
     <div id="main">
     <!-- About us -->
     <!-- Featured Products -->
@@ -52,6 +52,7 @@
             }
             ?>
     </section>
+</div>
 </div>
 <br>
 

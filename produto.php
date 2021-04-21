@@ -40,7 +40,8 @@ top();
 
 
                                 <div class="col-sm-6">
-                                    <input type="submit" class="primary" value="Adicionar ao Carrinho">
+                                    <a href="#" onclick="adicionaCarrinho(<?php echo $id?>)">
+                                    <input type="submit" class="primary" value="Adicionar ao Carrinho"></a>
                                 </div>
 
                             </div>

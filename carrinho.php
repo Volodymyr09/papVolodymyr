@@ -1,6 +1,18 @@
 <?php
 include_once("includes/body.inc.php");
 top();
+
+$lista="(0";
+if(isset($_SESSION['carrinho'])){
+    foreach ($_SESSION['carrinho'] as $produto){
+        $lista.=",".$produto;
+    }
+}
+$lista.=")";
+
+$sql="select * from produtos where produtoId in $lista";
+$result=mysqli_query($con,$sql);
+
 ?>
 
 
@@ -19,23 +31,23 @@ top();
                 <th >Quant.</th>
                 <th width="5%">&nbsp;</th>
             </tr>
+            <?php
+            $i=1;
+            while ($dados=mysqli_fetch_array($result)){
+            ?>
             <tr>
-                <td>#1</td>
-                <td>Motherboard ASUS XPTO 175HZ</td>
-                <td><img src="images/hardwareLogo.jpg" width="120"></td>
-                <td>250.00&euro;</td>
+                <td><?php echo $i++?></td>
+                <td><?php echo $dados['produtoNome']?></td>
+                <td><img src="<?php echo $dados['produtoImagemURL']?>" width="120"></td>
+                <td><?php echo $dados['produtoPreco']?></td>
                 <td><span class="btn-sm btn-light"> - </span> <span class="text-center pl-1 pr-1">1</span> <span  class="btn-sm btn-light">+</span></td>
-                <td><img src="images/trash_tb.png" width="18"> </td>
+                <!--<td><a href="#" onclick="confirmaEliminaCarrinho(<?php echo $dados['produtoId']?>);"><img src="images/trash_tb.png" width="18"></a></td> -->
             </tr>
-            <tr>
-                <td>#2</td>
-                <td>Monitor Gammer AOC</td>
-                <td><img src="images/MonitorGamAOC.jpg" width="120"></td>
-                <td>250.00&euro;</td>
-                <td><span class="btn-sm btn-light"> - </span> <span class="text-center pl-1 pr-1">1</span> <span  class="btn-sm btn-light">+</span></td>
-                <td><img src="images/trash_tb.png" width="18"> </td>
-            </tr>
+            <?php
+            }
+            ?>
         </table>
+
     </section>
 
     <div class="field half text-right">

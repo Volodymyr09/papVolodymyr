@@ -1,7 +1,9 @@
 <?php
 include_once("config.inc.php");
-session_start();
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
+
+session_start();
+$_SESSION['carrinho'][0]=-1;
 
 function top()
 {
@@ -56,6 +58,8 @@ function top()
             <?php
                 }else{
                     ?>
+                     <a href="utilizador.php" class="icon alt fa-user" ><span class="label"></span></a>
+
                      <a href="logout.php" >Logout</a>
             <?php
                 }
@@ -189,6 +193,7 @@ function top()
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="js/common.js"></script>
         </body>
     </HTML>
 
