@@ -36,6 +36,7 @@ top();
                 <td><img width='90' src="../<?php  echo $dados['produtoImagemURL']?>"></td>
                 <td><?php echo $dados['produtoDescricao']?></td>
                 <td><?php echo $dados['produtoPreco']?></td>
+                <td><?php echo substr($dados['produtoDescricao'],0,100)." (..)"?></td>
                 <td><a class='btn btn-primary btn-xs' href="gerirCategoriaChave.php?id=<?php echo $dados['produtoId']?>"><i class='fa fa-cog'></i>Detalhes</a></td>
                 <td><a class='btn btn-warning btn-xs' href="editaProduto.php?id=<?php echo $dados['produtoId']?>"><i class='fa fa-pencil'></i>Editar</a></td>
                 <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaEliminaProduto(<?php echo $dados['produtoId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>

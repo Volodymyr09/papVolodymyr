@@ -24,6 +24,17 @@ top();
 
         ?>
     </select>
+    <br>
+    <div class="form-group">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" checked type="radio" name="tipoCategoria" id="inlineRadio1" value="geral">
+            <label class="form-check-label" for="inlineRadio1">Geral (aparece em todos os produtos)</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="tipoCategoria" id="inlineRadio2" value="especifico">
+            <label class="form-check-label" for="inlineRadio2">Específico (a uma categoria de produtos)</label>
+        </div>
+    </div>
      <br>
     <input type="Submit" value="Adiciona"><br>
 </form>

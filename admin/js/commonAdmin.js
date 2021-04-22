@@ -1,17 +1,25 @@
-function fillNovasOpcoes(idChave){
+function fillNovasOpcoes(idChave, idProduto){
     $.ajax({
         url: "AJAX/AJAXGetOptionChave.php",
         type: "post",
         data: {
-            idChave: idChave
+            idChave: idChave,
+            idProduto: idProduto
 
         },
         success: function (result) {
-
             $('#chave').html(result);
         }
     });
-}
+};
+
+$('document').ready(function (){
+    $('#chaveCategoria').change(function (){
+        fillNovasOpcoes($(this).val(),$('#idProduto').val());
+    })
+})
+
+
 
 function confirmaElimina(idChave,idProduto) {
     var nomeChave, nomeProduto;
@@ -45,13 +53,7 @@ function confirmaElimina(idChave,idProduto) {
 
 
 
-$('document').ready(function (){
-    $('#chaveCategoria').change(function (){
 
-
-      fillNovasOpcoes($(this).val());
-    })
-})
 
 
 

@@ -1,6 +1,9 @@
 <?php
 include_once ("includes/body.inc.php");
 $id=intval($_GET['id']);
+$sql="select * from produtos where produtoId=$id";
+$result=mysqli_query($con,$sql);
+$dadosProduto=mysqli_fetch_array($result);
 
 top();
 ?>
@@ -8,13 +11,22 @@ top();
 
     <div class="container">
         <h1>Detalhes</h1>
+        <div style="text-align: center">
+        <img src="../<?php echo $dadosProduto['produtoImagemURL']?>" width="220">
+        <p class="text-dark bg-white" style="font-weight: bold"><?php echo $dadosProduto['produtoNome']?></p>
+        </div>
         <form action="confirmaNovoProdutoChave.php" method="post" enctype="multipart/form-data">
-            <input type="hidden" value="<?php echo $id?>" name="produtoChaveProduto">
+            <input id="idProduto" type="hidden" value="<?php echo $id?>" name="produtoChaveProduto">
             <label>Categoria Chaves</label>
             <select name="catChaveProduto" id="chaveCategoria">
                 <option value="-1">Escolha a categoria chave...</option>
                 <?php
-                $sql="select * from categoriachaves order by categoriaChaveNome";
+                $sql="select * from categoriachaves 
+                            where categoriaChaveTipo='geral'
+                            or categoriaChaveId in(
+                            select categoriaChaveId
+                            from categoriachaves inner join categorias on categoriaId =categoriaChaveCategoriaId inner join produtos on categoriaId= produtoCategoriaId
+	                        where produtoId=".$id.") order by categoriaChaveNome";
                 $result=mysqli_query($con,$sql);
                 while ($dados=mysqli_fetch_array($result)){
                     ?>

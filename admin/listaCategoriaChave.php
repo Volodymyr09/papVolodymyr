@@ -1,8 +1,9 @@
 <?php
 include_once("includes/body.inc.php");
 
-$sql="Select * from categoriachaves inner join categorias on categoriaChaveCategoriaId=categoriaId";
+$sql="Select * from categoriachaves left join categorias on categoriaChaveCategoriaId=categoriaId";
 $result=mysqli_query($con,$sql);
+
 
 top();
 ?>
@@ -30,7 +31,12 @@ top();
                 <tr>
                     <td><?php echo $dados['categoriaChaveId']?></td>
                     <td><?php echo $dados['categoriaChaveNome']?></td>
-                    <td><?php echo $dados['categoriaNome']?></td>
+                    <td><?php
+                        if(is_null($dados['categoriaNome']))
+                            echo $dados['categoriaChaveTipo'];
+                        else
+                            echo $dados['categoriaNome'];
+                        ?></td>
 
                     <td><a class='btn btn-warning btn-xs' href="editaCategoriaChave.php?id=<?php echo $dados['categoriaChaveId']?>"><i class='fa fa-pencil'></i>Editar</a></td>
                     <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaEliminaCatChave(<?php echo $dados['categoriaChaveId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>
