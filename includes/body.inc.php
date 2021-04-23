@@ -57,7 +57,7 @@ function top()
                 }else{
                     ?>
                      <a href="utilizador.php" class="icon alt fa-user" ><span class="label"></span></a>
-
+                     <a href="carrinho.php" class="icon alt fa-shopping-cart"><span class="label"></span></a>
                      <a href="logout.php" >Logout</a>
             <?php
                 }
