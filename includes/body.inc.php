@@ -51,9 +51,7 @@ function top()
             ?>
 
             <a href="carrinho.php" class="icon alt fa-shopping-cart"><span class="label"></span></a>
-            <!-- <a href="#" class="icon alt fa-user-circle" data-toggle="modal" data-target="#login"><span class="label"></span></a> -->
-
-            <a href="login.php" class="icon alt fa-user-circle" ><span class="label"></span></a>
+            <a href="registar.php" class="icon alt fa-user-circle" ><span class="label"></span></a>
 
             <?php
                 }else{

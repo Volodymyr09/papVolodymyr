@@ -19,7 +19,7 @@ top();
                 <tr>
 
                     <th width="5%">Id</th>
-                    <th width="25%">Data</th>
+                    <th width="25%">Data de Realização</th>
                     <th width="20%">Preço</th>
                     <th width="20%" >Quant.</th>
                     <th width="30%">Estado</th>
