@@ -23,7 +23,7 @@ top();
     <div class="container">
         <div class="modal-body">
                 <div class="form-group">
-                    <label for="InputName">Nome:</label>
+                    <label for="InputName">Nome de Utilizador:</label>
                     <input type="name" class="form-control" name="nome">
                 </div>
                 <div class="form-group">
