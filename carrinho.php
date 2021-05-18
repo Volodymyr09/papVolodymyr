@@ -40,12 +40,19 @@ $result=mysqli_query($con,$sql);
                 <td><?php echo $dados['produtoNome']?></td>
                 <td><img src="<?php echo $dados['produtoImagemURL']?>" width="120"></td>
                 <td><?php echo $dados['produtoPreco']?></td>
-                <td><span class="btn-sm btn-light"> - </span> <span class="text-center pl-1 pr-1">1</span> <span  class="btn-sm btn-light">+</span></td>
+                <td><p style="color: #000000!important;"><input type="number" value="1" min="1" style="width: 50px; text-align: center"></p></td>
                 <!--<td><a href="#" onclick="confirmaEliminaCarrinho(<?php echo $dados['produtoId']?>);"><img src="images/trash_tb.png" width="18"></a></td> -->
             </tr>
             <?php
             }
             ?>
+            <tr>
+                <th width="3%"></th>
+                <th width="50%"></th>
+                <th width="22%"></th>
+                <th width="20%">Preço Total: 300</th>
+                <th width="5%">&nbsp;</th>
+            </tr>
         </table>
 
     </section>

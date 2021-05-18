@@ -7,7 +7,7 @@ function adicionaCarrinho(id){
             idPrd:id
         },
         success:function(result){
-            alert(result);
+
         }
     });
 }
