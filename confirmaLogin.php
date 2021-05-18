@@ -7,7 +7,7 @@ $result=mysqli_query($con,$sql);
 $nome=addslashes($_POST['nome']);
 $password=addslashes($_POST['password']);
 
-if ($nome === 'admin' AND $password ==='09.05.2003'){
+if ($nome === 'admin' AND $password ==='12345'){
     header("location:admin/index.php");
 }else{
     while ($dados=mysqli_fetch_array($result)){

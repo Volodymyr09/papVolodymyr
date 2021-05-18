@@ -2,6 +2,8 @@
 include_once("config.inc.php");
     $con=mysqli_connect(HOST,USER,PWD,DATABASE);
     $con->set_charset("utf8");
+
+    session_start();
 function top()
 {
     ?>
@@ -27,7 +29,17 @@ function top()
 
         <!-- Header -->
         <header id="header" class="alt">
+            <?php
+                if(!isset($_SESSION['id'])){
+            ?>
 
+            <?php
+                }else{
+                    ?>
+                     <a href="logout.php">Logout</a>
+            <?php
+                }
+             ?>
             <nav>
                 <a  href="#menu">Menu</a>
             </nav>
