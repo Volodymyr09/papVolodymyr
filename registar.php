@@ -44,51 +44,13 @@ top();
                 </div>
         </div>
         <div class="modal-footer">
-            <input type="submit" class="form-control" value="Registar">
-            <input type="submit" class="form-control" onclick="location.href='login.php';" value="Login">
+            <input type="submit" class="w-25" value="Registar">
+            <a href="login.php"><button type="button" class="primary">Login</button></a>
         </div>
     </div>
 
 </form>
 </div>
-<!--
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-6 col-sm-12">
-                    <form id="contact-form" role="form" action="criarconta.php" method="post">
-                        <div class="section-title">
-                            <h2>Junte-se a nós<small>Faça parte da grande comunidade do voluntariado!</small></h2>
-                        </div>
-
-                        <div class="col-md-12 col-sm-12">
-                            <input type="email" class="form-control" placeholder="Escreva o seu email" name="email" required>
-
-                            <input type="text" class="form-control" placeholder="Escreva o seu nome de utilizador" name="nome" required>
-
-                            <input type="password" class="form-control" placeholder="Escreva a sua palavra-passe" name="password" required>
-
-                            <input type="text" class="form-control" placeholder="Escreva o seu numero de telemovel" name="telefone" required>
-                        </div>
-
-                        <div class="col-md-12 col-sm-12">
-                            <input type="submit" class="form-control" value="Criar a conta">
-                            <input type="submit" class="form-control" onclick="location.href='login.php';" value="Já tem conta? Entra!">
-                        </div>
-
-                    </form>
-                </div>
-
-                <div class="col-md-6 col-sm-12">
-                    <div class="contact-image">
-                        <img src="images/lock.png" style="height: 404px; width: 404px" class="img-responsive" alt="Smiling Two Girls">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
 <?php
 Bottom();
