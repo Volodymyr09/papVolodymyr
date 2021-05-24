@@ -29,20 +29,17 @@ function top()
 
         <!-- Header -->
         <header id="header" class="alt">
-            <?php
-                if(!isset($_SESSION['id'])){
-            ?>
+        <nav>
 
-            <?php
-                }else{
-                    ?>
-                     <a href="logout.php">Logout</a>
+                <a  href="#menu">Menu</a>
+                </nav>
+                <?php
+                if(isset($_SESSION['id'])){
+            ?>
+            <a href="../logout.php" style="float:right;">Logout</a>
             <?php
                 }
-             ?>
-            <nav>
-                <a  href="#menu">Menu</a>
-            </nav>
+                ?>
 
 
         </header>

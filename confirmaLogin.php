@@ -7,25 +7,28 @@ $result=mysqli_query($con,$sql);
 $nome=addslashes($_POST['nome']);
 $password=addslashes($_POST['password']);
 
-if ($nome === 'admin' AND $password ==='12345'){
-    header("location:admin/index.php");
-}else{
+
+
     while ($dados=mysqli_fetch_array($result)){
         if ($nome === $dados['userName'] AND $password === $dados['userPassword'] AND $dados['userState'] == 'ativo') {
             session_start();
             $_SESSION['id'] = $dados['userId'];
             $_SESSION['nome'] = $dados['userName'];
             header("location:index.php");
-        }else if($nome === $dados['userName'] AND $password === $dados['userPassword'] AND $dados['userState'] == 'inativo'){{
+        }else if($nome === $dados['userName'] AND $password === $dados['userPassword'] AND $dados['userState'] == 'inativo'){
             $verificacao='sim';
             header("location:login.php?message");
+        }elseif ($nome === 'admin' AND $password ==='12345'){
+            session_start();
+            $_SESSION['id'] = $dados['userId'];
+            $_SESSION['nome'] = $dados['userName'];
+            header("location:admin/index.php");
         }
-        }
-        else if(!isset($_SESSION['id']) AND !isset($verificacao)){{
+        elseif(!isset($_SESSION['id']) AND !isset($verificacao)){
             header("location:login.php?msg");
         }
-        }
-    }}
+
+    }
 
 ?>
 
