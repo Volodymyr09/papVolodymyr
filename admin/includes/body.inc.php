@@ -62,18 +62,11 @@ function top()
                 <li class="active"> <a href="listaCategoriaChave.php">Categoria Chaves</a> </li>
 
                 <li class="active"> <a href="listaNoticia.php">Noticias</a> </li>
+
+                <li class="active"> <a href="configurador.php">Configurador</a> </li>
+
             </ul>
-
-            <li class="drop-down"><a href="">EMPRESA</a>
-                <ul>
-                   <li><a href="sobre.html">Sobre nós</a></li>
-                   <li><a href="mais.html">Galeria</a></li>
-                   <li><a href="produtos.html">Produtos e Serviços</a></li>
-                   <li><a href="instalacoes.html">Parque de máquinas e Instalações</a></li>
-                </ul>
-            </li>
-
-        </nav>
+       </nav>
 
 
     <?php
