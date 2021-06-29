@@ -3,7 +3,7 @@ include_once("config.inc.php");
     $con=mysqli_connect(HOST,USER,PWD,DATABASE);
     $con->set_charset("utf8");
 
-    session_start();
+
 function top()
 {
     ?>
@@ -30,18 +30,8 @@ function top()
         <!-- Header -->
         <header id="header" class="alt">
         <nav>
-
-                <a  href="#menu">Menu</a>
-                </nav>
-                <?php
-                if(isset($_SESSION['id'])){
-            ?>
-            <a href="../logout.php" style="float:right;">Logout</a>
-            <?php
-                }
-                ?>
-
-
+             <a  href="#menu">Menu</a>
+        </nav>
         </header>
 
 
@@ -64,6 +54,8 @@ function top()
                 <li class="active"> <a href="listaNoticia.php">Noticias</a> </li>
 
                 <li class="active"> <a href="configurador.php">Configurador</a> </li>
+
+                <li class="active"> <a href="listaEstadoCompras.php">Estado das Encomendas</a> </li>
 
             </ul>
        </nav>

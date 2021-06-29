@@ -18,11 +18,7 @@ $password=addslashes($_POST['password']);
         }else if($nome === $dados['userName'] AND $password === $dados['userPassword'] AND $dados['userState'] == 'inativo'){
             $verificacao='sim';
             header("location:login.php?message");
-        }elseif ($nome === 'admin' AND $password ==='12345'){
-            session_start();
-            $_SESSION['id'] = $dados['userId'];
-            $_SESSION['nome'] = $dados['userName'];
-            header("location:admin/index.php");
+
         }
         elseif(!isset($_SESSION['id']) AND !isset($verificacao)){
             header("location:login.php?msg");

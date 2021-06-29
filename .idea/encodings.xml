@@ -24,6 +24,7 @@
     <file url="file://$PROJECT_DIR$/admin/confirmaEditaCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaEditaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaEditaChave2.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/confirmaEditaEstadoCompra.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaEditaNoticia.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaEditaProduto.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaNovaCategoria.php" charset="UTF-8" />
@@ -35,6 +36,7 @@
     <file url="file://$PROJECT_DIR$/admin/editaCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/editaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/editaChave2.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/editaEstadoCompra.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/editaNoticia.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/editaProduto.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/eliminaCategoria.php" charset="UTF-8" />
