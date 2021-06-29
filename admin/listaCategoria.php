@@ -12,6 +12,19 @@ top();
 <div class="container">
     <h1>Categorias</h1>
 
+    <div class="table-responsive" align="center">
+        <div class="row mb-2" style="width: 50%" >
+
+            <div class="col-11"><input id="search" class="form-control" >
+
+            </div>
+
+        </div>
+        <div id="tableContent">
+
+        </div>
+    </div>
+
     <table class='table table-striped' width="100%">
         <tr>
             <td colspan="5" align='right'>
