@@ -11,7 +11,7 @@
  Target Server Version : 50731
  File Encoding         : 65001
 
- Date: 28/06/2021 16:24:02
+ Date: 30/06/2021 09:46:41
 */
 
 SET NAMES utf8mb4;
@@ -81,6 +81,36 @@ CREATE TABLE `chaves`  (
 INSERT INTO `chaves` VALUES (26, 'Nucleos', 18);
 INSERT INTO `chaves` VALUES (27, 'Cor', 17);
 INSERT INTO `chaves` VALUES (28, 'Altura', 17);
+
+-- ----------------------------
+-- Table structure for encomendadetalhes
+-- ----------------------------
+DROP TABLE IF EXISTS `encomendadetalhes`;
+CREATE TABLE `encomendadetalhes`  (
+  `encomendaDetalhesId` int(11) NOT NULL AUTO_INCREMENT,
+  `encomenda` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`encomendaDetalhesId`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of encomendadetalhes
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for encomendas
+-- ----------------------------
+DROP TABLE IF EXISTS `encomendas`;
+CREATE TABLE `encomendas`  (
+  `encomendaId` int(11) NOT NULL AUTO_INCREMENT,
+  `encomendaCliente` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `encomendaData` date NOT NULL,
+  `encomendaEstado` enum('preparaçao','caminho','entregue') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  PRIMARY KEY (`encomendaId`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of encomendas
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for noticias
