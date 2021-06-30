@@ -20,7 +20,6 @@ function top()
 
         <link rel="icon" href="images/log.jpg">
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
         <style>
         .cardNoticias {
 
@@ -28,7 +27,6 @@ function top()
              border-radius: .25rem;
         }
         </style>
-
 
     </head>
     <body class="is-preload">
@@ -163,7 +161,8 @@ function top()
 
     <?php
 }
-
+?>
+<?php
     function Bottom(){
     ?>
         <!-- Footer -->

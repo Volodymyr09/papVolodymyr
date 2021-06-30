@@ -18,6 +18,7 @@ function top()
 
         <link rel="icon" href="../images/log.jpg">
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <script src="js/commonAdmin.js"></script>
 
     </head>
     <body class="is-preload">
@@ -63,8 +64,9 @@ function top()
 
     <?php
 }
-
-    function Bottom(){
+?>
+<?php
+    function Bottom($menu = HOME){
     ?>
         <!-- Footer -->
         <footer id="footer">
@@ -86,6 +88,21 @@ function top()
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="js/commonAdmin.js"></script>
+                <script>
+
+    $('document').ready(function (){
+        <?php
+        if ($menu == CATEGORIAS){
+        ?>
+        $('#search').keyup(function (){
+            fillTableCategorias(this.value);
+        });
+        fillTableCategorias();
+        <?php
+        }
+        ?>
+    })
+    </script>
         </body>
     </HTML>
 

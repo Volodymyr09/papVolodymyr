@@ -1,5 +1,5 @@
 function adicionaCarrinho(id){
-    alert(id);
+    alert("O produto esta adicionado ao carrinho!");
     $.ajax({
         url:"admin/AJAX/AJAXNovoProdutoCarrinho.php",
         type:"post",
