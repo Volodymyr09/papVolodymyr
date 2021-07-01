@@ -102,6 +102,59 @@ function top()
         }
         ?>
     })
+
+    $('document').ready(function (){
+        <?php
+        if ($menu == PRODUTOS){
+        ?>
+        $('#search').keyup(function (){
+            fillTableProdutos(this.value);
+        });
+        fillTableProdutos();
+        <?php
+        }
+        ?>
+    })
+
+    $('document').ready(function (){
+        <?php
+        if ($menu == CHAVES){
+        ?>
+        $('#search').keyup(function (){
+            fillTableChaves(this.value);
+        });
+        fillTableChaves();
+        <?php
+        }
+        ?>
+    })
+
+    $('document').ready(function (){
+        <?php
+        if ($menu == CATCHAVES){
+        ?>
+        $('#search').keyup(function (){
+            fillTableCatChaves(this.value);
+        });
+        fillTableCatChaves();
+        <?php
+        }
+        ?>
+    })
+
+    $('document').ready(function (){
+        <?php
+        if ($menu == NOTICIAS){
+        ?>
+        $('#search').keyup(function (){
+            fillTableNoticias(this.value);
+        });
+        fillTableNoticias();
+        <?php
+        }
+        ?>
+    })
+
     </script>
         </body>
     </HTML>

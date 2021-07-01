@@ -156,3 +156,62 @@ function fillTableCategorias(txt=''){
 
 };
 
+function fillTableProdutos(txt=''){
+    $.ajax({
+        url:"AJAX/AJAXFillProdutos.php",
+        type:"post",
+        data:{
+            txt:txt
+        },
+        success:function (result){
+            $('#tableContent').html(result);
+        }
+    });
+
+
+};
+
+function fillTableChaves(txt=''){
+    $.ajax({
+        url:"AJAX/AJAXFillChaves.php",
+        type:"post",
+        data:{
+            txt:txt
+        },
+        success:function (result){
+            $('#tableContent').html(result);
+        }
+    });
+
+
+};
+
+function fillTableCatChaves(txt=''){
+    $.ajax({
+        url:"AJAX/AJAXFillCatChaves.php",
+        type:"post",
+        data:{
+            txt:txt
+        },
+        success:function (result){
+            $('#tableContent').html(result);
+        }
+    });
+
+
+};
+
+function fillTableNoticias(txt=''){
+    $.ajax({
+        url:"AJAX/AJAXFillNoticias.php",
+        type:"post",
+        data:{
+            txt:txt
+        },
+        success:function (result){
+            $('#tableContent').html(result);
+        }
+    });
+
+
+};
