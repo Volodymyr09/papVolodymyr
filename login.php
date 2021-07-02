@@ -1,29 +1,14 @@
 <?php
 include_once("includes/body.inc.php");
 
-if(isset($_GET['msg'])) {
+if(isset($_GET['erro'])) {
 
 
     alert("Nome de utilizador ou palavra-passe errada, tente de novo.");
 }
-if(isset($_GET['message'])) {
 
-
-    alertinativo("Esta conta foi desativada.");
-}
-if(isset($_GET['conetar'])) {
-
-
-    alertcon("Precisa entrar na sua conta antes de requesitar um serviço.");
-}
 function alert($msg) {
     echo "<script type='text/javascript'>alert('$msg');</script>";
-}
-function alertinativo($message) {
-    echo "<script type='text/javascript'>alert('$message');</script>";
-}
-function alertcon($conetar) {
-    echo "<script type='text/javascript'>alert('$conetar');</script>";
 }
 
 top();

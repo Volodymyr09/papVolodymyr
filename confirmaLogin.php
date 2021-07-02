@@ -1,31 +1,33 @@
 <?php
 include_once ("includes/config.inc.php");
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
-$sql="select * from users inner join perfis on userId = perfilUserId";
-$result=mysqli_query($con,$sql);
-
 $nome=addslashes($_POST['nome']);
-$password=addslashes($_POST['password']);
+$password=md5(addslashes($_POST['password']));
+$sql="select userId from users where userState='ativo' and userName ='$nome'";
+$result=mysqli_query($con,$sql);
+$dados=mysqli_fetch_array($result);
+if(!isset($dados['userId'])){ // não existe o login
+    header("location:login.php?erro");
+}
+else{
+    $sql="select userId, userPassword, userName from users where userId =".$dados['userId'];
+    $result=mysqli_query($con,$sql);
+    $dados=mysqli_fetch_array($result);
+    $sistemaLogin=$dados['userName'];
+    $sistemaPass=$dados['userPassword'];
 
-
-
-    while ($dados=mysqli_fetch_array($result)){
-        if ($nome === $dados['userName'] AND $password === $dados['userPassword'] AND $dados['userState'] == 'ativo') {
-            session_start();
-            $_SESSION['id'] = $dados['userId'];
-            $_SESSION['nome'] = $dados['userName'];
-            header("location:index.php");
-        }else if($nome === $dados['userName'] AND $password === $dados['userPassword'] AND $dados['userState'] == 'inativo'){
-            $verificacao='sim';
-            header("location:login.php?message");
-
-        }
-        elseif(!isset($_SESSION['id']) AND !isset($verificacao)){
-            header("location:login.php?msg");
-        }
-
+    if($dados['userPassword']==$sistemaPass && $dados['userName']==$sistemaLogin){
+        session_start();
+        $_SESSION['id'] = $dados['userId'];
+        $_SESSION['nome'] = $dados['userName'];
+         header("location:index.php");
+    }
+    else{
+        header("location:login.php?erro");
     }
 
+
+}
 ?>
 
 
