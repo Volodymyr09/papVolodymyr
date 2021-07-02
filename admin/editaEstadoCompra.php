@@ -32,14 +32,6 @@ top();
             >&nbsp;Entregue</p>
     </div>
     <br>
-    <!--
-    <p><input type="radio" name="destaqueNoticia" value="sim"
-            <?php if( $dadosProduto['noticiaDestaque'] == 'sim') echo " checked ";?>
-        >&nbsp;Sim</p>
-    <p><input type="radio" name="destaqueNoticia" value="nao"
-            <?php if( $dadosProduto['noticiaDestaque'] == 'nao') echo " checked ";?>
-        >&nbsp;Não</p>
-        -->
     <br>
     <input type="Submit" value="Edita"><br>
 </form>

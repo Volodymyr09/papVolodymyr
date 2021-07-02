@@ -17,6 +17,7 @@ $result=mysqli_query($con,$sql);
         <th>Id</th>
         <th>Nome</th>
         <th>Categoria</th>
+        <th>Tipo</th>
         <th colspan="2">opções</th>
     </tr>
     <?php
@@ -31,8 +32,9 @@ $result=mysqli_query($con,$sql);
                     echo $dados['categoriaChaveTipo'];
                 else
                     echo $dados['categoriaNome'];
-                ?></td>
-
+                ?>
+            </td>
+            <td><?php echo $dados['categoriaChaveTipo']?></td>
             <td><a class='btn btn-warning btn-xs' href="editaCategoriaChave.php?id=<?php echo $dados['categoriaChaveId']?>"><i class='fa fa-pencil'></i>Editar</a></td>
             <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaEliminaCatChave(<?php echo $dados['categoriaChaveId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>
 

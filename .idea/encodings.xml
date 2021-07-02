@@ -40,6 +40,7 @@
     <file url="file://$PROJECT_DIR$/admin/confirmaNovoProduto.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaNovoProdutoChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/editaCategoria.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/editaCategoriaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/editaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/editaChave2.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/editaEstadoCompra.php" charset="UTF-8" />

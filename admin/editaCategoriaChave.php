@@ -14,7 +14,7 @@ top();
         <label>Nome: </label>
         <input type="text" name="nomeCategoriaChave" value="<?php echo $dadoscategoriaChaves['categoriaChaveNome']?>">
         <br>
-        <label>Categoria</label>
+        <label>Categoria:</label>
         <select name="categoriaCategoria">
             <option value="-1">Escolha a categoria...</option>
             <?php

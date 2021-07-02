@@ -39,7 +39,6 @@ top();
             </div>
             <div class="modal-footer">
                 <input type="submit" class="w-25" value="Entrar">
-                <a href="registar.php"><button type="button" class="primary">Registar</button></a>
             </div>
         </div>
 
