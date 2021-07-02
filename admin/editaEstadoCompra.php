@@ -3,32 +3,32 @@ include_once ("includes/body.inc.php");
 
 $id=intval($_GET['id']);
 
-$sql="select * from produtos where produtoId=$id";
-$resultProduto=mysqli_query($con,$sql);
-$dadosProduto=mysqli_fetch_array($resultProduto);
+$sql="select * from encomendas inner join produtos on produtoId=encomendaDetalheProdutoId where encomendaDetalheEncomendaId";
+$result=mysqli_query($con,$sql);
+$dados=mysqli_fetch_array($result);
 top();
 ?>
 <div class="container">
 <h1>Editar Estado</h1>
     <div style="text-align: center">
-        <img src="../<?php echo $dadosProduto['produtoImagemURL']?>" width="220">
-        <p class="text-dark bg-white" style="font-weight: bold"><?php echo $dadosProduto['produtoNome']?></p>
+        <img src="../<?php echo $dados['produtoImagemURL']?>" width="220">
+        <p class="text-dark bg-white" style="font-weight: bold"><?php echo $dados['produtoNome']?></p>
     </div>
-<form action="confirmaEditaNoticia.php" method="post" enctype="multipart/form-data" class="align-center">
+<form action="confirmaEditaEstadoCompra.php" method="post" enctype="multipart/form-data" class="align-center">
 
     <div class="form-check form-check-inline" >
         <p><input type="radio" name="EstadoCompra" value="preparçao"
-               <?php if( $dadosProduto['produtoDestaque'] == 'preparçao') echo " checked ";?>
+               <?php if( $dados['encomendaEstado'] == 'preparçao') echo " checked ";?>
             >&nbsp;Preparação</p>
     </div>
     <div class="form-check form-check-inline">
         <p><input type="radio" name="EstadoCompra" value="caminho"
-                <?php if( $dadosProduto['produtoDestaque'] == 'caminho') echo " checked ";?>
+                <?php if( $dados['encomendaEstado'] == 'caminho') echo " checked ";?>
             >&nbsp;A caminho</p>
     </div>
     <div class="form-check form-check-inline">
         <p><input type="radio" name="EstadoCompra" value="entregue"
-                <?php if( $dadosProduto['produtoDestaque'] == 'entregue') echo " checked ";?>
+                <?php if( $dados['encomendaEstado'] == 'entregue') echo " checked ";?>
             >&nbsp;Entregue</p>
     </div>
     <br>

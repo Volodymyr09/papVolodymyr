@@ -1,13 +1,13 @@
 <?php
 include_once ("includes/body.inc.php");
 
-$id=intval($_POST['produtoId']);
+$id=intval($_POST['encomendaId']);
 
-$estado=addslashes($_POST['destaqueProduto']);
+$estado=addslashes($_POST['encomendaEstado']);
 
-$sql="Update noticias set noticiaTitulo='".$nome."', noticiaLinkURL='".$link."', noticiaDestaque='".$destaque."'";
+$sql="Update encomendas set encomendaEstado='".$estado."'";
 
-$sql.=" where produtoId=".$id;
+$sql.=" where encomendaId=".$id;
 mysqli_query($con,$sql);
-header("location:listaEstadoNoticia.php");
+header("location:listaEstadoCompras.php");
 ?>
