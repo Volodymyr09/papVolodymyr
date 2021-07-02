@@ -11,7 +11,7 @@
  Target Server Version : 50731
  File Encoding         : 65001
 
- Date: 30/06/2021 09:46:41
+ Date: 02/07/2021 09:46:37
 */
 
 SET NAMES utf8mb4;
@@ -29,13 +29,14 @@ CREATE TABLE `categoriachaves`  (
   PRIMARY KEY (`categoriaChaveId`) USING BTREE,
   INDEX `fk_categoriachaves_categorias1_idx`(`categoriaChaveCategoriaId`) USING BTREE,
   CONSTRAINT `fk_categoriachaves_categorias1` FOREIGN KEY (`categoriaChaveCategoriaId`) REFERENCES `categorias` (`categoriaId`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 19 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 20 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of categoriachaves
 -- ----------------------------
 INSERT INTO `categoriachaves` VALUES (17, 'Caracteriscas fisicas', NULL, 'geral');
 INSERT INTO `categoriachaves` VALUES (18, 'Processador', 5, 'especifico');
+INSERT INTO `categoriachaves` VALUES (19, 'Ola', 6, 'especifico');
 
 -- ----------------------------
 -- Table structure for categorias
@@ -49,7 +50,7 @@ CREATE TABLE `categorias`  (
   PRIMARY KEY (`categoriaId`) USING BTREE,
   INDEX `fk_categorias_categorias_idx`(`categoriaCategoriaId`) USING BTREE,
   CONSTRAINT `fk_categorias_categorias` FOREIGN KEY (`categoriaCategoriaId`) REFERENCES `categorias` (`categoriaId`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of categorias
@@ -73,7 +74,7 @@ CREATE TABLE `chaves`  (
   PRIMARY KEY (`chaveId`) USING BTREE,
   INDEX `fk_chaves_categoriachaves1_idx`(`chaveCategoriaChaveId`) USING BTREE,
   CONSTRAINT `fk_chaves_categoriachaves1` FOREIGN KEY (`chaveCategoriaChaveId`) REFERENCES `categoriachaves` (`categoriaChaveId`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 29 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 30 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of chaves
@@ -88,8 +89,13 @@ INSERT INTO `chaves` VALUES (28, 'Altura', 17);
 DROP TABLE IF EXISTS `encomendadetalhes`;
 CREATE TABLE `encomendadetalhes`  (
   `encomendaDetalhesId` int(11) NOT NULL AUTO_INCREMENT,
-  `encomenda` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  PRIMARY KEY (`encomendaDetalhesId`) USING BTREE
+  `encomendas_encomendaId` int(11) NOT NULL,
+  `produtos_produtoId` int(11) NOT NULL,
+  PRIMARY KEY (`encomendaDetalhesId`) USING BTREE,
+  INDEX `fk_encomendadetalhes_encomendas1_idx`(`encomendas_encomendaId`) USING BTREE,
+  INDEX `fk_encomendadetalhes_produtos1_idx`(`produtos_produtoId`) USING BTREE,
+  CONSTRAINT `fk_encomendadetalhes_encomendas1` FOREIGN KEY (`encomendas_encomendaId`) REFERENCES `encomendas` (`encomendaId`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_encomendadetalhes_produtos1` FOREIGN KEY (`produtos_produtoId`) REFERENCES `produtos` (`produtoId`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
@@ -102,10 +108,12 @@ CREATE TABLE `encomendadetalhes`  (
 DROP TABLE IF EXISTS `encomendas`;
 CREATE TABLE `encomendas`  (
   `encomendaId` int(11) NOT NULL AUTO_INCREMENT,
-  `encomendaCliente` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `encomendaData` date NOT NULL,
   `encomendaEstado` enum('preparaçao','caminho','entregue') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  PRIMARY KEY (`encomendaId`) USING BTREE
+  `users_userId` int(11) NOT NULL,
+  PRIMARY KEY (`encomendaId`) USING BTREE,
+  INDEX `fk_encomendas_users1_idx`(`users_userId`) USING BTREE,
+  CONSTRAINT `fk_encomendas_users1` FOREIGN KEY (`users_userId`) REFERENCES `users` (`userId`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
@@ -123,14 +131,14 @@ CREATE TABLE `noticias`  (
   `noticiaImagemURL` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `noticiaDestaque` enum('sim','nao') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'nao',
   PRIMARY KEY (`noticiaId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of noticias
 -- ----------------------------
 INSERT INTO `noticias` VALUES (1, 'Xiaomi: veja quais celulares receberão o Android 11 com MIUI 12', 'https://www.tecmundo.com.br/software/214456-xiaomi-veja-celulares-receberao-android-11-miui-12.htm', 'images/xiaomiNoticia.gif', 'sim');
 INSERT INTO `noticias` VALUES (2, '512 GB de RAM em um módulo: Samsung apresenta nova memória DDR5', 'https://www.tecmundo.com.br/produto/214428-512-gb-ram-modulo-samsung-apresenta-nova-memoria-ddr5.htm', 'images/SamNoticia.gif', 'sim');
-INSERT INTO `noticias` VALUES (3, 'Benfica foi roubado', 'http://localhost/PapVolodymyr/index.php', 'images/motocompany.png', 'sim');
+INSERT INTO `noticias` VALUES (3, 'Benfica foi roubado', 'https://www.youtube.com/watch?v=xzNI_SMGzy0', 'images/motocompany.png', 'sim');
 INSERT INTO `noticias` VALUES (4, 'Sporting é campeao ', 'https://support.mozilla.org/pt-PT/', 'images/blog-2-370x270.jpg', 'sim');
 
 -- ----------------------------
@@ -148,12 +156,13 @@ CREATE TABLE `perfis`  (
   UNIQUE INDEX `users_userId_UNIQUE`(`perfilUserId`) USING BTREE,
   INDEX `fk_perfis_users1_idx`(`perfilUserId`) USING BTREE,
   CONSTRAINT `fk_perfis_users1` FOREIGN KEY (`perfilUserId`) REFERENCES `users` (`userId`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of perfis
 -- ----------------------------
 INSERT INTO `perfis` VALUES (3, 'Miguel', 'rua.pipefeio', '935322622', 'miguel@gmail.com', 12);
+INSERT INTO `perfis` VALUES (4, 'Pipe', 'av.Vitor Galo', '935442771', 'pipe@gmail.com', 13);
 
 -- ----------------------------
 -- Table structure for produtochaves
@@ -193,7 +202,7 @@ CREATE TABLE `produtos`  (
   PRIMARY KEY (`produtoId`) USING BTREE,
   INDEX `fk_produtos_categorias1_idx`(`produtoCategoriaId`) USING BTREE,
   CONSTRAINT `fk_produtos_categorias1` FOREIGN KEY (`produtoCategoriaId`) REFERENCES `categorias` (`categoriaId`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of produtos
@@ -213,11 +222,12 @@ CREATE TABLE `users`  (
   `userPassword` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `userState` enum('registo','ativo','inativo') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`userId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 14 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of users
 -- ----------------------------
 INSERT INTO `users` VALUES (12, 'Miguel', '777665', 'ativo');
+INSERT INTO `users` VALUES (13, 'Pipe', '12345', 'ativo');
 
 SET FOREIGN_KEY_CHECKS = 1;
