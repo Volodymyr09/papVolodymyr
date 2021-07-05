@@ -25,7 +25,7 @@ $result=mysqli_query($con,$sql);
         <table class='table table-striped table-hover' width="70%">
             <tr>
                 <th width="3%">Id</th>
-                <th width="50%">Nome</th>
+                <th width="40%">Nome</th>
                 <th width="22%">Imagem</th>
                 <th width="7%">Preço</th>
                 <th >Quant.</th>
@@ -40,18 +40,19 @@ $result=mysqli_query($con,$sql);
                 <td><?php echo $dados['produtoNome']?></td>
                 <td><img src="<?php echo $dados['produtoImagemURL']?>" width="120"></td>
                 <td><?php echo $dados['produtoPreco']?></td>
-                <td><p style="color: #000000!important;"><input type="number" value="1" min="1" style=" width: 50px; text-align: center"></p></td>
-                <!--<td><a href="#" onclick="confirmaEliminaCarrinho(<?php echo $dados['produtoId']?>);"><img src="images/trash_tb.png" width="18"></a></td> -->
+                <td><p><input type="number" value="1" min="1" style=" width: 50px; text-align: center ;color: #000000!important;"></p></td>
+                <td><a href="#" onclick="confirmaEliminaCarrinho(<?php echo $dados['produtoId']?>);"><img src="images/trash_tb.png" width="20"></a></td>
             </tr>
             <?php
             }
             ?>
             <tr>
                 <th width="3%"></th>
-                <th width="50%"></th>
+                <th width="40%"></th>
                 <th width="22%"></th>
                 <th width="20%">Preço Total: 300</th>
-                <th width="5%">&nbsp;</th>
+                <th width="5%"></th>
+                <th width="5%"></th>
             </tr>
         </table>
 
