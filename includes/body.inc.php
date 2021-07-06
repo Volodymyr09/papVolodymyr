@@ -48,7 +48,6 @@ function top()
                 if(!isset($_SESSION['id'])){
             ?>
 
-            <a href="carrinho.php" class="icon alt fa-shopping-cart"><span class="label"></span></a>
             <a href="registar.php" class="icon alt fa-user-circle" ><span class="label"></span></a>
 
             <?php
