@@ -73,8 +73,6 @@ function top()
 
                 <li> <a href="categorias.php">Categorias</a> </li>
 
-                <li> <a href="carrinho.php">Carrinho de Compras</a> </li>
-
                 <li><a href="contact.php">Contactos</a></li>
 
                 <li><a href="configurador.php">Configurador</a></li>
