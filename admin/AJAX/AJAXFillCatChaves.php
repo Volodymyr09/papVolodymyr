@@ -35,8 +35,8 @@ $result=mysqli_query($con,$sql);
                 ?>
             </td>
             <td><?php echo $dados['categoriaChaveTipo']?></td>
-            <td><a class='btn btn-warning btn-xs' href="editaCategoriaChave.php?id=<?php echo $dados['categoriaChaveId']?>"><i class='fa fa-pencil'></i>Editar</a></td>
-            <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaEliminaCatChave(<?php echo $dados['categoriaChaveId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>
+            <td><a title="Editar" class='btn btn-warning btn-xs' href="editaCategoriaChave.php?id=<?php echo $dados['categoriaChaveId']?>"><i class='fa fa-pencil'></i></a></td>
+            <td><a title="Eliminar" class='btn btn-danger btn-xs' href="#" onclick="confirmaEliminaCatChave(<?php echo $dados['categoriaChaveId']?>);"> <i class='fa fa-trash'></i></a></td>
 
         </tr>
         <?php

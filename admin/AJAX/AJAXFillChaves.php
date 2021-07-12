@@ -28,8 +28,8 @@ $result=mysqli_query($con,$sql);
             <td><?php echo $dados['chaveNome']?></td>
             <td><?php echo $dados['categoriaChaveNome']?></td>
 
-            <td><a class='btn btn-warning btn-xs' href="editaChave.php?id=<?php echo $dados['chaveId']?>"><i class='fa fa-pencil'></i>Editar</a></td>
-            <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaEliminaChave(<?php echo $dados['chaveId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>
+            <td><a title="Editar" class='btn btn-warning btn-xs' href="editaChave.php?id=<?php echo $dados['chaveId']?>"><i class='fa fa-pencil'></i></a></td>
+            <td><a title="Eliminar" class='btn btn-danger btn-xs' href="#" onclick="confirmaEliminaChave(<?php echo $dados['chaveId']?>);"> <i class='fa fa-trash'></i></a></td>
 
         </tr>
         <?php

@@ -27,8 +27,8 @@ $result=mysqli_query($con,$sql);
             <td><?php echo $dados['noticiaTitulo']?></td>
             <td><img width='90' src=../<?php  echo $dados['noticiaImagemURL']?>></td>
 
-            <td><a class='btn btn-warning btn-xs' href="editaNoticia.php?id=<?php echo $dados['noticiaId']?>"><i class='fa fa-pencil'></i>Editar</a></td>
-            <td><a class='btn btn-danger btn-xs' href="#" onclick="confirmaEliminaNoticia(<?php echo $dados['noticiaId']?>);"> <i class='fa fa-trash'></i>Eliminar</a></td>
+            <td><a title="Editar" class='btn btn-warning btn-xs' href="editaNoticia.php?id=<?php echo $dados['noticiaId']?>"><i class='fa fa-pencil'></i></a></td>
+            <td><a title="Eliminar" class='btn btn-danger btn-xs' href="#" onclick="confirmaEliminaNoticia(<?php echo $dados['noticiaId']?>);"> <i class='fa fa-trash'></i></a></td>
 
         </tr>
         <?php
