@@ -100,11 +100,7 @@ function top()
         fillTableCategorias();
         <?php
         }
-        ?>
-    })
 
-    $('document').ready(function (){
-        <?php
         if ($menu == PRODUTOS){
         ?>
         $('#search').keyup(function (){
@@ -113,11 +109,7 @@ function top()
         fillTableProdutos();
         <?php
         }
-        ?>
-    })
 
-    $('document').ready(function (){
-        <?php
         if ($menu == CHAVES){
         ?>
         $('#search').keyup(function (){
@@ -126,11 +118,7 @@ function top()
         fillTableChaves();
         <?php
         }
-        ?>
-    })
 
-    $('document').ready(function (){
-        <?php
         if ($menu == CATCHAVES){
         ?>
         $('#search').keyup(function (){
@@ -139,11 +127,7 @@ function top()
         fillTableCatChaves();
         <?php
         }
-        ?>
-    })
 
-    $('document').ready(function (){
-        <?php
         if ($menu == NOTICIAS){
         ?>
         $('#search').keyup(function (){
@@ -152,8 +136,17 @@ function top()
         fillTableNoticias();
         <?php
         }
+
+        if ($menu == COMPATIVEIS){
         ?>
-    })
+        $('#categoria').on('change',function (){
+            fillTableCompativeis(this.value);
+        });
+        fillTableCompativeis(-1);
+        <?php
+        }
+        ?>
+    });
 
     </script>
         </body>

@@ -215,3 +215,17 @@ function fillTableNoticias(txt=''){
 
 
 };
+function fillTableCompativeis(id=-1){
+    $.ajax({
+        url:"AJAX/AJAXFillProdutosCompativeis.php",
+        type:"post",
+        data:{
+            idCat:id
+        },
+        success:function (result){
+            $('#tableContent').html(result);
+        }
+    });
+
+
+};
