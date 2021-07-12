@@ -9,7 +9,14 @@ top();
     <section id="one">
         <div class="inner">
             <header class="major">
-                <h1>Conta </h1>
+                <?php if(isset($_SESSION['id'])){ ?>
+
+                    <h1> Conta - <?php echo  $_SESSION['nome']?></h1>
+
+                <?php }else{ ?>
+
+                    <h1> Conta </h1>
+                <?php }?>
             </header>
 
 
@@ -36,10 +43,13 @@ top();
                         <td class="text-center"><?php echo $dados['encomendaData']?></td>
                         <td class="text-center"><?php echo $dados['encomendaValorFinal']?>&euro;</td>
                         <td class="text-center"><?php echo $dados['encomendaEstado']?></td>
-                        <td class="text-center"><button class="btn btn-sm">ver Detalhes </button></td>
+                        <td class="text-center"><button class="btn btn-sm" onclick="mostrarDetalhes()">ver Detalhes </button></td>
+
                     </tr>
+
                     <tr>
                         <td colspan="5">
+                            <div id="detalhes" style="display: none">
                             <table class="table table-striped table-hover" style="color: #000">
                                 <tr>
                                     <th width="50%" class="text-center">Produto</th>
@@ -64,6 +74,8 @@ top();
                                     }
                                 ?>
                             </table>
+                            </div>
+
                         </td>
                     </tr>
                 <?php
