@@ -1,5 +1,10 @@
 <?php
 include_once("includes/body.inc.php");
+
+$sql="select * from produtos ";
+$result=mysqli_query($con,$sql);
+$dados=mysqli_fetch_array($result);
+
 top();
 ?>
 
@@ -20,25 +25,20 @@ top();
 
 
                     <div class="field half">
-                        <label for="field-1">Processador</label>
+                        <label for="field-1">Placa Motherboard</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Processador Intel Socket 1150</option>
-                            <option value="">Processador AMD Socket AM3</option>
-                            <option value="">-- Choose --</option>
-
+                            <option value="-1">Escolha o processador ...</option>
+                            <option value=""><?php echo $dados['produtoNome']?></option>
                         </select>
                     </div>
 
                     <div class="field half">
-                        <label for="field-1">Placa Motherboard</label>
+                        <label for="field-1">Processador</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Placa Motherboard GIGABYTE H81m-Hd3 1150</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha o processador ...</option>
+                            <option value=""><?php echo $dados['produtoNome']?></option>
                         </select>
                     </div>
 
@@ -46,10 +46,8 @@ top();
                         <label for="field-1">Memória RAM</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Memória RAM DDR4 GSKILL Aegis (1 x 8 GB - 2133 MHz)</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha o processador ...</option>
+                            <option value=""><?php echo $dados['produtoNome']?></option>
                         </select>
                     </div>
 
@@ -57,10 +55,8 @@ top();
                         <label for="field-1">Cooler CPU</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Cooler CPU NOX Hummer H-212 120mm Universal</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha o processador ...</option>
+                            <option value=""><?php echo $dados['produtoNome']?></option>
                         </select>
                     </div>
 
@@ -68,10 +64,8 @@ top();
                         <label for="field-1">Disco</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Disco HDD Externo WESTERN DIGITAL Elements(1.5TB-USB3.0)</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha o processador ...</option>
+                            <option value=""><?php echo $dados['produtoNome']?></option>
                         </select>
                     </div>
 
@@ -79,10 +73,8 @@ top();
                         <label for="field-1">Caixa PC</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Caixa PC ATX KOLINK Inspire K1(ATX Mid Tower-Preto RGB)</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha o processador ...</option>
+                            <option value=""><?php echo $dados['produtoNome']?></option>
                         </select>
                     </div>
 
@@ -90,10 +82,8 @@ top();
                         <label for="field-1">Fonte de Alimentação</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Fonte de Alimentação KOLINK Core(ATX-500 W-80 Plus)</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha o processador ...</option>
+                            <option value=""><?php echo $dados['produtoNome']?></option>
                         </select>
                     </div>
 
@@ -101,10 +91,8 @@ top();
                         <label for="field-1">Placa Grafica</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Placa Gráfica ASUS GeForce GTX 1050Ti Phoenix(NVIDIA-4GB DDR5)</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha o processador ...</option>
+                            <option value=""><?php echo $dados['produtoNome']?></option>
                         </select>
                     </div>
 
@@ -112,10 +100,8 @@ top();
                         <label for="field-1">Placa de Som</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Placa de som ASUS Xonar U5</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha o processador ...</option>
+                            <option value=""><?php echo $dados['produtoNome']?></option>
                         </select>
                     </div>
 
@@ -123,10 +109,8 @@ top();
                         <label for="field-1">Placa de Rede</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Placa de rede PCI D-LINK DGE-528T Gigabit</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha o processador ...</option>
+                            <option value=""><?php echo $dados['produtoNome']?></option>
                         </select>
                     </div>
 
@@ -134,10 +118,8 @@ top();
                         <label for="field-1">Sistema Operativo</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Software MICROSOFT Win Home FPP 10(1Dispositivo-Vitalicio-PC)</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha o processador ...</option>
+                            <option value=""><?php echo $dados['produtoNome']?></option>
                         </select>
                     </div>
 
@@ -145,9 +127,8 @@ top();
                         <label for="field-1">Montagem do Computador</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Sim --</option>
-                            <option value="">-- Não --</option>
+                            <option value="-1">Escolha o processador ...</option>
+                            <option value=""><?php echo $dados['produtoNome']?></option>
                         </select>
                     </div>
 
