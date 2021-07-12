@@ -9,7 +9,7 @@ top();
     <section id="one">
         <div class="inner">
             <header class="major">
-                <h1>Conta - Volodymyr</h1>
+                <h1>Conta </h1>
             </header>
 
 
