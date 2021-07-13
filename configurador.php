@@ -15,12 +15,8 @@ top();
                 <h1>Configurador</h1>
             </header>
 
-
-
-
-
             <form method="post" action="#">
-                <div class="fields">
+                <div>
 
 
 
@@ -28,115 +24,111 @@ top();
                         <label for="field-1">Placa Motherboard</label>
 
                         <select>
-                            <option value="-1">Escolha o processador ...</option>
-                            <option value=""><?php echo $dados['produtoNome']?></option>
+                            <option value="-1">Escolha a motherboard ...</option>
+                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Processador</label>
 
                         <select>
                             <option value="-1">Escolha o processador ...</option>
-                            <option value=""><?php echo $dados['produtoNome']?></option>
+                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Memória RAM</label>
 
                         <select>
-                            <option value="-1">Escolha o processador ...</option>
-                            <option value=""><?php echo $dados['produtoNome']?></option>
+                            <option value="-1">Escolha a RAM ...</option>
+                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Cooler CPU</label>
 
                         <select>
-                            <option value="-1">Escolha o processador ...</option>
-                            <option value=""><?php echo $dados['produtoNome']?></option>
+                            <option value="-1">Escolha o cooler ...</option>
+                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Disco</label>
 
                         <select>
-                            <option value="-1">Escolha o processador ...</option>
-                            <option value=""><?php echo $dados['produtoNome']?></option>
+                            <option value="-1">Escolha o disco ...</option>
+                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Caixa PC</label>
 
                         <select>
-                            <option value="-1">Escolha o processador ...</option>
-                            <option value=""><?php echo $dados['produtoNome']?></option>
+                            <option value="-1">Escolha a caixa ...</option>
+                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Fonte de Alimentação</label>
 
                         <select>
-                            <option value="-1">Escolha o processador ...</option>
-                            <option value=""><?php echo $dados['produtoNome']?></option>
+                            <option value="-1">Escolha a fonte de alimentação ...</option>
+                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Placa Grafica</label>
 
                         <select>
-                            <option value="-1">Escolha o processador ...</option>
-                            <option value=""><?php echo $dados['produtoNome']?></option>
+                            <option value="-1">Escolha a placa grafica ...</option>
+                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Placa de Som</label>
 
                         <select>
-                            <option value="-1">Escolha o processador ...</option>
-                            <option value=""><?php echo $dados['produtoNome']?></option>
+                            <option value="-1">Escolha a placa de som ...</option>
+                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Placa de Rede</label>
 
                         <select>
-                            <option value="-1">Escolha o processador ...</option>
-                            <option value=""><?php echo $dados['produtoNome']?></option>
+                            <option value="-1">Escolha a placa de rede ...</option>
+                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Sistema Operativo</label>
 
                         <select>
-                            <option value="-1">Escolha o processador ...</option>
-                            <option value=""><?php echo $dados['produtoNome']?></option>
+                            <option value="-1">Escolha o sistema operativo ...</option>
+                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Montagem do Computador</label>
 
                         <select>
-                            <option value="-1">Escolha o processador ...</option>
-                            <option value=""><?php echo $dados['produtoNome']?></option>
+                            <option value="-1">Escolha ...</option>
+                            <option value="">Sim</option>
+                            <option value="">Não</option>
                         </select>
                     </div>
-
-                    <div class="field half">
-
-
-                    </div>
-
+                    <br>
 
                     <div class="field half text-right">
                         <ul class="actions">

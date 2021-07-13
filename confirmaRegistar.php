@@ -9,7 +9,7 @@ $telefone=addslashes($_POST['telemovel']);
 $morada=addslashes($_POST['morada']);
 
 
-echo $sql="insert into users(userName,userPassword,userState) values('$nome','$password','ativo')";
+echo $sql="insert into users(userName,userPassword,userState) values('$nome','$password','inativo')";
 mysqli_query($con,$sql);
 $lastId=mysqli_insert_id($con);
 
