@@ -51,7 +51,8 @@ top();
                         if($dados['encomendaEstado']=='entregue'){
                     ?>
                         <a class='btn btn-primary btn-xs' href="verEncomenda.php?id=<?php echo $dados['encomendaId']?>">
-                        <i class='fa fa-pencil'></i>Ver detalhe</a>
+                        <i class='fa fa-pencil'></i>Detalhes</a>
+
                     <?php
                         }
                         if($dados['encomendaEstado']=='preparacao'){
@@ -61,6 +62,7 @@ top();
                     <?php
                         }
                     ?>
+
                 </td>
             </tr>
             <?php

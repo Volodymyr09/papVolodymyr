@@ -38,12 +38,14 @@ top();
                 $res=mysqli_query($con,$sql);
                 while($dados=mysqli_fetch_array($res)){
                     ?>
+
+
                     <tr>
                         <td class="text-center"><?php echo $dados['encomendaId']?></td>
                         <td class="text-center"><?php echo $dados['encomendaData']?></td>
                         <td class="text-center"><?php echo $dados['encomendaValorFinal']?>&euro;</td>
                         <td class="text-center"><?php echo $dados['encomendaEstado']?></td>
-                        <td class="text-center"><button class="btn btn-sm" onclick="mostrarDetalhes()">ver Detalhes </button></td>
+                        <td class="text-center"><button title="" class="btn btn-sm" onclick="mostrarDetalhes()">ver Detalhes </button></td>
 
                     </tr>
 
@@ -67,7 +69,7 @@ top();
                                 ?>
                                     <tr>
                                         <td class="text-center"><?php echo $dadosDetalhe['produtoNome']?></td>
-                                        <td class="text-center"><?php echo $dadosDetalhe['encomendaDetalhePreco']?></td>
+                                        <td class="text-center"><?php echo $dadosDetalhe['encomendaDetalhePreco']?>&euro;</td>
                                         <td class="text-center"><?php echo $dadosDetalhe['encomendaDetalheQuantidade']?></td>
                                     </tr>
                                 <?php
@@ -78,6 +80,7 @@ top();
 
                         </td>
                     </tr>
+
                 <?php
                 }
                 ?>
