@@ -3,7 +3,7 @@ include_once ("includes/body.inc.php");
 
 $id=intval($_GET['id']);
 
-$sql="select * from encomendas inner join produtos on produtoId=encomendaDetalheProdutoId where encomendaDetalheEncomendaId";
+$sql="select * from encomendas inner join produtos on produtoId=encomendaProdutoId where produtoEncomendaId";
 $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);
 top();
