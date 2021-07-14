@@ -42,23 +42,28 @@ top();
                 <td><?php echo $dados['encomendaEstado']?></td>
                 <td>
                     <?php
+                        if($dados['encomendaEstado']=='preparacao'){
+                    ?>
+                    <a class='btn btn-warning btn-xs' href="caminhoEncomenda.php?id=<?php echo $dados['encomendaId']?>">
+                        <i class='fa fa-pencil'></i>Despachar</a>
+
+                    <a class='btn btn-primary btn-xs' href="verEncomenda.php?id=<?php echo $dados['encomendaId']?>">
+                        <i class='fa fa-pencil'></i>Detalhes</a>
+                    <?php
+                        }
                         if($dados['encomendaEstado']=='caminho'){
                     ?>
                     <a class='btn btn-success btn-xs' href="entregaEncomenda.php?id=<?php echo $dados['encomendaId']?>">
                         <i class='fa fa-pencil'></i>Entregar</a>
+
+                    <a class='btn btn-primary btn-xs' href="verEncomenda.php?id=<?php echo $dados['encomendaId']?>">
+                         <i class='fa fa-pencil'></i>Detalhes</a>
                     <?php
                         }
                         if($dados['encomendaEstado']=='entregue'){
                     ?>
-                        <a class='btn btn-primary btn-xs' href="verEncomenda.php?id=<?php echo $dados['encomendaId']?>">
+                    <a class='btn btn-primary btn-xs' href="verEncomenda.php?id=<?php echo $dados['encomendaId']?>">
                         <i class='fa fa-pencil'></i>Detalhes</a>
-
-                    <?php
-                        }
-                        if($dados['encomendaEstado']=='preparacao'){
-                    ?>
-                        <a class='btn btn-warning btn-xs' href="verEncomenda.php?id=<?php echo $dados['encomendaId']?>">
-                        <i class='fa fa-pencil'></i>Despachar</a>
                     <?php
                         }
                     ?>
