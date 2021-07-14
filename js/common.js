@@ -32,3 +32,5 @@ function confirmaEliminaCarrinho(id) {
 function mostrarDetalhes(){
     $('#detalhes').toggle();
 }
+
+

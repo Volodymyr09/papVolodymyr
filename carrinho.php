@@ -13,7 +13,6 @@ $lista.=")";
 $sql="select * from produtos where produtoId in $lista";
 $result=mysqli_query($con,$sql);
 
-
 ?>
 
 <div class="container">

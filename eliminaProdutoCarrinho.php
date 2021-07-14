@@ -1,7 +1,7 @@
 <?php
 $id = intval($_POST['id']);
 
-
+session_start();
 $lista="(0";
 if(isset($_SESSION['carrinho'])){
     foreach ($_SESSION['carrinho'] as $produto){
@@ -15,5 +15,5 @@ if(($key = array_search($id, $lista)) !== false){
 }
 
 
-header("location:carrinho.php ");
+header("location: ".$_SERVER['HTTP_REFERER']);
 ?>
