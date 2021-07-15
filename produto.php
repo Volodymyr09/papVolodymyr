@@ -26,27 +26,20 @@ top();
                 </div>
 
                 <div class="col-md-7">
-                    <h2><?php echo $dados['produtoPreco']?></h2>
-
-                    <p> (Intel Core i7-10700 - NVIDIA GeForce RTX 2060 - RAM: 16 GB - 512 GB SSD).</p>
-
-                    <div class="row">
-
-
-                        <div class="col-sm-8">
-
+                    <h2><?php echo $dados['produtoPreco']?>&euro;</h2>
 
                             <div class="row">
-
-
                                 <div class="col-sm-6">
-                                    <a href="#" onclick="adicionaCarrinho(<?php echo $id?>)">
-                                    <input type="submit" class="primary" value="Adicionar ao Carrinho"></a>
-                                </div>
+                                    <?php if(isset($_SESSION['id'])){ ?>
+                                        <a href="#" onclick="adicionaCarrinho(<?php echo $id?>)">
+                                        <input type="submit" class="primary" value="Adicionar ao Carrinho"></a>
+                                    <?php }else{ ?>
+                                        <a data-toggle="modal" data-target="#carrinho"><input type="submit" class="primary" value="Adicionar ao Carrinho"></a>
 
+                                    <?php }?>
+
+                                </div>
                             </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -106,6 +99,16 @@ top();
     </section>
 
 
+</div>
+
+<div class="modal fade" id="carrinho" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                Faz "Login" para adicionar produto ao carrinho!
+            </div>
+        </div>
+    </div>
 </div>
 
 <?php

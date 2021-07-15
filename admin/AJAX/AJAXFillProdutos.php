@@ -32,7 +32,7 @@ $result=mysqli_query($con,$sql);
 
 
             <td width="30%"><?php echo substr($dados['produtoDescricao'],0,100)." (...)"?></td>
-            <td width="10%"><?php echo $dados['produtoPreco']?></td>
+            <td width="10%"><?php echo $dados['produtoPreco']?>&euro;</td>
             <td width="1%"><a title="Gerir compatibilidades" class='btn btn-secondary btn-xs' href="gerirCompatibilidade.php?id=<?php echo $dados['produtoId']?>"><i class='fa fa-lock'></i></a></td>
             <td width="1%"><a title="Gerir detalhes" class='btn btn-primary btn-xs' href="gerirCategoriaChave.php?id=<?php echo $dados['produtoId']?>"><i class='fa fa-cog'></i></a></td>
             <td width="1%"><a title="Editar" class='btn btn-warning btn-xs' href="editaProduto.php?id=<?php echo $dados['produtoId']?>"><i class='fa fa-pencil'></i></a></td>

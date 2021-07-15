@@ -1,9 +1,6 @@
 <?php
 include_once("includes/body.inc.php");
 
-$sql="select * from produtos ";
-$result=mysqli_query($con,$sql);
-$dados=mysqli_fetch_array($result);
 
 top();
 ?>
@@ -25,7 +22,19 @@ top();
 
                         <select>
                             <option value="-1">Escolha a motherboard ...</option>
+                            <?php
+                            $sql="select tabelaP2.*
+                            from produtos as tabelaP1 inner join compatibilidades on tabelaP1.produtoId = compatibilidadeProduto1Id
+                            inner join produtos as tabelaP2 on tabelaP2.produtoId = compatibilidadeProduto2Id
+                            where tabelaP1.produtoId=produtoId
+                            and tabelaP2.produtoCategoriaId=categoriaId";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                            ?>
                             <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                            <?php
+                            }
+                            ?>
                         </select>
                     </div>
                     <br>
@@ -34,7 +43,15 @@ top();
 
                         <select>
                             <option value="-1">Escolha o processador ...</option>
-                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
                     <br>
@@ -43,7 +60,15 @@ top();
 
                         <select>
                             <option value="-1">Escolha a RAM ...</option>
-                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
                     <br>
@@ -52,7 +77,15 @@ top();
 
                         <select>
                             <option value="-1">Escolha o cooler ...</option>
-                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
                     <br>
@@ -61,7 +94,15 @@ top();
 
                         <select>
                             <option value="-1">Escolha o disco ...</option>
-                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
                     <br>
@@ -70,7 +111,15 @@ top();
 
                         <select>
                             <option value="-1">Escolha a caixa ...</option>
-                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
                     <br>
@@ -79,7 +128,15 @@ top();
 
                         <select>
                             <option value="-1">Escolha a fonte de alimentação ...</option>
-                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
                     <br>
@@ -88,7 +145,15 @@ top();
 
                         <select>
                             <option value="-1">Escolha a placa grafica ...</option>
-                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
                     <br>
@@ -97,7 +162,15 @@ top();
 
                         <select>
                             <option value="-1">Escolha a placa de som ...</option>
-                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
                     <br>
@@ -106,7 +179,15 @@ top();
 
                         <select>
                             <option value="-1">Escolha a placa de rede ...</option>
-                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
                     <br>
@@ -115,7 +196,15 @@ top();
 
                         <select>
                             <option value="-1">Escolha o sistema operativo ...</option>
-                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
                     <br>

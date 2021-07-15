@@ -12,18 +12,18 @@ function adicionaCarrinho(id){
     });
 }
 
-function confirmaEliminaCarrinho(id) {
+function confirmaEliminaCarrinho(idProduto) {
     var nomeProduto;
     $.ajax({
-        url:"../AJAX/AJAXGetNameProduto.php",
+        url:"admin/AJAX/AJAXGetNameProduto.php",
         type:"post",
         data:{
-            id:id
+            idProduto:idProduto
         },
         success:function (result){
             nomeProduto=result;
             if(confirm('Confirma que deseja eliminar o produto:'+nomeProduto+'?'))
-                window.location="AJAX/AJAXGetCarrinho.php?id=" + id;
+                window.location="removeCarrinho.php?id=" + idProduto;
         }
     });
 }
