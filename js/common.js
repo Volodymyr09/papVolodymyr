@@ -29,8 +29,8 @@ function confirmaEliminaCarrinho(idProduto) {
 }
 
 
-function mostrarDetalhes(){
-    $('#detalhes').toggle();
+function mostrarDetalhes(id){
+    $('#detalhes'+id).toggle();
 }
 
 

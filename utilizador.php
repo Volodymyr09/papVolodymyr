@@ -36,6 +36,7 @@ top();
                         from encomendas
                         where encomendaPerfilId=".$_SESSION['id'];
                 $res=mysqli_query($con,$sql);
+                $i = 0;
                 while($dados=mysqli_fetch_array($res)){
                     ?>
 
@@ -45,12 +46,12 @@ top();
                         <td class="text-center"><?php echo $dados['encomendaData']?></td>
                         <td class="text-center"><?php echo $dados['encomendaValorFinal']?>&euro;</td>
                         <td class="text-center"><?php echo $dados['encomendaEstado']?></td>
-                        <td class="text-center"><button class="btn btn-sm" onclick="mostrarDetalhes()">ver Detalhes </button></td>
+                        <td class="text-center"><button class="btn btn-sm" onclick="mostrarDetalhes(<?php echo $i?>)">ver Detalhes </button></td>
                     </tr>
 
                     <tr>
                         <td colspan="5">
-                            <div id="detalhes" style="display: none">
+                            <div id="detalhes<?php echo $i ?>" style="display: none">
                             <table class="table table-striped table-hover" style="color: #000">
                                 <tr>
                                     <th width="50%" class="text-center">Produto</th>
@@ -73,6 +74,7 @@ top();
                                     </tr>
                                 <?php
                                     }
+                                    $i = $i + 1;
                                 ?>
                             </table>
                             </div>

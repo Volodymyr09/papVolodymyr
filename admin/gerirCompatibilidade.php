@@ -10,7 +10,7 @@ top();
 
 
     <div class="container">
-        <h1>Detalhes</h1>
+        <h1>Compatibilidade</h1>
         <div style="text-align: center">
         <img src="../<?php echo $dadosProduto['produtoImagemURL']?>" width="220">
         <p class="text-dark bg-white" style="font-weight: bold"><?php echo $dadosProduto['produtoNome']?></p>
