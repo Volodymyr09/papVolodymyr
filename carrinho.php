@@ -19,54 +19,36 @@ top();
                 <th width="10%">&nbsp;Opções</th>
             </tr>
             <?php
-            $lista="(0";
+            $total=0;
+            $k=0;
             if(isset($_SESSION['carrinho'])){
                 foreach ($_SESSION['carrinho'] as $produto){
-                    $lista.=",".$produto;
-                }
-            }
-            $lista.=")";
+                    foreach ($produto as $prdId => $quant){
+                        $sql="select * from produtos where produtoId =".$prdId;
+                        $result=mysqli_query($con,$sql);
+                        if(mysqli_affected_rows($con)>0){
+                            $dados=mysqli_fetch_array($result);
+                        ?>
 
-            $sql="select * from produtos where produtoId in $lista";
-            $result=mysqli_query($con,$sql);
-            $i=0;
-            $k=0;
-            while ($dados=mysqli_fetch_array($result)){
-            ?>
-            <tr>
-                <td><?php echo $dados['produtoNome']?></td>
-                <td><img src="<?php echo $dados['produtoImagemURL']?>" width="120"></td>
-                <td><?php echo $dados['produtoPreco']?>&euro;</td>
-                <td><p><input type="number" value="1" min="1" style=" width: 50px; text-align: center ;color: #000000!important;"></p></td>
-                <td><a href="#" onclick="confirmaEliminaCarrinho(<?php echo $dados['produtoId']?>);"><img src="images/trash_tb.png" width="20"></a></td>
-            </tr>
-            <?php
-                $k++;
-                $i+=$dados["produtoPreco"];
+                            <tr>
+                                <td><?php echo $dados['produtoNome']?></td>
+                                <td><img src="<?php echo $dados['produtoImagemURL']?>" width="120"></td>
+                                <td><?php echo $dados['produtoPreco']?>&euro;</td>
+                                <td><p><input onclick="atualizaCarrinho(this.value,<?php echo $prdId?>)" type="number" value="<?php echo $quant?>" min="1" style=" width: 50px; text-align: center ;color: #000000!important;"></p></td>
+                                <td><a href="#" onclick="confirmaEliminaCarrinho(<?php echo $prdId?>);"><img src="images/trash_tb.png" width="20"></a></td>
+                            </tr>
+                            <?php
+                            $k++;
+                            $total+=$dados["produtoPreco"]*$quant;
+                        }
+                    }
+                 }
             }
             ?>
-
 
             <tr style="text-align: right">
                 <th colspan="6">
-                    <?php
-                    if($k == 0){
-                        ?> <span style="color: #FFFFFF!important; font-size: 25px; font-weight: bold">Total ( <?php echo $k?> Produtos): <?php echo $i ?>&nbsp;€</span>
-
-                        <?php
-                    }elseif ($k < 2){
-
-                        ?>
-                        <span style="color: #FFFFFF!important; font-size: 25px; font-weight: bold">Total ( <?php echo $k?> Produto): <?php echo $i ?>&nbsp;€</span>
-
-                        <?php
-                    }elseif ($k > 1){
-                        ?>
-                        <span style="color: #FFFFFF!important; font-size: 25px; font-weight: bold">Total ( <?php echo $k?> Produtos): <?php echo $i ?>&nbsp;€</span>
-
-                        <?php
-                    }
-                    ?>
+                    <span style="font-size: 25px; font-weight: bold">Total ( <?php echo $k?> Produto<?php echo $k!=1?'s':''?>): <?php echo $total ?>&nbsp;€</span>
                 </th>
             </tr>
         </table>

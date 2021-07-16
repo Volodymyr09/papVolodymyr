@@ -20,7 +20,10 @@ else{
         session_start();
         $_SESSION['id'] = $dados['userId'];
         $_SESSION['nome'] = $dados['userName'];
-         header("location:index.php");
+        $_SESSION['carrinho'][0][0]=-1;
+        $teste=array(0 => 0);
+        array_push($_SESSION['carrinho'],$teste);
+        header("location:index.php");
     }
     else{
         header("location:login.php?erro");

@@ -73,23 +73,6 @@ top();
                     </div>
                     <br>
                     <div class="field half">
-                        <label for="field-1">Cooler CPU</label>
-
-                        <select>
-                            <option value="-1">Escolha o cooler ...</option>
-                            <?php
-                            $sql="select * from produtos order by produtoNome";
-                            $result=mysqli_query($con,$sql);
-                            while ($dados=mysqli_fetch_array($result)){
-                                ?>
-                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
-                                <?php
-                            }
-                            ?>
-                        </select>
-                    </div>
-                    <br>
-                    <div class="field half">
                         <label for="field-1">Disco</label>
 
                         <select>
@@ -111,6 +94,23 @@ top();
 
                         <select>
                             <option value="-1">Escolha a caixa ...</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="field half">
+                        <label for="field-1">Cooler CPU</label>
+
+                        <select>
+                            <option value="-1">Escolha o cooler ...</option>
                             <?php
                             $sql="select * from produtos order by produtoNome";
                             $result=mysqli_query($con,$sql);

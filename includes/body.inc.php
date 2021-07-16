@@ -3,7 +3,6 @@ include_once("config.inc.php");
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 $con->set_charset("utf8");
 session_start();
-$_SESSION['carrinho'][0]=-1;
 
 function top()
 {

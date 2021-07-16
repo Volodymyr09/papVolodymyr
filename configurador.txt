@@ -1,0 +1,17 @@
+Processador: Intel Core i5-9600K 3.7Ghz
+
+Placa Motherboard: MSI Mpg Z390 Gaming Plus
+
+Memória RAM: Kingston HyperX Fury Black DDR4 3200Mhz PC-25600 16GB 2x8GB CL16
+
+Cooler CPU: Cooler Master Hyper 212 RGB Black Edition
+
+Disco: Kioxia EXCERIA 480 GB SSD SATA
+
+Caixa PC: Tempest Spectra RGB USB 3.0 com Janela
+
+Fonte De Alimentação: Tempest Gaming GPSU 650W
+
+Placa Gráfica: Zotac Gaming GeForce RTX 3070 Ti AMP Holo 8GB GDDR6X
+
+Placa Som: Creative Sound Blaster Audigy FX PCI Express
