@@ -8,13 +8,13 @@ include_once ("includes/body.inc.php");
 top();
 ?>
 <div class="container">
-    <h1>Editar chave</h1>
+    <h1>Editar Categoria Chave</h1>
     <form action="confirmaEditaCategoriaChave.php" method="post" enctype="multipart/form-data">
         <input type="hidden" name="categoriaChaveId" value="<?php echo $id?>">
         <label>Nome: </label>
         <input type="text" name="nomeCategoriaChave" value="<?php echo $dadoscategoriaChaves['categoriaChaveNome']?>">
         <br>
-        <label>Categoria</label>
+        <label>Categoria:</label>
         <select name="categoriaCategoria">
             <option value="-1">Escolha a categoria...</option>
             <?php

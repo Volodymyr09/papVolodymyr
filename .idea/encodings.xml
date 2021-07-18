@@ -14,6 +14,13 @@
     <file url="file://$PROJECT_DIR$/ListaMonitores.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ListaPortatil.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/acessoarios.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/AJAX/AJAXFillCatChaves.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/AJAX/AJAXFillCategorias.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/AJAX/AJAXFillChaves.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/AJAX/AJAXFillNoticias.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/AJAX/AJAXFillProdutos.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/AJAX/AJAXFillProdutosCompativeis.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/AJAXFillCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/adicionaCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/adicionaCategoriaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/adicionaChave.php" charset="UTF-8" />
@@ -24,17 +31,21 @@
     <file url="file://$PROJECT_DIR$/admin/confirmaEditaCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaEditaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaEditaChave2.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/confirmaEditaEstadoCompra.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaEditaNoticia.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaEditaProduto.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaNovaCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaNovaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaNovaChave2.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/confirmaNovaCompatibilidade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaNovaNoticia.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaNovoProduto.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/confirmaNovoProdutoChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/editaCategoria.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/editaCategoriaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/editaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/editaChave2.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/editaEstadoCompra.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/editaNoticia.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/editaProduto.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/eliminaCategoria.php" charset="UTF-8" />
@@ -44,11 +55,13 @@
     <file url="file://$PROJECT_DIR$/admin/eliminaProduto.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/eliminaProdutoChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/gerirCategoriaChave.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/gerirCompatibilidade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/listaCategoria.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/listaChave.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/listaChave2.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/listaNoticias.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/listaProduto.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/verEncomenda.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/asus.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caixas.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/carrinho.php" charset="UTF-8" />

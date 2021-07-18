@@ -2,6 +2,7 @@
 include_once("config.inc.php");
     $con=mysqli_connect(HOST,USER,PWD,DATABASE);
     $con->set_charset("utf8");
+
 function top()
 {
     ?>
@@ -17,6 +18,7 @@ function top()
 
         <link rel="icon" href="../images/log.jpg">
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <script src="js/commonAdmin.js"></script>
 
     </head>
     <body class="is-preload">
@@ -27,11 +29,9 @@ function top()
 
         <!-- Header -->
         <header id="header" class="alt">
-
-            <nav>
-                <a  href="#menu">Menu</a>
-            </nav>
-
+                <nav>
+                     <a  href="#menu">Menu</a>
+                </nav>
 
         </header>
 
@@ -54,14 +54,19 @@ function top()
 
                 <li class="active"> <a href="listaNoticia.php">Noticias</a> </li>
 
+                <li class="active"> <a href="listaUtilizadores.php">Utilizadores</a> </li>
+
+                <li class="active"> <a href="listaEstadoCompras.php">Estado das Encomendas</a> </li>
+
             </ul>
-        </nav>
+       </nav>
 
 
     <?php
 }
-
-    function Bottom(){
+?>
+<?php
+    function Bottom($menu = HOME){
     ?>
         <!-- Footer -->
         <footer id="footer">
@@ -83,6 +88,67 @@ function top()
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="js/commonAdmin.js"></script>
+                <script>
+
+    $('document').ready(function (){
+        <?php
+        if ($menu == CATEGORIAS){
+        ?>
+        $('#search').keyup(function (){
+            fillTableCategorias(this.value);
+        });
+        fillTableCategorias();
+        <?php
+        }
+
+        if ($menu == PRODUTOS){
+        ?>
+        $('#search').keyup(function (){
+            fillTableProdutos(this.value);
+        });
+        fillTableProdutos();
+        <?php
+        }
+
+        if ($menu == CHAVES){
+        ?>
+        $('#search').keyup(function (){
+            fillTableChaves(this.value);
+        });
+        fillTableChaves();
+        <?php
+        }
+
+        if ($menu == CATCHAVES){
+        ?>
+        $('#search').keyup(function (){
+            fillTableCatChaves(this.value);
+        });
+        fillTableCatChaves();
+        <?php
+        }
+
+        if ($menu == NOTICIAS){
+        ?>
+        $('#search').keyup(function (){
+            fillTableNoticias(this.value);
+        });
+        fillTableNoticias();
+        <?php
+        }
+
+        if ($menu == COMPATIVEIS){
+        ?>
+        $('#categoria').on('change',function (){
+            fillTableCompativeis(this.value);
+        });
+        fillTableCompativeis(-1);
+        <?php
+        }
+        ?>
+    });
+
+    </script>
         </body>
     </HTML>
 

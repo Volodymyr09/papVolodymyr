@@ -140,3 +140,92 @@ function confirmaEliminaProduto(idProduto) {
         }
     })
 };
+
+function fillTableCategorias(txt=''){
+    $.ajax({
+        url:"AJAX/AJAXFillCategorias.php",
+        type:"post",
+        data:{
+            txt:txt
+        },
+        success:function (result){
+            $('#tableContent').html(result);
+        }
+    });
+
+
+};
+
+function fillTableProdutos(txt=''){
+    $.ajax({
+        url:"AJAX/AJAXFillProdutos.php",
+        type:"post",
+        data:{
+            txt:txt
+        },
+        success:function (result){
+            $('#tableContent').html(result);
+        }
+    });
+
+
+};
+
+function fillTableChaves(txt=''){
+    $.ajax({
+        url:"AJAX/AJAXFillChaves.php",
+        type:"post",
+        data:{
+            txt:txt
+        },
+        success:function (result){
+            $('#tableContent').html(result);
+        }
+    });
+
+
+};
+
+function fillTableCatChaves(txt=''){
+    $.ajax({
+        url:"AJAX/AJAXFillCatChaves.php",
+        type:"post",
+        data:{
+            txt:txt
+        },
+        success:function (result){
+            $('#tableContent').html(result);
+        }
+    });
+
+
+};
+
+function fillTableNoticias(txt=''){
+    $.ajax({
+        url:"AJAX/AJAXFillNoticias.php",
+        type:"post",
+        data:{
+            txt:txt
+        },
+        success:function (result){
+            $('#tableContent').html(result);
+        }
+    });
+
+
+};
+function fillTableCompativeis(id=-1){
+    $.ajax({
+        url:"AJAX/AJAXFillProdutosCompativeis.php",
+        type:"post",
+        data:{
+            idCat:id
+        },
+        success:function (result){
+            $('#tableContent').html(result);
+        }
+    });
+
+
+};

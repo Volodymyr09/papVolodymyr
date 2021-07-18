@@ -1,9 +1,8 @@
 <?php
 include_once("config.inc.php");
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
-
+$con->set_charset("utf8");
 session_start();
-$_SESSION['carrinho'][0]=-1;
 
 function top()
 {
@@ -20,7 +19,6 @@ function top()
 
         <link rel="icon" href="images/log.jpg">
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
         <style>
         .cardNoticias {
 
@@ -28,7 +26,6 @@ function top()
              border-radius: .25rem;
         }
         </style>
-
 
     </head>
     <body class="is-preload">
@@ -50,7 +47,6 @@ function top()
                 if(!isset($_SESSION['id'])){
             ?>
 
-            <a href="carrinho.php" class="icon alt fa-shopping-cart"><span class="label"></span></a>
             <a href="registar.php" class="icon alt fa-user-circle" ><span class="label"></span></a>
 
             <?php
@@ -58,7 +54,7 @@ function top()
                     ?>
                      <a href="utilizador.php" class="icon alt fa-user" ><span class="label"></span></a>
                      <a href="carrinho.php" class="icon alt fa-shopping-cart"><span class="label"></span></a>
-                     <a href="logout.php" >Logout</a>
+                     <a href="logout.php">Logout</a>
             <?php
                 }
              ?>
@@ -75,8 +71,6 @@ function top()
                 <li class="active"> <a href="index.php">Pagina Principal</a> </li>
 
                 <li> <a href="categorias.php">Categorias</a> </li>
-
-                <li> <a href="carrinho.php">Carrinho de Compras</a> </li>
 
                 <li><a href="contact.php">Contactos</a></li>
 
@@ -163,7 +157,8 @@ function top()
 
     <?php
 }
-
+?>
+<?php
     function Bottom(){
     ?>
         <!-- Footer -->

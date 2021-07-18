@@ -1,5 +1,7 @@
 <?php
 include_once("includes/body.inc.php");
+
+
 top();
 ?>
 
@@ -10,152 +12,212 @@ top();
                 <h1>Configurador</h1>
             </header>
 
-
-
-
-
             <form method="post" action="#">
-                <div class="fields">
+                <div>
 
 
-
-                    <div class="field half">
-                        <label for="field-1">Processador</label>
-
-                        <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Processador Intel Socket 1150</option>
-                            <option value="">Processador AMD Socket AM3</option>
-                            <option value="">-- Choose --</option>
-
-                        </select>
-                    </div>
 
                     <div class="field half">
                         <label for="field-1">Placa Motherboard</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Placa Motherboard GIGABYTE H81m-Hd3 1150</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha a motherboard ...</option>
+                            <?php
+                            $sql="select tabelaP2.*
+                            from produtos as tabelaP1 inner join compatibilidades on tabelaP1.produtoId = compatibilidadeProduto1Id
+                            inner join produtos as tabelaP2 on tabelaP2.produtoId = compatibilidadeProduto2Id
+                            where tabelaP1.produtoId=produtoId
+                            and tabelaP2.produtoCategoriaId=categoriaId";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                            ?>
+                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                            <?php
+                            }
+                            ?>
                         </select>
                     </div>
+                    <br>
+                    <div class="field half">
+                        <label for="field-1">Processador</label>
 
+                        <select>
+                            <option value="-1">Escolha o processador ...</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
+                        </select>
+                    </div>
+                    <br>
                     <div class="field half">
                         <label for="field-1">Memória RAM</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Memória RAM DDR4 GSKILL Aegis (1 x 8 GB - 2133 MHz)</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha a RAM ...</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
-
-                    <div class="field half">
-                        <label for="field-1">Cooler CPU</label>
-
-                        <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Cooler CPU NOX Hummer H-212 120mm Universal</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
-                        </select>
-                    </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Disco</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Disco HDD Externo WESTERN DIGITAL Elements(1.5TB-USB3.0)</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha o disco ...</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Caixa PC</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Caixa PC ATX KOLINK Inspire K1(ATX Mid Tower-Preto RGB)</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha a caixa ...</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
+                    <br>
+                    <div class="field half">
+                        <label for="field-1">Cooler CPU</label>
 
+                        <select>
+                            <option value="-1">Escolha o cooler ...</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
+                        </select>
+                    </div>
+                    <br>
                     <div class="field half">
                         <label for="field-1">Fonte de Alimentação</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Fonte de Alimentação KOLINK Core(ATX-500 W-80 Plus)</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha a fonte de alimentação ...</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Placa Grafica</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Placa Gráfica ASUS GeForce GTX 1050Ti Phoenix(NVIDIA-4GB DDR5)</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha a placa grafica ...</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Placa de Som</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Placa de som ASUS Xonar U5</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha a placa de som ...</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Placa de Rede</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Placa de rede PCI D-LINK DGE-528T Gigabit</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha a placa de rede ...</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Sistema Operativo</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">Software MICROSOFT Win Home FPP 10(1Dispositivo-Vitalicio-PC)</option>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Choose --</option>
+                            <option value="-1">Escolha o sistema operativo ...</option>
+                            <?php
+                            $sql="select * from produtos order by produtoNome";
+                            $result=mysqli_query($con,$sql);
+                            while ($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                                <?php
+                            }
+                            ?>
                         </select>
                     </div>
-
+                    <br>
                     <div class="field half">
                         <label for="field-1">Montagem do Computador</label>
 
                         <select>
-                            <option value="">-- Choose --</option>
-                            <option value="">-- Sim --</option>
-                            <option value="">-- Não --</option>
+                            <option value="-1">Escolha ...</option>
+                            <option value="">Sim</option>
+                            <option value="">Não</option>
                         </select>
                     </div>
-
-                    <div class="field half">
-
-
-                    </div>
-
+                    <br>
 
                     <div class="field half text-right">
                         <ul class="actions">
