@@ -26,7 +26,7 @@ $result=mysqli_query($con,$sql);
     while($dados=mysqli_fetch_array($result)){
         $sql="select * from compatibilidades ";
         $sql.=" where compatibilidadeProduto1Id=".$dados['produtoId']." and compatibilidadeProduto2Id=".$idPrd;
-       echo  $sql.=" or compatibilidadeProduto2Id=".$dados['produtoId']." and compatibilidadeProduto1Id=".$idPrd;
+        $sql.=" or compatibilidadeProduto2Id=".$dados['produtoId']." and compatibilidadeProduto1Id=".$idPrd;
         mysqli_query($con,$sql);
         if($idCat!=-1){
         ?>
