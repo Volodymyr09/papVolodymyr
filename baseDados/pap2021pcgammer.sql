@@ -11,7 +11,7 @@
  Target Server Version : 50731
  File Encoding         : 65001
 
- Date: 16/07/2021 18:43:34
+ Date: 19/07/2021 15:37:48
 */
 
 SET NAMES utf8mb4;
@@ -107,8 +107,14 @@ CREATE TABLE `compatibilidades`  (
 -- ----------------------------
 -- Records of compatibilidades
 -- ----------------------------
-INSERT INTO `compatibilidades` VALUES (12, 2);
-INSERT INTO `compatibilidades` VALUES (2, 10);
+INSERT INTO `compatibilidades` VALUES (12, 14);
+INSERT INTO `compatibilidades` VALUES (12, 16);
+INSERT INTO `compatibilidades` VALUES (12, 17);
+INSERT INTO `compatibilidades` VALUES (12, 18);
+INSERT INTO `compatibilidades` VALUES (12, 19);
+INSERT INTO `compatibilidades` VALUES (12, 20);
+INSERT INTO `compatibilidades` VALUES (12, 21);
+INSERT INTO `compatibilidades` VALUES (12, 22);
 
 -- ----------------------------
 -- Table structure for encomendadetalhes
@@ -173,7 +179,6 @@ CREATE TABLE `noticias`  (
 -- ----------------------------
 INSERT INTO `noticias` VALUES (1, 'Xiaomi: veja quais celulares receberão o Android 11 com MIUI 12', 'https://www.tecmundo.com.br/software/214456-xiaomi-veja-celulares-receberao-android-11-miui-12.htm', 'images/xiaomiNoticia.gif', 'sim');
 INSERT INTO `noticias` VALUES (2, '512 GB de RAM em um módulo: Samsung apresenta nova memória DDR5', 'https://www.tecmundo.com.br/produto/214428-512-gb-ram-modulo-samsung-apresenta-nova-memoria-ddr5.htm', 'images/SamNoticia.gif', 'sim');
-INSERT INTO `noticias` VALUES (3, 'Benfica foi roubado', 'https://www.youtube.com/watch?v=xzNI_SMGzy0', 'images/motocompany.png', 'sim');
 
 -- ----------------------------
 -- Table structure for perfis
@@ -232,7 +237,7 @@ CREATE TABLE `produtos`  (
   PRIMARY KEY (`produtoId`) USING BTREE,
   INDEX `fk_produtos_categorias1_idx`(`produtoCategoriaId`) USING BTREE,
   CONSTRAINT `fk_produtos_categorias1` FOREIGN KEY (`produtoCategoriaId`) REFERENCES `categorias` (`categoriaId`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 14 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 23 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of produtos
@@ -242,6 +247,15 @@ INSERT INTO `produtos` VALUES (7, 'Monitor Curvo ACER ED320QRP', 'images/Monitor
 INSERT INTO `produtos` VALUES (8, 'Rato Gaming ONN', 'images/ListaRatoGamHyperxPlusefireDatr.jpg', ' Muito bom!', 24.00, 8, 'nao');
 INSERT INTO `produtos` VALUES (10, 'Portatil Asus Rog Strix G15', 'images/PorAsusRogStrixG15.jpg', '    Bom!', 5.00, 7, 'sim');
 INSERT INTO `produtos` VALUES (12, 'Motherboard ASUS ROG MAXIMUS XIII EXTREME', 'images/motherboardAsusRogMaximusXiiiExtreme.jpg', '    Bom!', 1596.00, 5, 'sim');
+INSERT INTO `produtos` VALUES (14, 'Intel Core i5-9600K 3.7Ghz', 'images/IntelCorei5-9600K3.7Ghz.png', '    Bom!', 75.00, 11, 'nao');
+INSERT INTO `produtos` VALUES (15, 'MSI Mpg Z390 Gaming Plus', 'images/MSIMpgZ390GamingPlus.png', '    Bom!', 150.00, 10, 'nao');
+INSERT INTO `produtos` VALUES (16, 'Kingston HyperX Fury Black DDR4 3200Mhz PC-25600 16GB 2x8GB CL16', 'images/KingstonHyperXFuryBlackDDR432Mhz PC-2560016GB2x8GBCL16.png', '    Bom!', 50.00, 12, 'nao');
+INSERT INTO `produtos` VALUES (17, 'Cooler Master Hyper 212 RGB Black Edition', 'images/CoolerMasterHyper212RGBBlackEdition.png', '    Bom!', 60.00, 14, 'nao');
+INSERT INTO `produtos` VALUES (18, 'Kioxia EXCERIA 480 GB SSD SATA', 'images/KioxiaEXCERIA480GBSSDSATA.png', '    Bom!', 55.00, 13, 'nao');
+INSERT INTO `produtos` VALUES (19, 'Tempest Spectra RGB USB 3.0 com Janela', 'images/TempestSpectraRGBUSB3.0comJanela.png', '    Bom!', 85.00, 2, 'nao');
+INSERT INTO `produtos` VALUES (20, 'Tempest Gaming GPSU 650W', 'images/TempestGamingGPSU650W.png', '    Bom!', 76.00, 15, 'nao');
+INSERT INTO `produtos` VALUES (21, 'Zotac Gaming GeForce RTX 3070 Ti AMP Holo 8GB GDDR6X', 'images/ZotacGamingGeForceRTX3070TiAMPHolo8GBGDDR6X.png', '    Bom!', 155.00, 16, 'nao');
+INSERT INTO `produtos` VALUES (22, 'Creative Sound Blaster Audigy FX PCI Express', 'images/CreativeSoundBlasterAudigyFXPCIExpress.png', '    Bom!', 555.00, 17, 'nao');
 
 -- ----------------------------
 -- Table structure for users
