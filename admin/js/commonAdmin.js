@@ -215,12 +215,13 @@ function fillTableNoticias(txt=''){
 
 
 };
-function fillTableCompativeis(id=-1){
+function fillTableCompativeis(idCat=-1, idPrd=-1){
     $.ajax({
         url:"AJAX/AJAXFillProdutosCompativeis.php",
         type:"post",
         data:{
-            idCat:id
+            idCat:idCat,
+            idPrd:idPrd
         },
         success:function (result){
             $('#tableContent').html(result);

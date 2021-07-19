@@ -9,7 +9,7 @@ $result=mysqli_query($con,$sql);
 
 <table class='table table-striped' width="100%">
     <tr>
-        <td colspan="5" align='right'>
+        <td colspan="6" align='right'>
             <a href="adicionaCategoriaChave.php"><i class='btn btn-success btn-xs'>Adicionar</i></a>
         </td>
     </tr>

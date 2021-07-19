@@ -9,6 +9,6 @@ foreach ($_POST['produto'] as $item){
     mysqli_query($con,$sql);
 }
 
-header("location:listaProduto.php");
+header("location:gerirCompatibilidade.php?id=$idProduto");
 
 ?>

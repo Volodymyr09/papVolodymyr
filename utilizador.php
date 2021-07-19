@@ -24,8 +24,6 @@ top();
             <table class='table table-striped table-hover' width="70%">
                 <h3>Historico das encomendas</h3>
                 <tr>
-
-                    <th width="10%" class="text-center">Id</th>
                     <th width="30%" class="text-center" >Data de Realização</th>
                     <th width="20%" class="text-center">Valor</th>
                     <th width="20%" class="text-center">Estado</th>
@@ -42,7 +40,6 @@ top();
 
 
                     <tr>
-                        <td class="text-center"><?php echo $dados['encomendaId']?></td>
                         <td class="text-center"><?php echo $dados['encomendaData']?></td>
                         <td class="text-center"><?php echo $dados['encomendaValorFinal']?>&euro;</td>
                         <td class="text-center"><?php echo $dados['encomendaEstado']?></td>
