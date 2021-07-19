@@ -14,7 +14,7 @@ top();
 
             <div class="row">
                 <div class="col-md-3 col-sm-6 co-xs-12 text-center">
-                    <img src="images/miguel.jpg" class="img-responsive" alt="">
+                    <img src="images/author-image-4-646x680.jpg" class="img-responsive" alt="">
 
                     <h3>Miguel Pereira</h3>
 
@@ -28,7 +28,7 @@ top();
                 </div>
 
                 <div class="col-md-3 col-sm-6 co-xs-12 text-center">
-                    <img src="images/pipe.jpg" class="img-responsive" alt="">
+                    <img src="images/author-image-4-646x680.jpg" class="img-responsive" alt="">
 
                     <h3>Filipe Vital</h3>
 
@@ -42,7 +42,7 @@ top();
                 </div>
 
                 <div class="col-md-3 col-sm-6 co-xs-12 text-center">
-                    <img src="images/author-image-3-646x680.jpg" class="img-responsive" alt="">
+                    <img src="images/author-image-4-646x680.jpg" class="img-responsive" alt="">
 
                     <h3>Daniel Ferreira</h3>
 
@@ -56,7 +56,7 @@ top();
                 </div>
 
                 <div class="col-md-3 col-sm-6 co-xs-12 text-center">
-                    <img src="images/eu.jpg" class="img-responsive" alt="">
+                    <img src="images/author-image-4-646x680.jpg" class="img-responsive" alt="">
 
                     <h3>Volodymyr Babaiev</h3>
 
