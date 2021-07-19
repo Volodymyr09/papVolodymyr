@@ -35,6 +35,7 @@ top();
             <h1>Produtos</h1>
 
             <div class="table-responsive" align="center">
+
                <div id="tableContent">
 
                </div>
@@ -47,7 +48,7 @@ top();
 
 
 <?php
-Bottom(COMPATIVEIS);
+Bottom(COMPATIVEIS,$id);
 
 ?>
 

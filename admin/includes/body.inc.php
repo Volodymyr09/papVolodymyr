@@ -66,7 +66,7 @@ function top()
 }
 ?>
 <?php
-    function Bottom($menu = HOME){
+    function Bottom($menu = HOME,$idPrd){
     ?>
         <!-- Footer -->
         <footer id="footer">
@@ -140,9 +140,9 @@ function top()
         if ($menu == COMPATIVEIS){
         ?>
         $('#categoria').on('change',function (){
-            fillTableCompativeis(this.value);
+            fillTableCompativeis(this.value,<?php echo $idPrd?>);
         });
-        fillTableCompativeis(-1);
+        fillTableCompativeis(-1,<?php echo $idPrd?>);
         <?php
         }
         ?>
