@@ -19,8 +19,6 @@ $('document').ready(function (){
     })
 })
 
-
-
 function confirmaElimina(idChave,idProduto) {
     var nomeChave, nomeProduto;
     $.ajax({
@@ -48,13 +46,6 @@ function confirmaElimina(idChave,idProduto) {
     });
 
 };
-
-
-
-
-
-
-
 
 
 function confirmaEliminaCategoria(idCategoria) {

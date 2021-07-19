@@ -1,5 +1,7 @@
 <?php
 include_once("includes/body.inc.php");
+
+
 top();
 ?>
 
@@ -21,12 +23,12 @@ top();
                         <select>
                             <option value="-1">Escolha a motherboard ...</option>
                             <?php
-                            $sql="select * from produtos inner join categorias";
+                            $sql="select * from produtos from categorias where categoriaNome='Monitores'";
                             $result=mysqli_query($con,$sql);
                             while ($dados=mysqli_fetch_array($result)){
                             ?>
 
-                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
+                            <option value="<?php echo $dadosProduto['produtoId']?>"><?php echo $dadosProduto['produtoNome']?> - <?php echo $dadosProduto['produtoPreco']?>&euro;</option>
                             <?php
                             }
                             ?>
