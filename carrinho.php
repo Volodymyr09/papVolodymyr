@@ -1,7 +1,9 @@
 <?php
 include_once("includes/body.inc.php");
 top();
-
+$sql="select * from perfis where perfilId=".$_SESSION['id'];
+$res=mysqli_query($con,$sql);
+$dadosPerfil=mysqli_fetch_array($res);
 ?>
 
 <div class="container">
@@ -72,45 +74,32 @@ top();
                 </button>
             </div>
             <div class="modal-body">
-                <form class="row g-3">
+                <form action="confirmaEncomenda.php" method="post">
                     <div class="col-md-6">
                         <label for="validationServer01" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="validationServer01"  required>
+                        <input type="text" disabled value="<?php echo $dadosPerfil['perfilNome']?>" class="form-control" id="validationServer01"  required>
                     </div>
                     <div class="col-md-6">
                         <label for="inputTelephone4" class="form-label">Telemóvel</label>
-                        <input type="email" class="form-control" id="inputTelephone4">
+                        <input type="text" class="form-control" id="inputTelephone4"  value="<?php echo $dadosPerfil['perfilTelefone']?>" >
                     </div>
 
                     <div class="col-12">
                         <label for="inputAddress" class="form-label">Morada</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputCity" class="form-label">Cidade</label>
-                        <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="inputState" class="form-label">País</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputState" class="form-label">Pagamento</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Choose...</option>
-                            <option>Pagamento a cobrança</option>
-                        </select>
+                        <input type="text"  value="<?php echo $dadosPerfil['perfilMorada']?>"  class="form-control" id="inputAddress" placeholder="1234 Main St">
                     </div>
 
-                </form>
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email"  value="<?php echo $dadosPerfil['perfilEmail']?>"  class="form-control" placeholder="name@example.com">
+                    </div>
+
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="submit" class="btn btn-warning">Finalizar</button>
+                <button type="button" class="btn bg-transparent" data-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn bg-transparent">Finalizar</button>
             </div>
+            </form>
         </div>
     </div>
 </div>

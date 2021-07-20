@@ -3,7 +3,7 @@
 include_once("../includes/body.inc.php");
 $idComPrd2=intval($_POST['idCompatibilidadeProduto2']);
 $idPrd=intval($_POST['idProduto']);
-$sql="Select * from compatibilidades where compatibilidadeProduto1Id=$id and compatibilidadeProduto2Id not in(
+$sql="Select * from compatibilidades where compatibilidadeProduto1Id=$idComPrd2 and compatibilidadeProduto2Id not in(
     select produtoChaveChaveId from produtoChaves where produtoChaveProdutoId = $idPrd
 )";
 
