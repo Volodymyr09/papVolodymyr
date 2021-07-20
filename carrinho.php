@@ -78,7 +78,7 @@ $dadosPerfil=mysqli_fetch_array($res);
                     <input type="hidden" name="total" value="<?php echo $total ?>">
                     <div class="col-md-6">
                         <label for="validationServer01" class="form-label">Nome</label>
-                        <input type="text" disabled value="<?php echo $dadosPerfil['perfilNome']?>" class="form-control" id="validationServer01"  required>
+                        <input type="text" value="<?php echo $dadosPerfil['perfilNome']?>" class="form-control" id="validationServer01"  required>
                     </div>
                     <div class="col-md-6">
                         <label for="inputTelephone4" class="form-label">Telemóvel</label>

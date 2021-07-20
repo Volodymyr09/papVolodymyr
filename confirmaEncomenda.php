@@ -1,9 +1,10 @@
-<?php
+cbc<?php
 include_once("includes/body.inc.php");
 $total=intval($_POST['total']);
 $sql="insert into encomendas(encomendaValorFinal,encomendaData,encomendaPerfilId) values(".$total.", now(),".$_SESSION['id'].")";
 mysqli_query($con,$sql);
 $encomendaId=mysqli_insert_id($con);
+
 $cont=0;
 if(isset($_SESSION['carrinho'])) {
     foreach ($_SESSION['carrinho'] as $produto) {

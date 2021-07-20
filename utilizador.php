@@ -67,7 +67,7 @@ top();
                                     <tr>
                                         <td class="text-center"><?php echo $dadosDetalhe['produtoNome']?></td>
                                         <td class="text-center"><?php echo $dadosDetalhe['produtoPreco']?>&euro;</td>
-                                        <td class="text-center"><?php echo $dadosDetalhe['encomendaDetalheProduto']?></td>
+                                        <td class="text-center"><?php echo $dadosDetalhe['encomendaDetalheQuantidade']?></td>
                                     </tr>
                                 <?php
                                     }
