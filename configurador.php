@@ -23,12 +23,12 @@ top();
                         <select>
                             <option value="-1">Escolha a motherboard ...</option>
                             <?php
-                            $sql="select * from produtos from categorias where categoriaNome='Monitores'";
+                            $sql="select * from produtos inner join categorias on produtoCategoriaId=categoriaId where categoriaNome='Motherboard'";
                             $result=mysqli_query($con,$sql);
                             while ($dados=mysqli_fetch_array($result)){
                             ?>
 
-                            <option value="<?php echo $dadosProduto['produtoId']?>"><?php echo $dadosProduto['produtoNome']?> - <?php echo $dadosProduto['produtoPreco']?>&euro;</option>
+                            <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
                             <?php
                             }
                             ?>
@@ -41,7 +41,7 @@ top();
                         <select>
                             <option value="-1">Escolha o processador ...</option>
                             <?php
-                            $sql="select * from produtos order by produtoNome";
+                            $sql="select * from produtos inner join categorias on produtoCategoriaId=categoriaId where categoriaNome='Processador'";
                             $result=mysqli_query($con,$sql);
                             while ($dados=mysqli_fetch_array($result)){
                                 ?>
@@ -58,7 +58,7 @@ top();
                         <select>
                             <option value="-1">Escolha a RAM ...</option>
                             <?php
-                            $sql="select * from produtos order by produtoNome";
+                            $sql="select * from produtos inner join categorias on produtoCategoriaId=categoriaId where categoriaNome='Memória RAM'";
                             $result=mysqli_query($con,$sql);
                             while ($dados=mysqli_fetch_array($result)){
                                 ?>
@@ -75,7 +75,7 @@ top();
                         <select>
                             <option value="-1">Escolha o disco ...</option>
                             <?php
-                            $sql="select * from produtos order by produtoNome";
+                            $sql="select * from produtos inner join categorias on produtoCategoriaId=categoriaId where categoriaNome='Disco'";
                             $result=mysqli_query($con,$sql);
                             while ($dados=mysqli_fetch_array($result)){
                                 ?>
@@ -92,7 +92,7 @@ top();
                         <select>
                             <option value="-1">Escolha a caixa ...</option>
                             <?php
-                            $sql="select * from produtos order by produtoNome";
+                            $sql="select * from produtos inner join categorias on produtoCategoriaId=categoriaId where categoriaNome='Caixas'";
                             $result=mysqli_query($con,$sql);
                             while ($dados=mysqli_fetch_array($result)){
                                 ?>
@@ -109,7 +109,7 @@ top();
                         <select>
                             <option value="-1">Escolha o cooler ...</option>
                             <?php
-                            $sql="select * from produtos order by produtoNome";
+                            $sql="select * from produtos inner join categorias on produtoCategoriaId=categoriaId where categoriaNome='Cooler CPU'";
                             $result=mysqli_query($con,$sql);
                             while ($dados=mysqli_fetch_array($result)){
                                 ?>
@@ -126,7 +126,7 @@ top();
                         <select>
                             <option value="-1">Escolha a fonte de alimentação ...</option>
                             <?php
-                            $sql="select * from produtos order by produtoNome";
+                            $sql="select * from produtos inner join categorias on produtoCategoriaId=categoriaId where categoriaNome='Fonte de Alimentação'";
                             $result=mysqli_query($con,$sql);
                             while ($dados=mysqli_fetch_array($result)){
                                 ?>
@@ -143,7 +143,7 @@ top();
                         <select>
                             <option value="-1">Escolha a placa grafica ...</option>
                             <?php
-                            $sql="select * from produtos order by produtoNome";
+                            $sql="select * from produtos inner join categorias on produtoCategoriaId=categoriaId where categoriaNome='Placa Grafica'";
                             $result=mysqli_query($con,$sql);
                             while ($dados=mysqli_fetch_array($result)){
                                 ?>
@@ -160,7 +160,7 @@ top();
                         <select>
                             <option value="-1">Escolha a placa de som ...</option>
                             <?php
-                            $sql="select * from produtos order by produtoNome";
+                            $sql="select * from produtos inner join categorias on produtoCategoriaId=categoriaId where categoriaNome='Placa Som'";
                             $result=mysqli_query($con,$sql);
                             while ($dados=mysqli_fetch_array($result)){
                                 ?>
@@ -177,7 +177,7 @@ top();
                         <select>
                             <option value="-1">Escolha a placa de rede ...</option>
                             <?php
-                            $sql="select * from produtos order by produtoNome";
+                            $sql="select * from produtos inner join categorias on produtoCategoriaId=categoriaId where categoriaNome='Placa Rede'";
                             $result=mysqli_query($con,$sql);
                             while ($dados=mysqli_fetch_array($result)){
                                 ?>

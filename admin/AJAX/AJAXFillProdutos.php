@@ -2,14 +2,14 @@
 include_once("../includes/body.inc.php");
 $txt=addslashes($_POST['txt']);
 
-$sql="Select * from produtos where produtoNome LIKE '%$txt%'";
+$sql="Select * from produtos inner join categorias on produtoCategoriaId=categoriaId where produtoNome LIKE '%$txt%'";
 $result=mysqli_query($con,$sql);
 
 ?>
 
 <table class='table table-striped' width="100%">
     <tr>
-        <td colspan="9" align='right'>
+        <td colspan="10" align='right'>
             <a href="adicionaProduto.php"><i class='btn btn-success btn-xs'>Adicionar</i></a>
         </td>
     </tr>
@@ -17,6 +17,7 @@ $result=mysqli_query($con,$sql);
         <th>Id</th>
         <th>Nome</th>
         <th>Imagem</th>
+        <th>Categoria</th>
         <th>Descrição</th>
         <th>Preço</th>
         <th colspan="4">opções</th>
@@ -28,8 +29,9 @@ $result=mysqli_query($con,$sql);
         <tr>
             <td width="1%"><?php echo $dados['produtoId']?></td>
             <td width="30%"><?php echo $dados['produtoNome']?></td>
-            <td width="10%"><img width='90' src="../<?php  echo $dados['produtoImagemURL']?>"></td>
 
+            <td width="10%"><img width='90' src="../<?php  echo $dados['produtoImagemURL']?>"></td>
+            <td width="15%"><?php echo $dados['categoriaNome']?></td>
 
             <td width="30%"><?php echo substr($dados['produtoDescricao'],0,100)." (...)"?></td>
             <td width="10%"><?php echo $dados['produtoPreco']?>&euro;</td>

@@ -48,9 +48,9 @@ function top()
 
                 <li class="active"> <a href="listaProduto.php">Produtos</a> </li>
 
-                <li class="active"> <a href="listaChave.php">Chaves</a> </li>
-
                 <li class="active"> <a href="listaCategoriaChave.php">Categoria Chaves</a> </li>
+
+                <li class="active"> <a href="listaChave.php">Chaves</a> </li>
 
                 <li class="active"> <a href="listaNoticia.php">Noticias</a> </li>
 
