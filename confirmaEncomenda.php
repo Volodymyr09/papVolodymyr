@@ -22,5 +22,5 @@ if(isset($_SESSION['carrinho'])) {
         unset($_SESSION['carrinho'][$cont++]);
     }
 }
-header("location:index.php");
+header("location:utilizador.php");
 ?>
