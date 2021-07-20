@@ -66,7 +66,7 @@ function top()
 }
 ?>
 <?php
-    function Bottom($menu = HOME,$idPrd){
+    function Bottom($menu = HOME, $idPrd=-1){
     ?>
         <!-- Footer -->
         <footer id="footer">

@@ -75,6 +75,7 @@ $dadosPerfil=mysqli_fetch_array($res);
             </div>
             <div class="modal-body">
                 <form action="confirmaEncomenda.php" method="post">
+                    <input type="hidden" name="total" value="<?php echo $total ?>">
                     <div class="col-md-6">
                         <label for="validationServer01" class="form-label">Nome</label>
                         <input type="text" disabled value="<?php echo $dadosPerfil['perfilNome']?>" class="form-control" id="validationServer01"  required>
