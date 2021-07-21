@@ -1,2 +1,52 @@
+Fazer Registo:
+ - Nome: Miguell
+ - Morada: rua.miguel
+ - Numero: 935322622
+ - Email: miguel@gmail.com
+ - Mostrar no Administração
+
+Fazer Login
+ - Como Miguel
+
+Fazer uma compra
+ - Adicionar ao carrinho
+ - Finalizar a compra
+ - Mostrar no prefil
+ - Mostrar no Administração
+
+Mostrar estado das encomendas
+ - Mudar estado e mostrar no prefil do utilizador
+
 Adicionar Categoria:
- - Acessórios
+ - Nome: Acessórios
+
+Adicionar Produto para a categoria acessorios:
+ - Nome: Teclado Gaming CORSAIR K60 RGB Pro 
+ - Descrição: (USB - Layout Português - Preto)
+ - Preço: 89.99
+
+ - Adicionar Categoria Chave - Mais Informações
+ - Adicionar Chave - Mais Informações
+ - Valor - O teclado gaming, com estrutura resistente em alumíni.
+
+ - Fazer compatibilidade para o configurador
+	
+ - Adicionar as caracteristicas do teclado:
+
+	- Referencias:
+   		- Marca - CORSAIR
+		- Modelo - K60 RGB Pro
+
+	- Características Físicas:
+		- Cor - Preto
+		- Peso - 0,9
+		- Altura - 4
+		- Largura - 44
+		- Profundidade - 14
+
+
+Adicionar Noticia:
+ -Titulo: Android TV é atualizado e recebe funções do Google TV
+ -Link: https://www.tecmundo.com.br/software/221397-android-tv-atualizado-recebe-funcoes-google-tv.htm
+
+

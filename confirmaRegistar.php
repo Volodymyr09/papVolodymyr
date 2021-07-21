@@ -13,7 +13,7 @@ echo $sql="insert into users(userName,userPassword,userState) values('$nome','$p
 mysqli_query($con,$sql);
 $lastId=mysqli_insert_id($con);
 
-echo $sql2="insert into perfis(perfilNome,perfilMorada,perfilEmail,perfilTelefone,perfilUserId) values('$nome','$morada','$email','$telefone','$lastId')";
+echo $sql2="insert into perfis(perfilNome,perfilMorada,perfilEmail,perfilTelefone) values('$nome','$morada','$email','$telefone')";
 mysqli_query($con,$sql2);
 
 

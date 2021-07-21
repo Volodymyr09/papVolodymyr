@@ -197,7 +197,7 @@ top();
                 <div class="contact-method">
                     <span class="icon alt fa-credit-card"></span>
                     <h3>Preço Total</h3>
-                    <span>$ 975.00</span>
+                    <span>975.00&euro;</span>
                 </div>
 
 

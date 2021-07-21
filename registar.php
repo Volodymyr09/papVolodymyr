@@ -1,7 +1,8 @@
 <?php
 include_once ("includes/config.inc.php");
 include_once("includes/body.inc.php");
-$sql="Select * from users";
+//$sql="Select * from users";
+$sql="Select * from users inner join prefis on prefilId=userId";
 $res=mysqli_query($con,$sql);
 
 top();
