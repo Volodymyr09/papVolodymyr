@@ -172,40 +172,6 @@ top();
                     </div>
                     <br>
                     <div class="field half">
-                        <label for="field-1">Placa de Rede</label>
-
-                        <select>
-                            <option value="-1">Escolha a placa de rede ...</option>
-                            <?php
-                            $sql="select * from produtos inner join categorias on produtoCategoriaId=categoriaId where categoriaNome='Placa Rede'";
-                            $result=mysqli_query($con,$sql);
-                            while ($dados=mysqli_fetch_array($result)){
-                                ?>
-                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
-                                <?php
-                            }
-                            ?>
-                        </select>
-                    </div>
-                    <br>
-                    <div class="field half">
-                        <label for="field-1">Sistema Operativo</label>
-
-                        <select>
-                            <option value="-1">Escolha o sistema operativo ...</option>
-                            <?php
-                            $sql="select * from produtos order by produtoNome";
-                            $result=mysqli_query($con,$sql);
-                            while ($dados=mysqli_fetch_array($result)){
-                                ?>
-                                <option value="<?php echo $dados['produtoId']?>"><?php echo $dados['produtoNome']?> - <?php echo $dados['produtoPreco']?>&euro;</option>
-                                <?php
-                            }
-                            ?>
-                        </select>
-                    </div>
-                    <br>
-                    <div class="field half">
                         <label for="field-1">Montagem do Computador</label>
 
                         <select>

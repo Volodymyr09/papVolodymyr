@@ -1,0 +1,109 @@
+1.Motherboard ASUS TUF Gaming B550-Plus (Socket AM4 - AMD B550 - ATX) - 147,99
+Referências
+
+Referência 7193719
+EAN 4718017749435
+Marca ASUS
+Modelo TUF Gaming B550-Plus
+Características Físicas
+
+Altura 30.5
+Largura 24.4
+Unidade de Medida cm
+Formato da Motherboard ATX
+Slots de Expansão 1 x PCIe 4.0 x16 (x16 mode), 1 x PCIe 3.0 x16 (x4 mode), 3 x PCIe 3.0 x1
+
+Características Específicas
+
+Chipset AMD B550
+Marca do Chipset AMD
+Processador compatível AMD Ryzen 3ª Geração
+Função RAID Sim
+SocketAM4
+Armazenamento 2 x M.2 slots e 6 x SATA 6Gb/s, 6 x SATA 6Gb/s
+Portas USB 2 x USB 3.2 Gen 2 port(s)(1 x Type-A +1 x USB Type-C), 4 x USB 3.2 Gen 1 port(s)(4 x Type-A), 2 x USB 2.0 port(s)(2 x Type-A), 2 x USB 3.2 Gen 1 port(s)(2 x Type-A), 4 x USB 2.0 port(s)(4 x Type-A)
+Performance
+
+Áudio Realtek ALC S1200A 7.1
+Tecnologia Multi-Gráfica 2-way Crossfire Ready
+
+Memória
+
+Memória Standard 4 x DIMM de memória DDR4 com capacidade até 128GB
+Memória RAM Suportada DDR4
+Máximo de Memória Suportada 128 GB
+
+2.Motherboard MSI Z390-A Pro (Socket LGA1151 - Intel Z390 - ATX )- €114,99
+Referência 7193719
+EAN 4718017749435
+Marca ASUS
+Modelo TUF Gaming B550-Plus
+Características Físicas
+
+Altura 30.5
+Largura 24.4
+Unidade de Medida cm
+
+
+
+
+
+1Processador AMD Ryzen 5 5600X Box (Socket AM4 - Hexa-Core - 3.7 GHz) - 309
+
+Referências
+
+Referência7285942
+EAN0730143312042
+MarcaAMD
+ModeloRyzen 5 5600X Box
+Garantia2 anos
+Características Físicas
+
+Cooler IncluídoSim
+Material do CoolerWraith Stealth
+
+Características Específicas
+
+SérieAMD Ryzen 5
+Tipo de SocketAM4
+MicroarquiteturaZen 3
+Processo de Fabrico (nm)7 nm
+Gráfica incluídaNão
+Nome da Gráfica incluídaNão
+Gráficos EmbutidosNão
+Thermal Design Power (TDP)65 W
+Performance
+
+Número de Núcleos Core6 (Hexa-Core)
+Número de Threads12
+Frequência Base (Ghz)3.7
+Frequência Turbo (Ghz)4.6
+Memória
+
+Cache L23 MB
+Cache L332 MB
+
+2Processador AMD Ryzen 7 3700X (Socket AM4 - Octa-Core - 3.6 GHz)
+
+Formato da Motherboard ATX
+Slots de Expansão 1 x PCIe 4.0 x16 (x16 mode), 1 x PCIe 3.0 x16 (x4 mode), 3 x PCIe 3.0 x1
+
+Características Específicas
+
+Chipset AMD B550
+Marca do Chipset AMD
+Processador compatível AMD Ryzen 3ª Geração
+Função RAID Sim
+SocketAM4
+Armazenamento 2 x M.2 slots e 6 x SATA 6Gb/s, 6 x SATA 6Gb/s
+Portas USB 2 x USB 3.2 Gen 2 port(s)(1 x Type-A +1 x USB Type-C), 4 x USB 3.2 Gen 1 port(s)(4 x Type-A), 2 x USB 2.0 port(s)(2 x Type-A), 2 x USB 3.2 Gen 1 port(s)(2 x Type-A), 4 x USB 2.0 port(s)(4 x Type-A)
+Performance
+
+Áudio Realtek ALC S1200A 7.1
+Tecnologia Multi-Gráfica 2-way Crossfire Ready
+
+Memória
+
+Memória Standard 4 x DIMM de memória DDR4 com capacidade até 128GB
+Memória RAM Suportada DDR4
+Máximo de Memória Suportada 128 GB
