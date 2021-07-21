@@ -9,12 +9,12 @@ $cont=0;
 if(isset($_SESSION['carrinho'])) {
     foreach ($_SESSION['carrinho'] as $produto) {
         foreach ($produto as $prdId => $quant) {
-            $sql = "select * from produtos where produtoId =".$prdId;
+            $sql = "select produtoPreco from produtos where produtoId =".$prdId;
             $result = mysqli_query($con, $sql);
             if (mysqli_affected_rows($con) > 0) {
                 $dados = mysqli_fetch_array($result);
 
-                $sql = "insert into encomendadetalhes values(0,$encomendaId,$prdId,$quant,$dados[0])";
+                $sql = "insert into encomendadetalhes values(0,$encomendaId,$prdId,$dados[0],$quant)";
                 mysqli_query($con, $sql);
 
                 echo mysqli_error($con);

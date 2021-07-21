@@ -4,7 +4,7 @@ $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 
 $nome=addslashes($_POST['nome']);
 $email=addslashes($_POST['email']);
-$password=addslashes($_POST['password']);
+$password=md5(addslashes($_POST['password']));
 $telefone=addslashes($_POST['telemovel']);
 $morada=addslashes($_POST['morada']);
 
@@ -13,7 +13,7 @@ echo $sql="insert into users(userName,userPassword,userState) values('$nome','$p
 mysqli_query($con,$sql);
 $lastId=mysqli_insert_id($con);
 
-echo $sql2="insert into perfis(perfilNome,perfilMorada,perfilEmail,perfilTelefone) values('$nome','$morada','$email','$telefone')";
+echo $sql2="insert into perfis(perfilId,perfilNome,perfilMorada,perfilEmail,perfilTelefone) values($lastId,'$nome','$morada','$email','$telefone')";
 mysqli_query($con,$sql2);
 
 

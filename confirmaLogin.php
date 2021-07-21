@@ -16,7 +16,7 @@ else{
     $sistemaLogin=$dados['userName'];
     $sistemaPass=$dados['userPassword'];
 
-    if($dados['userPassword']==$sistemaPass && $dados['userName']==$sistemaLogin){
+    if($password==$sistemaPass && $nome==$sistemaLogin){
         session_start();
         $_SESSION['id'] = $dados['userId'];
         $_SESSION['nome'] = $dados['userName'];
