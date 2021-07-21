@@ -12,5 +12,6 @@ if($imagem!=''){
 }
 $sql.=" where categoriaId=".$id;
 mysqli_query($con,$sql);
-header("location:listaCategoria.php");
+echo print_r($sql);
+//header("location:listaCategoria.php");
 ?>
