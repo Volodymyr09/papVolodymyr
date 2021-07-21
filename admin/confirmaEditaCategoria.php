@@ -5,13 +5,17 @@ $id=intval($_POST['categoriaId']);
 $imagem=$_FILES['imagemCategoria']['name'];
 $novoNome="images/".$imagem;
 $catId=intval($_POST['categoriaCategoria']);
-$sql="Update categorias set categoriaNome='".$nome."', categoriaCategoriaId='".$catId."'";
+
+if($catId==-1)
+    $catId='NULL';
+
+$sql="Update categorias set categoriaNome='".$nome."', categoriaCategoriaId=".$catId;
 if($imagem!=''){
     $sql.=", categoriaImagemURL='images/".$imagem."'";
     copy($_FILES['imagemCategoria']['tmp_name'],$novoNome);
 }
 $sql.=" where categoriaId=".$id;
 mysqli_query($con,$sql);
-echo print_r($sql);
-//header("location:listaCategoria.php");
+
+header("location:listaCategoria.php");
 ?>
