@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2021-07-21 22:55:51
+Date: 2021-07-21 23:28:36
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -187,12 +187,11 @@ CREATE TABLE `encomendadetalhes` (
   KEY `fk_encomendadetalhes_produtos1_idx` (`encomendaDetalheProdutoId`) USING BTREE,
   CONSTRAINT `fk_encomendadetalhes_encomendas1` FOREIGN KEY (`encomendaDetalheEncomendaId`) REFERENCES `encomendas` (`encomendaId`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_encomendadetalhes_produtos1` FOREIGN KEY (`encomendaDetalheProdutoId`) REFERENCES `produtos` (`produtoId`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of encomendadetalhes
 -- ----------------------------
-INSERT INTO encomendadetalhes VALUES ('13', '14', '27', '2.00', '27');
 
 -- ----------------------------
 -- Table structure for `encomendas`
@@ -207,12 +206,11 @@ CREATE TABLE `encomendas` (
   PRIMARY KEY (`encomendaId`) USING BTREE,
   KEY `fk_encomendas_perfis1_idx` (`encomendaPerfilId`) USING BTREE,
   CONSTRAINT `fk_encomendas_perfis1` FOREIGN KEY (`encomendaPerfilId`) REFERENCES `perfis` (`perfilId`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of encomendas
 -- ----------------------------
-INSERT INTO encomendas VALUES ('14', '2021-07-21', 'entregue', '602.00', '12');
 
 -- ----------------------------
 -- Table structure for `noticias`
@@ -369,10 +367,9 @@ CREATE TABLE `users` (
   `userPassword` varchar(255) NOT NULL,
   `userState` enum('registo','ativo','inativo') NOT NULL,
   PRIMARY KEY (`userId`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of users
 -- ----------------------------
-INSERT INTO users VALUES ('12', 'Miguel', '777665', 'ativo');
-INSERT INTO users VALUES ('24', 'Volodymyr', '12345', 'inativo');
+INSERT INTO users VALUES ('12', 'Miguel', '827ccb0eea8a706c4c34a16891f84e7b', 'ativo');
