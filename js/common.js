@@ -31,6 +31,7 @@ function confirmaEliminaCarrinho(idProduto) {
                     },
                     success:function(result){
                         alert("O produto eliminado do carrinho!");
+                        location.reload();
                     }
                 });
             }

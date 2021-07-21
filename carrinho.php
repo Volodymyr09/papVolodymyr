@@ -40,7 +40,7 @@ $dadosPerfil=mysqli_fetch_array($res);
                                 <td><a href="#" onclick="confirmaEliminaCarrinho(<?php echo $prdId?>);"><img src="images/trash_tb.png" width="20"></a></td>
                             </tr>
                             <?php
-                            $k++;
+                            $k+=$quant;
                             $total+=$dados["produtoPreco"]*$quant;
                         }
                     }

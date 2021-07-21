@@ -1,4 +1,4 @@
-cbc<?php
+<?php
 include_once("includes/body.inc.php");
 $total=intval($_POST['total']);
 $sql="insert into encomendas(encomendaValorFinal,encomendaData,encomendaPerfilId) values(".$total.", now(),".$_SESSION['id'].")";
