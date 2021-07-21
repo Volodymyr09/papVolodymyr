@@ -1,27 +1,23 @@
 1.Motherboard ASUS TUF Gaming B550-Plus (Socket AM4 - AMD B550 - ATX) - 147,99
 Referências
 
-Referência 7193719
-EAN 4718017749435
+
 Marca ASUS
 Modelo TUF Gaming B550-Plus
+
 Características Físicas
 
 Altura 30.5
 Largura 24.4
 Unidade de Medida cm
-Formato da Motherboard ATX
-Slots de Expansão 1 x PCIe 4.0 x16 (x16 mode), 1 x PCIe 3.0 x16 (x4 mode), 3 x PCIe 3.0 x1
 
 Características Específicas
 
 Chipset AMD B550
-Marca do Chipset AMD
-Processador compatível AMD Ryzen 3ª Geração
-Função RAID Sim
 SocketAM4
 Armazenamento 2 x M.2 slots e 6 x SATA 6Gb/s, 6 x SATA 6Gb/s
 Portas USB 2 x USB 3.2 Gen 2 port(s)(1 x Type-A +1 x USB Type-C), 4 x USB 3.2 Gen 1 port(s)(4 x Type-A), 2 x USB 2.0 port(s)(2 x Type-A), 2 x USB 3.2 Gen 1 port(s)(2 x Type-A), 4 x USB 2.0 port(s)(4 x Type-A)
+
 Performance
 
 Áudio Realtek ALC S1200A 7.1
@@ -34,76 +30,225 @@ Memória RAM Suportada DDR4
 Máximo de Memória Suportada 128 GB
 
 2.Motherboard MSI Z390-A Pro (Socket LGA1151 - Intel Z390 - ATX )- €114,99
-Referência 7193719
-EAN 4718017749435
-Marca ASUS
-Modelo TUF Gaming B550-Plus
-Características Físicas
 
-Altura 30.5
-Largura 24.4
-Unidade de Medida cm
-
-
-
+--------------------------------------------------------------------------------------------------------------------------------
 
 
 1Processador AMD Ryzen 5 5600X Box (Socket AM4 - Hexa-Core - 3.7 GHz) - 309
 
 Referências
 
-Referência7285942
-EAN0730143312042
-MarcaAMD
-ModeloRyzen 5 5600X Box
-Garantia2 anos
-Características Físicas
+Marca-AMD
+Modelo- Ryzen 5 5600X Box
 
-Cooler IncluídoSim
-Material do CoolerWraith Stealth
 
 Características Específicas
 
-SérieAMD Ryzen 5
-Tipo de SocketAM4
-MicroarquiteturaZen 3
-Processo de Fabrico (nm)7 nm
-Gráfica incluídaNão
-Nome da Gráfica incluídaNão
-Gráficos EmbutidosNão
-Thermal Design Power (TDP)65 W
+Série - AMD Ryzen 5
+Tipo de Socket -AM4
+
 Performance
 
-Número de Núcleos Core6 (Hexa-Core)
-Número de Threads12
-Frequência Base (Ghz)3.7
-Frequência Turbo (Ghz)4.6
+Número de Núcleos Core- 6 (Hexa-Core)
+Frequência Base (Ghz)-3.7
+Frequência Turbo (Ghz)-4.6
+
 Memória
 
-Cache L23 MB
-Cache L332 MB
+CacheL2 - 3 MB
+CacheL3 - 32 MB
 
 2Processador AMD Ryzen 7 3700X (Socket AM4 - Octa-Core - 3.6 GHz)
 
-Formato da Motherboard ATX
-Slots de Expansão 1 x PCIe 4.0 x16 (x16 mode), 1 x PCIe 3.0 x16 (x4 mode), 3 x PCIe 3.0 x1
+-------------------------------------------------------------------------------------------------------------------
+1.Memória RAM DDR4 KINGSTON FURY (1 x 8 GB - 2666 MHz - CL 16 - Preto)
+Referências
+    Marca-KINGSTON
+    Modelo-FURY
+
+Características Físicas
+
+    Cor-Preto
+    Peso-0.036 g
+    Altura-34.1
+    Largura-7.2
+    Profundidade-133.35
+    Unidade de Medida-mm
+
+Performance
+
+    Capacidade RAM (Kb)-8 GB (1x8)
+    Velocidade - 2666 MHz
+    Tipo de Memória-DDR4
+
+2.Memória RAM DDR4 KINGSTON Fury (1 x 8 GB - 3200 MHz - CL 16 - Preto)
+
+---------------------------------------------------------------------------------------------------------------------
+
+1.Disco SSD Interno SAMSUNG 970 EVO Plus (1 TB - PCI-Express - 350 MB/s)
+
+Referências
+
+    Marca-SAMSUNG
+    Modelo-970 Evo Plus
+
+Características Físicas
+
+    Cor-Preto
+    Peso-8 gr.
+    Altura-22,15
+    Largura-80,15
+    Profundidade-2,38
+    Unidade de Medida-mm
 
 Características Específicas
 
-Chipset AMD B550
-Marca do Chipset AMD
-Processador compatível AMD Ryzen 3ª Geração
-Função RAID Sim
-SocketAM4
-Armazenamento 2 x M.2 slots e 6 x SATA 6Gb/s, 6 x SATA 6Gb/s
-Portas USB 2 x USB 3.2 Gen 2 port(s)(1 x Type-A +1 x USB Type-C), 4 x USB 3.2 Gen 1 port(s)(4 x Type-A), 2 x USB 2.0 port(s)(2 x Type-A), 2 x USB 3.2 Gen 1 port(s)(2 x Type-A), 4 x USB 2.0 port(s)(4 x Type-A)
-Performance
+    Velocidade Máxima de Escrita-3300
+    Velocidade Máxima de Leitura-350
 
-Áudio Realtek ALC S1200A 7.1
-Tecnologia Multi-Gráfica 2-way Crossfire Ready
+2.Disco SSD Interno SAMSUNG 980 PRO (1 TB - PCI Express 4.0 - 7000 MB/s)
+
+----------------------------------------------------------------------------------------------------------------------
+
+1.Caixa PC NOX Hummer TGX RGB (ATX Full Tower - Preto)
+
+A caixa NOX Hummer TGX combina beleza e possibilidades de alto desempenho, tudo-em-um: painéis de vidro temperado na frente e em ambos os lados, ventoinhas de 140 mm com iluminação RGB e capacidade para acomodar placas gráficas de grandes dimensões (até 430 mm), bem como suporte para arrefecimento líquido, juntamente com seis unidades de armazenamento no seu grande interior, otimizado para instalação conveniente e gestão de cabos. Trata-se de uma torre compatível com motherboards E-ATX, ATX, M-ATX e ITX, uma solução perfeita para equipamentos de alto desempenho com visual elegante. Projetado com um estilo esteticamente agradável, a Hummer TGX tem dois painéis laterais e um de vidro temperado, com acabamentos em preto na frente, abrigando três ventoinhas com iluminação LED RGB. A Hummer TGX é perfeita para aqueles entusiastas que desejam apreciar a sua configuração, uma vez que os painéis laterais oferecem uma visão completa dos interiores do equipamento e de todos os componentes instalados. No cimo do painel frontal, iluminado por três ventoinhas LED RGB, existem duas portas USB 2.0 e duas portas USB 3.0, um controlador de velocidade da ventoinha, um controlador de sequência de cores e as conexões de áudio. E porque um equipamento de alto desempenho requer um sistema de refrigeração superior para ajudar a manter o bom funcionamento de todos os seus componentes instalados, a caixa NOX Hummer TGX oferece a possibilidade de alojar grandes sistemas de refrigeração líquida no interior, uma vez que incorpora calhas de cabos para ajudar a manter uma instalação arrumada. Por fim, é possível alojar coolers para CPU com uma altura máxima de 175 mm, o que permite que você instale quase qualquer cooler high-end no mercado. Outras características: quatro ventoinhas RGB de 140 mm incluídas; bandejas de unidade HDD incluídas; filtro magnético de poeira no painel superior; filtro de poeira PSU incluído; compartimento isolado de PSU e HDD; ventoinhas de iluminação LED RGB com controlo de sequência de cores; capacidade para instalar até nove ventoinhas; oito slots de expansão. Garantia de dois anos.
+
+Referências
+
+    Marca--NOX
+    Modelo-TGX RGB
+
+
+Características Físicas
+
+    Cor-Preto
+    Peso-10,7 kg
+    Altura-51,5 cm
+    Largura-23 cm
+    Profundidade-50 cm
+    Material Chassi em 0.9mm SPCC, V. temp
+
+Características Específicas
+    Tipo de Caixa-ATX Full Tower
+    Slots de Expansão-Maior que 7
+    Família de Motherboard-E-ATX, ATX, Micro-ATX, ITX
+    Série-Hummer
+
+2.Caixa PC E-ATX KOLINK Observatory (ATX Mid Tower - Branco RGB)
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+1.Dissipador CPU COOLER MASTER Hyper TX3 EVO - 30
+
+Referências
+
+    Marca-COOLER MASTER
+    Modelo-Hyper TX3 EVO
+
+
+Características Físicas
+
+    Altura-2.5 cm
+    Largura-9.2 cm
+    Profundidade-9.2 cm
+    Unidade de Medida-cm
+
+2.Dissipador COOLER MASTER Hyper 212 Led - 30
+
+----------------------------------------------------------------------------------------
+
+
+1.Fonte de alimentação Nox Hummer X 700W 80+BZ
+
+Referências
+    Marca-NOX
+
+Características Físicas
+
+    Cor-preto
+    Altura-8,6
+    Largura-15
+    Profundidade-15,7
+    Unidade de Medida-cm
+
+Características Específicas
+
+    Potência(W) - 700W
+    Alimentação Switches - 100-240 V universal inpu
+    Certificação Energética - 80 Plus Bronze
+
+
+Conexões
+
+    Conectores SATA - 7 x SATA 4 pinos
+    Conectores ATX - ATX12V v2.31
+    Conectores Molex - 3 x Molex 4 pinos
+
+2.Fonte de Alimentação ASUS ROG THOR 1200P (Modular - 80 Plus Platinum) - 359
+
+-------------------------------------------------------------------------------------------------------
+
+1.Placa Gráfica GIGABYTE GV-N2060OC-6GD - 586
+
+Referências
+    Marca-GIGABYTE
+    Modelo-GV-N2060OC-6GD
+
+Características Específicas
+
+    GPU-GeForce RTX 2060
+    Chipset-NVIDIA
 
 Memória
 
-Memória Standard 4 x DIMM de memória DDR4 com capacidade até 128GB
-Memória RAM Suportada DDR4
-Máximo de Memória Suportada 128 GB
+    Memória Interna - 6 GB
+    Tipo de Memória - DDR6
+
+2.Placa Gráfica ZOTAC GeForce GT 710 Zone Edition (NVIDIA - 2 GB DDR3)
+-----------------------------------------------------------------------------------
+
+1.Placa de som ASUS Xonar AE 7.1
+
+Referências
+
+    Marca-ASUS
+    Modelo-AE
+
+
+Características Específicas
+
+    Série-Xonar
+    Frequencia Resposta (Hz)-65 KHz
+    Chipset- C-Media 6632AE
+    Software - Windows 10/8.1/7
+
+2.Placa de som ASUS Xonar Phoebus Solo
+-----------------------------------------------------------------------------------------------
+1.Monitor
+Características Físicas
+
+    Cor - Preto e Vermelho
+    Peso - 5.5 Kg
+    Altura - 52.3 cm
+    Largura - 21.4 cm
+    Profundidade - 68.6 cm
+    Unidade de Medida - cm
+Ecrã
+
+    Diagonal de Ecrã - 27
+    Tipo de Ecrã - LED VA
+    Relação de Aspeto - 16:9
+    Ângulo de Visão - H 178º / V 178 º
+    Formato - Curvo
+
+Qualidade de Imagem
+
+    Resolução - Full HD
+    Resolução (lpi) - 1920x1080
+    Cores - 16.7 Milhões
+    Contraste Static - 3000:1
+    Distância entre Pixels - 0.3114
+    Brilho [cd/m2] - 300
+    Tecnologia - Compatível com G-Sync | AMD FreeSync Premium
+
