@@ -3,7 +3,7 @@ include_once ("includes/config.inc.php");
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 $nome=addslashes($_POST['nome']);
 $password=md5(addslashes($_POST['password']));
-$sql="select userId from users where userState='ativo' and userName ='$nome'";
+$sql="select userId from users where userName ='$nome'";
 $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);
 if(!isset($dados['userId'])){ // não existe o login

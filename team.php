@@ -28,7 +28,7 @@ top();
                 </div>
 
                 <div class="col-md-3 col-sm-6 co-xs-12 text-center">
-                    <img src="images/author-image-4-646x680.jpg" class="img-responsive" alt="">
+                    <img src="images/prefil4.jpg" class="img-responsive" alt="">
 
                     <h3>Filipe Vital</h3>
 
@@ -42,7 +42,7 @@ top();
                 </div>
 
                 <div class="col-md-3 col-sm-6 co-xs-12 text-center">
-                    <img src="images/author-image-4-646x680.jpg" class="img-responsive" alt="">
+                    <img src="images/prefil3.jpg" class="img-responsive" alt="">
 
                     <h3>Daniel Ferreira</h3>
 
@@ -56,7 +56,7 @@ top();
                 </div>
 
                 <div class="col-md-3 col-sm-6 co-xs-12 text-center">
-                    <img src="images/author-image-4-646x680.jpg" class="img-responsive" alt="">
+                    <img src="images/prefil2.jpg" class="img-responsive" alt="">
 
                     <h3>Volodymyr Babaiev</h3>
 
